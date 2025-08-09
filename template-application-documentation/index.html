@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Application Documentation Template - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Application Documentation Template";
+    var mkdocs_page_input_path = "template-application-documentation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Application Documentation Template
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#key-links">Key Links</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#general-information">General Information</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#risk-classification">Risk classification</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#application-functionality">Application Functionality</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#models-and-datasets">
+      Models and Datasets
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#models">Models</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#datasets">Datasets</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#deployment">
+      Deployment
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#infrastructure-and-environment-details">Infrastructure and Environment Details</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#integration-with-external-systems">Integration with External Systems</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#deployment-plan">Deployment Plan</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#lifecycle-management">
+      Lifecycle Management
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#risk-management-system">
+      Risk Management System
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#risk-mitigation-measures">Risk Mitigation Measures</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#testing-and-validation-accuracy-robustness-cybersecurity">
+      Testing and Validation (Accuracy, Robustness, Cybersecurity)
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#accuracy-throughout-the-lifecycle">Accuracy throughout the lifecycle</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#robustness">Robustness</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#cybersecurity">Cybersecurity</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#human-oversight">Human Oversight</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#incident-management">
+      Incident Management
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#troubleshooting-ai-application-deployment">
+      Troubleshooting AI Application Deployment
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+          
+
+  <li class="toctree-l5 current with-children">
+    <a href="#infrastructure-level-issues">
+      Infrastructure-Level Issues
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5 current">
+    <ul class="subnav-l5 current">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#insufficient-resources">Insufficient Resources</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#network-failures">Network Failures</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#deployment-pipeline-failures">Deployment Pipeline Failures</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#integration-problems">
+      Integration Problems
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#api-failures">API Failures</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#data-format-mismatches">Data Format Mismatches</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-quality-problems">Data Quality Problems</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#model-level-issues">
+      Model-Level Issues
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#performance-or-deployment-issues">Performance or Deployment Issues</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#safety-and-security-issues">
+      Safety and Security Issues
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#unauthorised-access">Unauthorised Access</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#data-breaches">Data Breaches</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#monitoring-and-logging-failures">
+      Monitoring and Logging Failures
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#missing-or-incomplete-logs">Missing or Incomplete Logs</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#recovery-and-rollback">
+      Recovery and Rollback
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#rollback-mechanisms">Rollback Mechanisms</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#disaster-recovery">Disaster Recovery</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#eu-declaration-of-conformity">EU Declaration of conformity</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#standards-applied">Standards applied</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#documentation-metadata">
+      Documentation Metadata
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#template-version">Template Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-authors">Documentation Authors</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-application-documentation-safesite-ai/">SafeSiteAI Application Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>TEMPLATES &raquo;</li>
+        
+      
+    
+    <li>Application Documentation Template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="application-documentation-template">Application Documentation Template<a class="headerlink" href="#application-documentation-template" title="Permanent link">&para;</a></h1>
+<p><strong>Application Owner</strong>: Name and contact information
+<br><strong>Document Version</strong>: Version controlling this document is highly recommended
+<br><strong>Reviewers</strong>: List reviewers</p>
+<h2 id="key-links">Key Links<a class="headerlink" href="#key-links" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="">Code Repository</a></li>
+<li><a href="">Deployment Pipeline</a></li>
+<li><a href="">API</a> (<a href="">Swagger Docs</a>)</li>
+<li><a href="">Cloud Account</a></li>
+<li><a href="">Project Management Board</a></li>
+<li><a href="">Application Architecture</a></li>
+</ul>
+<h2 id="general-information">General Information<a class="headerlink" href="#general-information" title="Permanent link">&para;</a></h2>
+<div style="color: gray">
+EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 1, 2, 3
+<!-- info: this section covers the AI Act requirement of a description of the intended purpose, version and provider, relevant versions and updates. In Article 11, 2(d) a datasheet is required which describes all training methodologies and techniques as well as the characteristics of the training dataset, general description of the dataset, information about their provenance, scope and main characteristics, how the data was obtained and selected, labelling procedures conducted, and data cleaning methodologies deployed. -->
+<p></p>
+</div>
+
+<p><strong>Purpose and Intended Use</strong>:</p>
+<ul>
+<li>Description of the AI system's intended purpose, including the sector of deployment.</li>
+<li>Clearly state the problem the AI application aims to solve.</li>
+<li>Delineate target users and stakeholders.</li>
+<li>Set measurable goals and key performance indicators (KPIs).</li>
+<li>Consider ethical implications and regulatory constraints. </li>
+<li>Clear statement on prohibited uses or potential misuse scenarios.</li>
+<li><strong>Operational environment:</strong> Describe where and how the AI system will operate, such as on mobile devices, cloud platforms, or embedded systems.</li>
+</ul>
+<h2 id="risk-classification">Risk classification<a class="headerlink" href="#risk-classification" title="Permanent link">&para;</a></h2>
+<div style="color: gray">
+Prohibited Risk: EU AI Act Chapter II <a href="https://artificialintelligenceact.eu/article/5/" style="color:blue; text-decoration:underline">Article 5</a>
+<br>High-Risk: EU AI Act Chapter III, Section 1 <a href="https://artificialintelligenceact.eu/article/6/" style="color:blue; text-decoration:underline">Article 6</a>, <a href="https://artificialintelligenceact.eu/article/7/" style="color:blue; text-decoration:underline">Article 7</a>  
+<br>Limited Risk: Chapter IV <a href="https://artificialintelligenceact.eu/article/50/" style="color:blue; text-decoration:underline">Article 50</a>
+<p></p>
+</div>
+
+<!--info: The AI Act classifies AI systems into four different risk categories. The EU AI Act categorizes AI systems into four risk levels: unacceptable, high, limited, and minimal risk, each with corresponding regulatory requirements.  
+Unacceptable risk (Chapter II, Article 5) includes systems that pose a clear threat to safety or fundamental rights (e.g. social scoring, recidivism scoring) and are banned.  
+High-risk systems are delineated in Chapter III, Section 1, Articles 6 and 7, including AI used in sensitive domains like healthcare, law enforcement, education, employment, and critical infrastructure. These must meet strict requirements and conduct conformity assessment practices, including risk management, transparency, and human oversight.  
+Limited-risk systems, delineated in Chapter IV Article 50, such as chatbots, must meet transparency obligations (e.g. disclosing AI use).  
+Minimal-risk systems, like spam filters or AI in video games, face no specific requirements. -->
+
+<ul>
+<li>High / Limited / Minimal (in accordance with the AI Act)</li>
+<li>reasoning for the above classification</li>
+</ul>
+<h2 id="application-functionality">Application Functionality<a class="headerlink" href="#application-functionality" title="Permanent link">&para;</a></h2>
+<div style="color: gray">
+EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>, paragraph 1, 2, 3
+<!-- Info: this section covers the delineation of the general purpose of the system required in Article 1, with a focus on defining what the system should do and how it should work.-->
+<p></p>
+</div>
+
+<ul>
+<li><strong>Instructions for use for deployers</strong>: <div style="color: gray">(EU AI Act <a href="https://artificialintelligenceact.eu/article/13/" style="color:blue; text-decoration:underline">Article 13</a>)</div></li>
+<li><strong>Model Capabilities</strong>:</li>
+<li>What the application can and cannot do (limitations).</li>
+<li>Supported languages, data types, or scenarios.</li>
+<li><strong>Input Data Requirements</strong>:</li>
+<li>Format and quality expectations for input data.</li>
+<li>Examples of valid and invalid inputs.</li>
+<li><strong>Output Explanation</strong>:</li>
+<li>How to interpret predictions, classifications, or recommendations.</li>
+<li>Uncertainty or confidence measures, if applicable.</li>
+<li><strong>System Architecture Overview</strong>:</li>
+<li>Functional description and architecture of the system.</li>
+<li>Describe the key components of the system (including datasets, algorithms, models, etc.)</li>
+</ul>
+<h2 id="models-and-datasets">Models and Datasets<a class="headerlink" href="#models-and-datasets" title="Permanent link">&para;</a></h2>
+<div style="color: gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 2 (d)
+<p></p>
+</div>
+
+<!--All information about models and datasets that are used in the application should be found in their respective dataset or model documentation.  The purpose here is mainly to provide links to those documentation. -->
+<!--In Article 11, 2 (d) a datasheet is required which describes all training methodologies and techniques as well as the charatcteristics of the training dataset, general description of the dataset, information about their provenance, scope and main characteristics, how the data was obtained and selected labelling procedures conducted and data cleaning methodologies deployed -->
+
+<h3 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h3>
+<p>Link to all model integrated in the AI/ML System</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Link to Single Source of Truth</th>
+<th>Description of Application Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model 1</td>
+<td><a href="">TechOps Model Document</a></td>
+<td>...</td>
+</tr>
+<tr>
+<td>Model 2</td>
+<td><a href="">TechOps Model Document</a></td>
+<td>...</td>
+</tr>
+<tr>
+<td>Model 3</td>
+<td><a href="">GitHub Repo</a></td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<h3 id="datasets">Datasets<a class="headerlink" href="#datasets" title="Permanent link">&para;</a></h3>
+<p>Link to all dataset documentation and information used to evaluate the AI/ML System.<br />
+(Note, Model Documentation should also contain dataset information and links for all datasets used to train and test each respective model) </p>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Link to Single Source of Truth</th>
+<th>Description of Application Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dataset 1</td>
+<td><a href="">TechOps Data Document</a></td>
+<td>...</td>
+</tr>
+<tr>
+<td>Dataset 2</td>
+<td><a href="">GitHub Repo</a></td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Infrastructure and environment details (e.g., cloud setup, APIs).</li>
+<li>Integration with external systems or applications.</li>
+</ul>
+<h3 id="infrastructure-and-environment-details">Infrastructure and Environment Details<a class="headerlink" href="#infrastructure-and-environment-details" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cloud Setup</strong>:</li>
+<li>Specify cloud provider (e.g., AWS, Azure, GCP) and regions.</li>
+<li>List required services: compute (e.g., EC2, Kubernetes), storage (e.g., S3, Blob Storage), and databases (e.g., DynamoDB, Firestore).</li>
+<li>Define resource configurations (e.g., VM sizes, GPU/TPU requirements).</li>
+<li>Network setup: VPC, subnets, and security groups.</li>
+<li><strong>APIs</strong>:</li>
+<li>API endpoints, payload structure, authentication methods (e.g., OAuth, API keys).</li>
+<li>Latency and scalability expectations.</li>
+</ul>
+<h2 id="integration-with-external-systems">Integration with External Systems<a class="headerlink" href="#integration-with-external-systems" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 1 (b, c, d, g, h), 2 (a)
+  <p></p>
+</div>
+
+<ul>
+<li><strong>Systems</strong>:</li>
+<li>List dependencies </li>
+<li>Data flow diagrams showing interactions.</li>
+<li>Error-handling mechanisms for APIs or webhooks</li>
+</ul>
+<h2 id="deployment-plan">Deployment Plan<a class="headerlink" href="#deployment-plan" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Infrastructure</strong>:</li>
+<li>List environments: development, staging, production.</li>
+<li>Resource scaling policies (e.g., autoscaling, redundancy).</li>
+<li>Backup and recovery processes.</li>
+<li><strong>Integration Steps</strong>:</li>
+<li>Order of deployment (e.g., database migrations, model upload, service launch).</li>
+<li>Dependencies like libraries, frameworks, or APIs.</li>
+<li>Rollback strategies for each component.</li>
+<li><strong>User Information</strong>: where is this under deployment?</li>
+</ul>
+<h2 id="lifecycle-management">Lifecycle Management<a class="headerlink" href="#lifecycle-management" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 6
+  <p></p>
+</div>
+
+<ul>
+<li>Monitoring procedures for performance and ethical compliance.</li>
+<li>Versioning and change logs for model updates.</li>
+<li><strong>Metrics</strong>:</li>
+<li>Application performance: response time, error rate.</li>
+<li>Model performance: accuracy, precision, recall.</li>
+<li>Infrastructure: CPU, memory, network usage.</li>
+<li><strong>Key Activities</strong>:</li>
+<li>Monitor performance in real-world usage.</li>
+<li>Identify and fix drifts, bugs, or failures.</li>
+<li>Update the model periodically.</li>
+<li><strong>Documentation Needs</strong>:</li>
+<li><strong>Monitoring Logs</strong>: Real-time data on accuracy, latency, and uptime.</li>
+<li><strong>Incident Reports</strong>: Record of failures, impacts, and resolutions.</li>
+<li><strong>Retraining Logs</strong>: Data updates and changes in performance.</li>
+<li><strong>Audit Trails</strong>: Comprehensive history of changes to ensure compliance.
+-<strong>Manteinance of change logs</strong>: </li>
+<li>new features added</li>
+<li>updates to existing functionality</li>
+<li>deprecated features</li>
+<li>removed features</li>
+<li>bug fixes</li>
+<li>security and vulnerability fixes</li>
+</ul>
+<h3 id="risk-management-system">Risk Management System<a class="headerlink" href="#risk-management-system" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/9/" style="color:blue; text-decoration:underline">Article 9</a>
+  <br>EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>
+  ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>
+  <p></p>
+</div>
+<!--**Instructions:**  A thorough risk management system is mandated by the AI Act, especially for high-risk AI systems. This section documents the  proactive efforts to ensure the AI system operates safely and ethically. In general in this section you should document all the measures undertaken to make sure that a system operates safely on the market. Example: Consider a facial recognition system used for real-time law enforcement in public spaces. This is categorized as high-risk under the EU AI Act. If developers document the risk that the system might misidentify individuals—particularly among minority groups due to biased training data—they can plan for rigorous dataset audits, independent bias testing, and establish human oversight in decision-making. Without documenting this risk, the system might be deployed without safeguards, leading to wrongful detentions and legal liabilities. Systematic documentation ensures these issues are not only identified but addressed before harm occurs.-->
+
+<p><strong>Risk Assessment Methodology:</strong> Describe the frameworks or standards used to identify and assess risks, such as ISO 31000 or failure mode and effects analysis (FMEA), or NIST Risk Assessment Framework.</p>
+<p><strong>Identified Risks:</strong> </p>
+<p><strong>Potential Harmful Outcomes:</strong> List possible negative effects, such as biased decisions, privacy breaches, or safety hazards.</p>
+<p><strong>Likelihood and Severity:</strong> Assess how likely each risk is to occur and the potential impact on users or society.</p>
+<h4 id="risk-mitigation-measures">Risk Mitigation Measures<a class="headerlink" href="#risk-mitigation-measures" title="Permanent link">&para;</a></h4>
+<p><strong>Preventive Measures:</strong> Detail actions taken to prevent risks, like implementing data validation checks or bias reduction techniques.</p>
+<p><strong>Protective Measures:</strong> Describe contingency plans and safeguards in place to minimize the impact if a risk materializes.</p>
+<h2 id="testing-and-validation-accuracy-robustness-cybersecurity">Testing and Validation (Accuracy, Robustness, Cybersecurity)<a class="headerlink" href="#testing-and-validation-accuracy-robustness-cybersecurity" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/15/" style="color:blue; text-decoration:underline">Article 15</a>
+  <p></p>
+</div>
+
+<p><strong>Testing and Validation Procedures (Accuracy):</strong></p>
+<p><strong>Performance Metrics:</strong> List the metrics used to evaluate the AI system, such as accuracy, precision, recall, F1 score, or mean squared error.</p>
+<p><strong>Validation Results:</strong> Summarize the outcomes of testing, including any benchmarks or thresholds met or exceeded.</p>
+<p><strong>Measures for Accuracy:</strong> High-quality data, algorithm optimisation, evaluation metrics, and real-time performance tracking.</p>
+<h3 id="accuracy-throughout-the-lifecycle">Accuracy throughout the lifecycle<a class="headerlink" href="#accuracy-throughout-the-lifecycle" title="Permanent link">&para;</a></h3>
+<p><strong>Data Quality and Management:</strong> High-Quality Training Data: Data Preprocessing, techniques like normalisation, outlier removal, and feature scaling to improve data consistency, Data Augmentation, Data Validation</p>
+<p><strong>Model Selection and Optimisation:</strong> Algorithm selection suited for the problem, Hyperparameter Tuning (grid search, random search, Bayesian optimization), Performance Validation( cross-validation by splitting data into training and testing sets, using k-fold or stratified cross-validation), Evaluation Metrics (precision,recall, F1 score, accuracy, mean squared error (MSE), or area under the curve (AUC).</p>
+<p><strong>Feedback Mechanisms:</strong> Real-Time Error Tracking, Incorporate mechanisms to iteratively label and include challenging or misclassified examples for retraining.</p>
+<h3 id="robustness">Robustness<a class="headerlink" href="#robustness" title="Permanent link">&para;</a></h3>
+<p>&lt;-- Add outlier detection and all possible post analysis, what are the criticalities --&gt;</p>
+<p><strong>Robustness Measures:</strong></p>
+<ul>
+<li>Adversarial training, stress testing, redundancy, error handling, and domain adaptation.</li>
+</ul>
+<p><strong>Scenario-Based Testing:</strong></p>
+<ul>
+<li>
+<p>Plan for adversarial conditions, edge cases, and unusual input scenarios.</p>
+</li>
+<li>
+<p>Design the system to degrade gracefully when encountering unexpected inputs.</p>
+</li>
+</ul>
+<p><strong>Redundancy and Fail-Safes:</strong></p>
+<ul>
+<li>Introduce fallback systems (e.g., rule-based or simpler models) to handle situations where the main AI system fails.</li>
+</ul>
+<p><strong>Uncertainty Estimation:</strong></p>
+<ul>
+<li>Include mechanisms to quantify uncertainty in the model’s predictions (e.g., Bayesian networks or confidence scores).</li>
+</ul>
+<h3 id="cybersecurity">Cybersecurity<a class="headerlink" href="#cybersecurity" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 2 (h)
+  <p></p>
+</div>
+
+<p><strong>Data Security:</strong></p>
+<p><strong>Access Control:</strong></p>
+<p><strong>Incident Response :</strong></p>
+<p>These measures include threat modelling, data security, adversarial robustness, secure development practices, access control, and incident response mechanisms.</p>
+<p>Post-deployment monitoring, patch management, and forensic logging are crucial to maintaining ongoing cybersecurity compliance.</p>
+<p>Documentation of all cybersecurity processes and incidents is mandatory to ensure accountability and regulatory conformity.</p>
+<h2 id="human-oversight">Human Oversight<a class="headerlink" href="#human-oversight" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>;; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 2(e)
+  <br>EU AI Act <a href="https://artificialintelligenceact.eu/article/14/" style="color:blue; text-decoration:underline">Article 14</a>
+  <p></p>
+</div>
+
+<!-- info: AI Act Article 11, paragraph 2(e) requirements: assessment of the human oversight measures needed in accordance with Article 14, including the assessment of the technical measures needed to facilitate the integration of the outputs of the AI systems by deployers. -->
+
+<p><strong>Human-in-the-Loop Mechanisms:</strong>  Explain how human judgment is incorporated into the AI system’s decision-making process, such as requiring human approval before action.</p>
+<p><strong>Override and Intervention Procedures:</strong> Describe how users or operators can intervene or disable the AI system in case of errors or emergencies.</p>
+<p><strong>User Instructions and Training:</strong> Provide guidelines and training materials to help users understand how to operate the AI system safely and effectively.</p>
+<p><strong>Limitations and Constraints of the System:</strong> Clearly state what the AI system cannot do, including any known weaknesses or scenarios where performance may degrade.</p>
+<h2 id="incident-management">Incident Management<a class="headerlink" href="#incident-management" title="Permanent link">&para;</a></h2>
+<!-- what happens when things go wrong. This part is particularly important to provide information on how incidents were dealth with and the processes put in place to minimize damage when things go wrong. -->
+<ul>
+<li><strong>Common Issues</strong>:</li>
+<li>List common errors and their solutions.</li>
+<li>Logs or debugging tips for advanced troubleshooting.</li>
+<li><strong>Support Contact</strong>:</li>
+<li>How to reach technical support or community forums.</li>
+</ul>
+<h3 id="troubleshooting-ai-application-deployment">Troubleshooting AI Application Deployment<a class="headerlink" href="#troubleshooting-ai-application-deployment" title="Permanent link">&para;</a></h3>
+<p>This section outlines potential issues that can arise during the deployment of an AI application, along with their causes, resolutions, and best practices for mitigation.</p>
+<h4 id="infrastructure-level-issues">Infrastructure-Level Issues<a class="headerlink" href="#infrastructure-level-issues" title="Permanent link">&para;</a></h4>
+<h5 id="insufficient-resources">Insufficient Resources<a class="headerlink" href="#insufficient-resources" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Inaccurate resource estimation for production workloads.</li>
+<li>
+<p>Unexpected spikes in user traffic can lead to insufficient resources such as compute, memory or storage that can lead to crashes and bad performance</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>:</p>
+</li>
+</ul>
+<!-- describe here the resolution strategy such as:
+-  Enable autoscaling (e.g., Kubernetes Horizontal Pod Autoscaler).
+  - Monitor usage metrics and adjust resource allocation dynamically.
+  - Implement rate-limiting for traffic spikes. -->
+
+<h5 id="network-failures">Network Failures<a class="headerlink" href="#network-failures" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>:  network bottlenecks  can lead to inaccessible or experiences latency of the application.</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>:</p>
+</li>
+</ul>
+<!-- 
+  - Test network connectivity 
+  - Use content delivery networks (CDNs) or regional load balancers.
+  - Ensure proper failover mechanisms.-->
+
+<h5 id="deployment-pipeline-failures">Deployment Pipeline Failures<a class="headerlink" href="#deployment-pipeline-failures" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: pipeline fails to build, test, or deploy because of issues of compatibility between application code and infrastructure, environment variables or credentials misconfiguration.</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>: </p>
+</li>
+</ul>
+<!--:
+  - Roll back to the last stable build.
+  - Fix pipeline scripts and use containerisation for environment consistency.
+  - Enable verbose logging for error diagnostics.-->
+
+<h4 id="integration-problems">Integration Problems<a class="headerlink" href="#integration-problems" title="Permanent link">&para;</a></h4>
+<h5 id="api-failures">API Failures<a class="headerlink" href="#api-failures" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: External APIs or internal services are unreachable due to network errors or authentication failures.</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>:</p>
+</li>
+</ul>
+<!--:
+  - Implement retries with exponential backoff.
+  - Validate API keys or tokens and refresh as needed.
+  - Log and monitor API responses for debugging. -->
+
+<h5 id="data-format-mismatches">Data Format Mismatches<a class="headerlink" href="#data-format-mismatches" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: Crashes or errors due to unexpected data formats such as changes in the schema of external data sources or missing data validation steps.</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>: </p>
+</li>
+</ul>
+<!--
+  - Use schema validation tools (e.g., JSON schema validators).
+  - Add versioning to APIs and validate inputs before processing.-->
+
+<h4 id="data-quality-problems">Data Quality Problems<a class="headerlink" href="#data-quality-problems" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Problem</strong>: Inaccurate or corrupt data leads to poor predictions.</li>
+<li><strong>Causes</strong>:</li>
+<li>No data validation or cleaning processes.</li>
+<li>
+<p>Inconsistent labelling in training datasets.</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>: </p>
+</li>
+</ul>
+<!--
+- **Resolution**:
+  - Automate data quality checks (e.g., Great Expectations framework).
+  - Regularly audit and clean production data.-->
+
+<h4 id="model-level-issues">Model-Level Issues<a class="headerlink" href="#model-level-issues" title="Permanent link">&para;</a></h4>
+<h5 id="performance-or-deployment-issues">Performance or Deployment Issues<a class="headerlink" href="#performance-or-deployment-issues" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: Incorrect or inconsistent results due to data drift or inadequate training data for the real world deployment domain. </p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>:</p>
+</li>
+</ul>
+<!--
+- **Resolution**:
+  - Monitoring for data drift and retraining of the model as needed.
+  - Regularly update the model -->
+
+<h4 id="safety-and-security-issues">Safety and Security Issues<a class="headerlink" href="#safety-and-security-issues" title="Permanent link">&para;</a></h4>
+<h5 id="unauthorised-access">Unauthorised Access<a class="headerlink" href="#unauthorised-access" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Sensitive data or APIs are exposed due to misconfigured authentication and authorization.</li>
+</ul>
+<h5 id="data-breaches">Data Breaches<a class="headerlink" href="#data-breaches" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: User or model data is compromised due to insecure storage or lack of monitoring and logging of data access. </p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>: </p>
+</li>
+</ul>
+<!--
+- **Resolution**:
+  - Use secure storage services (e.g., AWS KMS).
+  - Implement auditing for data access and alerts for unusual activity.
+  6.1. Delayed or Missing Data-->
+
+<h4 id="monitoring-and-logging-failures">Monitoring and Logging Failures<a class="headerlink" href="#monitoring-and-logging-failures" title="Permanent link">&para;</a></h4>
+<h5 id="missing-or-incomplete-logs">Missing or Incomplete Logs<a class="headerlink" href="#missing-or-incomplete-logs" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: Lack of information to debug issues due to inefficient logging. Critical issues go unnoticed, or too many false positives occur by lack of implementation ofactionable information in alerts. </p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>: </p>
+</li>
+</ul>
+<!--
+- **Resolution**:
+  - Fine-tune alerting thresholds and prioritise critical alerts.
+  - Use tools like Prometheus Alertmanager to manage and group alerts. -->
+
+<h4 id="recovery-and-rollback">Recovery and Rollback<a class="headerlink" href="#recovery-and-rollback" title="Permanent link">&para;</a></h4>
+<h5 id="rollback-mechanisms">Rollback Mechanisms<a class="headerlink" href="#rollback-mechanisms" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: New deployment introduces critical errors.</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>: </p>
+</li>
+</ul>
+<!--
+- **Resolution**:
+  - Use blue-green or canary deployments to minimise impact.
+  - Maintain backups of previous versions and configurations. -->
+
+<h5 id="disaster-recovery">Disaster Recovery<a class="headerlink" href="#disaster-recovery" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p><strong>Problem</strong>: Complete system outage or data loss.</p>
+</li>
+<li>
+<p><strong>Mitigation Strategy</strong>:</p>
+</li>
+</ul>
+<!--
+- **Resolution**:
+  - Test and document disaster recovery plans.
+  - Use automated backups and verify restore procedures.-->
+
+<h3 id="eu-declaration-of-conformity">EU Declaration of conformity<a class="headerlink" href="#eu-declaration-of-conformity" title="Permanent link">&para;</a></h3>
+<div style="color: gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/47/" style="color:blue; text-decoration:underline">Article 47</a>
+  <p></p>
+</div>
+
+<!-- when applicable and certifications are available: it requires a systems name as well as the name and address of the provider; a statement that the EU declaration of conformity referred to in Article 47 is issued under the sole responsibility of the provider; a statement that the AI system is in conformity with this Regulation and, if applicable, with any other relevant Union law that provides for the issuing of the EU declaration of conformity referred to in Article 47, Where an AI system involves the processing of personal data;  a statement that that AI system complies with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, reference to the harmonised standards used or any other common specification in relation to which
+conformity is declared; the name and identification number of the notified body, a description of the conformity
+assessment procedure performed, and identification of the certificate issued; the place and date of issue of the declaration, the name and function of the person who signed it, as well as an
+indication for, or on behalf of whom, that person signed, a signature.-->
+
+<h3 id="standards-applied">Standards applied<a class="headerlink" href="#standards-applied" title="Permanent link">&para;</a></h3>
+<!-- Document here the standards and frameworks used-->
+
+<h2 id="documentation-metadata">Documentation Metadata<a class="headerlink" href="#documentation-metadata" title="Permanent link">&para;</a></h2>
+<h3 id="template-version">Template Version<a class="headerlink" href="#template-version" title="Permanent link">&para;</a></h3>
+<!-- info: link to model documentation template (i.e. could be a GitHub link) -->
+
+<h3 id="documentation-authors">Documentation Authors<a class="headerlink" href="#documentation-authors" title="Permanent link">&para;</a></h3>
+<!-- info: Give documentation authors credit
+
+Select one or more roles per author and reference author's
+emails to ease communication and add transparency. -->
+
+<ul>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../template-model-documentation/" class="btn btn-neutral float-right" title="Model Documentation Template">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../template-model-documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
