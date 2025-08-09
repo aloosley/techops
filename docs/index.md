@@ -23,17 +23,7 @@ See [Getting Started](#getting-started) below for more details.
 
 ## Citing
 
-If you use and parts of this work, we kindly ask that you cite our paper:
-
-```bibtex
-@inproceedings{lucaj2025techops,
-   title     = {TechOps: Technical Documentation Templates for the AI Act},
-   author    = {Laura Lucaj and Alex Loosley and H{\aa}kan Jonsson and Urs Gasser and Patrick van der Smagt},
-   booktitle = {Proceedings of the Eighth {AAAI/ACM} Conference on AI, Ethics, and Society {(AIES-25)}},
-   publisher = {{AAAI} Press},
-   year      = {2025}
-}
-```
+If you use and parts of this work, we kindly ask that you [cite our paper](https://github.com/aloosley/techops?tab=readme-ov-file#citing).
 
 ## Templates
 
