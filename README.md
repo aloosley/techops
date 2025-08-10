@@ -33,7 +33,7 @@ If you use and parts of this work, we kindly ask that you cite our paper:
 ```bibtex
 @inproceedings{lucaj2025techops,
    title     = {TechOps: Technical Documentation Templates for the AI Act},
-   author    = {Laura Lucaj and Alex Loosley and H{\aa}kan Jonsson and Urs Gasser and Patrick van der Smagt},
+   author    = {Lucaj, Laura and Loosley, Alex and Jonsson,  H{\aa}kan and Gasser, Urs and  van der Smagt, Patrick},
    booktitle = {Proceedings of the Eighth {AAAI/ACM} Conference on AI, Ethics, and Society {(AIES-25)}},
    publisher = {{AAAI} Press},
    year      = {2025}
