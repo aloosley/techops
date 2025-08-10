@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=67.0.0", "wheel>=0.38.4"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "techops"
+dynamic = ['version', 'readme']
+description = "Guidelines and templates for responsible and AI-Act complaint documentation of AI/ML systems."
+authors = [
+    { name = 'Laura Lucaj', email='laura.lucaj@argmax.org' },
+    { name = 'Alex Loosley'},
+    { name = 'Håkan Jonsson'},
+    { name = 'Patrick van der Smagt'},
+]
+requires-python = '>=3.12'
+dependencies = [
+    "mkdocs>=1.1.2",
+    "mkdocs-rtd-dropdown>=1.0.0",
+    "pre-commit>=3.0.2",
+]
+
+[project.optional-dependencies]
+all = ["techops[dev]"]
+
+[tool.setuptools.dynamic]
+version = {attr = "techops.__version__"}
+readme = {file = ["README.md"]}
+
+[tool.setuptools.packages.find]
+include = ["techops"]

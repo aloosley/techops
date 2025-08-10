@@ -1,0 +1,30 @@
+---
+minimum_pre_commit_version: 1.21.0
+fail_fast: true
+default_stages: [ pre-commit ]
+default_install_hook_types: [pre-commit, pre-push]
+
+repos:
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.26.3
+    hooks:
+      - id: yamllint
+        args: [ "--strict", "-d", "{rules: {line-length: {max: 180}}}" ]
+        #
+
+  # miscellaneous
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=2048']
+      - id: check-yaml
+        args: [--unsafe]
+      - id: detect-private-key
+      - id: mixed-line-ending
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.18.1
+    hooks:
+      - id: markdownlint-cli2

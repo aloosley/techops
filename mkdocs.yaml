@@ -1,0 +1,29 @@
+site_name: techops
+nav:
+- GETTING STARTED:
+  - Home: index.md
+- TEMPLATES:
+  - Application Documentation Template: template-application-documentation.md
+  - Model Documentation Template: template-model-documentation.md
+  - Data Documentation Template: template-data-documentation.md
+- EXAMPLES:
+  - SafeSiteAI Application Documentation: example-application-documentation-safesite-ai.md
+  - ALiSNet Model Documentation: example-model-documentation-alisnet.md
+  - Skin Tones Data Documentation: example-data-documentation-voc-skin-tones.md
+
+theme:
+  name: rtd-dropdown
+
+# Possible extensions: https://python-markdown.github.io/sitemap.html
+# More extensions: https://facelessuser.github.io/pymdown-extensions/
+markdown_extensions:
+- toc:
+    permalink: true
+
+strict: true
+
+# Useful plugins: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
+# Plugin documentation: https://www.mkdocs.org/user-guide/configuration/#plugins
+plugins:
+  - search:
+      min_search_length: 2
