@@ -18,8 +18,8 @@ section 4.1, for a definition of data modality): -->
 
 ### Dataset Description
 
-*Post hoc* skin tone labels of the faces of customers in the [Zalando Voice of Customer (VOC) dataset](https://docs.google.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRDhXfV5BT4ZZXfOcs)
-curated as part of the ["Skin Tone Labeling Initiative."](https://docs.google.com/document/d/12wYbrM9dHFXapbeBPZxX3Yh6mvYSzskQs1nmWrlt-Lk/edit#heading=h.va8flzlzpc8h)
+*Post hoc* skin tone labels of the faces of customers in the [Zalando Voice of Customer (VOC) dataset](https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRDfV5BT4ZZXfOcs)
+curated as part of the ["Skin Tone Labeling Initiative."](https://docs.fake-domain-x.m.com/document/d/12wYbrM9dHFXapbeBPZxX3Yh6mvYSQs1nmWrlt-Lk/edit#heading=h.va8flzlzpc8h)
 The primary purpose of this data is for fairness evaluation purposes:
 
 - to help ensure data used to train ML/AI systems for Size and Fit is representative of Zalando's customers
@@ -30,14 +30,14 @@ evaluations implemented using this dataset).
 
 This data was collected by a team of four Zalando labelers from a mix of teams including
 Beauty, Size and Fit, and Algorithmic Privacy and Fairness.  Labelers followed specific
-[Skin Tone Labeling Instructions](https://docs.google.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuoWIrHntZ2Dx4AiCRFE/edit),
+[Skin Tone Labeling Instructions](https://ceur-ws.org/Vol-3442/paper-17.pdf),
 and labeled each image for skin tone based on the 
-[2022 Zalando Beauty skin tone scale](https://www.figma.com/file/XiG4sHJbr8YNNoVUObAcPC/Beauty-Advice---Phase-2?node-id=5208%3A69268&t=yFlqy40lkT8sEvVd-0)
+[2022 Zalando Beauty skin tone scale](https://ceur-ws.org/Vol-3442/paper-17.pdf)
 (shown below).
 
 ![](figures/beauty-skin-tone-label-options-plus-uncertain.png)
 
-Further technical details can be found in the [Skin Tone Labeling GitHub Repository](https://github.bus.zalan.do/aithics/skin-tone-labeling).
+Further technical details can be found in the [Skin Tone Labeling GitHub Repository](https://github.fake.domain/aithics/skin-tone-labeling).
 
 Special thanks to the labelers:
 
@@ -66,10 +66,10 @@ ready for wider usage in June 2023.
 
 - [Zalando VOC Skin Tones Dataset](https://s3.console.aws.amazon.com/s3/buckets/skin-tone-labeling?region=eu-central-1&tab=objects)
 (S3 Bucket requiring access permissions)
-- [Zalando VOC Images Data Documentation](https://docs.google.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRDhXfV5BT4ZZXfOcs/edit) (Base dataset used for labeling)
-- [Skin Tone Labeling Initiative](https://docs.google.com/document/d/12wYbrM9dHFXapbeBPZxX3Yh6mvYSzskQs1nmWrlt-Lk/edit#heading=h.va8flzlzpc8h)
-- [Instructions for Labelers](https://docs.google.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuoWIrHntZ2Dx4AiCRFE/edit)
-- [Dataset processing and analysis](https://github.bus.zalan.do/aithics/skin-tone-labeling/) (GitHub Repository)
+- [Zalando VOC Images Data Documentation](https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRfV5BT4ZZXfOcs/edit) (Base dataset used for labeling)
+- [Skin Tone Labeling Initiative](https://docs.fake-domain-x.m.com/document/d/12wYbrM9dHFXapbeBPYh6mvYSzskQs1nmWrlt-Lk/edit#heading=h.va8flzlzpc8h)
+- [Instructions for Labelers](https://docs.fake-domain-x.m.com/document/d/1o56MdP7yFW9aWcLbV3fuoWIrHntZ2Dx4AiCRFE/edit)
+- [Dataset processing and analysis](https://github.fake.domain/aithics/skin-tone-labeling/) (GitHub Repository)
 
 ### Developers
 
@@ -95,7 +95,7 @@ ready for wider usage in June 2023.
 <!-- info: Provide a short description of the content in a data point: -->
 
 A data point is made up of an image of a person, and one or more skin tone labels as defined in this
-[Instructions for Labelers](https://docs.google.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuoWIrHntZ2Dx4AiCRFE/edit)
+[Instructions for Labelers](https://docs.fake-domain-x.m.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuoWIrHntZ2Dx4AiCRFE/edit)
 document.
 
 See the [Examples of Data Points](#example-of-data-points) section for examples.
@@ -135,7 +135,7 @@ For `Type` use [python typing standards](https://docs.python.org/3/library/typin
 |------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | annotation_image_id    | str             | Primary key identifying image with respect to annotation job                                                                                                                   |
 | labels                 | list[list[str]] | List of multiple labels (inner lists) given by each labeler (outer list)                                                                                                       |
-| skin_tone_values       | list[float]     | Skin tone values for each labeler (based on [ZBeautySkinToneLabelEncoder](https://github.bus.zalan.do/aithics/skin-tone-labeling/blob/main/skin_tone/encoders/zbeauty.py#L22)) |
+| skin_tone_values       | list[float]     | Skin tone values for each labeler (based on [ZBeautySkinToneLabelEncoder](https://github.fake.domain/aithics/skin-tone-labeling/blob/main/skin_tone/encoders/zbeauty.py#L22)) |
 | valid_skin_tone_values | list[float]     | Same as skin tone values with invalid value floats removed                                                                                                                     |
 | skin_tone_mean         | float           | Mean valid skin tone value                                                                                                                                                     |
 | skin_tone_std          | float           | Standard deviation of valid skin tone values                                                                                                                                   |
@@ -412,12 +412,12 @@ curating this dataset-->
 
 (Usage Note: use this to describe the problem space and corresponding
 motivations for the dataset.) -->
-- Assessing and publishing the distribution of skin tones in the [Zalando VOC dataset](https://docs.google.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRDhXfV5BT4ZZXfOcs/edit)
+- Assessing and publishing the distribution of skin tones in the [Zalando VOC dataset](https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-Jtx5BT4ZZXfOcs/edit)
 - Identifying potential sample bias in data that may be used for training computer vision systems at Zalando
 - Providing a skin tone dataset for fairness evaluation
-- Writing a [skin tone labeling playbook](https://github.bus.zalan.do/aithics/skin-tone-labeling/tree/main/playbook) for others who want to curate skin tones via *post hoc* human labeling
+- Writing a [skin tone labeling playbook](https://github.fake.domain/aithics/skin-tone-labeling/tree/main/playbook) for others who want to curate skin tones via *post hoc* human labeling
 
-See the [skin-tone-labeling](https://github.bus.zalan.do/aithics/skin-tone-labeling) repository for more details.
+See the [skin-tone-labeling](https://github.fake.domain/aithics/skin-tone-labeling) repository for more details.
 
 ### Intended Use
 
@@ -433,7 +433,7 @@ See the [skin-tone-labeling](https://github.bus.zalan.do/aithics/skin-tone-label
 Use additional notes to capture any specific patterns that readers should
 look out for, or other relevant information or considerations. -->
 **Suitable Use Case:** Use to evaluate (un)fairness of any model that should perform well for Zalando VOC type images of humans.
-For example, Zalando's [Body Measurements Pipeline](https://docs.google.com/document/d/14kVRAs8jZdqbIfJgQ0dbnvlHcQ0oYe3RbVnMv3eBhO4).
+For example, Zalando's [Body Measurements Pipeline](https://docs.fake-domain-x.m.com/document/d/14kVRAs8jZdqbIfJgQ0dbn0oYe3RbVnMv3eBhO4).
 
 #### Unsuitable Use Case(s)
 <!-- scope: microscope -->
@@ -468,8 +468,8 @@ that models trained on the Zalando VOC dataset, or similar, do not systematicall
 for subjects with certain skin tones.
 
 **Approval Steps:** The reason of using this dataset for a particular use case must be described
-and approved via a [DPR process](https://jira.zalando.net/secure/CreateIssue.jspa?pid=16062&issuetype=15401).
-New DPRs should refer to this [existing DPR](https://jira.zalando.net/browse/SEC-23706), which pertains to the
+and approved via a [DPR process](https://jira.fake-domain.net/DPR/CreateIssue.jspa?pid=16062&issuetype=15401).
+New DPRs should refer to this [existing DPR](https://jira.fake-domain.net/DPR/ticket), which pertains to the
 creation of this dataset.  See the [Accesss Prerequesites](#prerequisites) section.
 
 **Reviewer:** Please tag the data owner when creating a DPR.
@@ -543,7 +543,7 @@ individual data points made explicit.
 
 Include links to servers where readers can explore the data on their own. -->
 
-**Exploration Demo:** Found in [Jupyter Notebook](https://github.bus.zalan.do/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results-from-local.ipynb)
+**Exploration Demo:** Found in [Jupyter Notebook](https://github.fake.domain/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results-from-local.ipynb)
 
 
 ### Distribution(s)
@@ -603,7 +603,7 @@ that the dataset has been used for.-->
 
 | **Model**                                                                                                                                                    | **Model Task**     | **Purpose of Dataset Usage** | **[AI Act Risk](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)** |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------------------------------|----------------------------------------------------------------------------------------------|
-| [Size and Fit - On Device Silhouette Extraction](https://docs.google.com/document/d/14XxvBzHaOj2Ny5vi9Iw-6edz9JuYfanPyJuvP6ImcNY/edit#heading=h.c4gjs8wgfzq) | image segmentation | Fairness Evaluation          | Limited                                                                                      |
+| [Size and Fit - On Device Silhouette Extraction](https://docs.fake-domain-x.m.com/document/d/14XxvBzHaOj2Ny5vi9Iw-6edz9JuYfanPyJuvP6ImcNY/edit#heading=h.c4gjs8wgfzq) | image segmentation | Fairness Evaluation          | Limited                                                                                      |
 
 Note, this table may not be exhaustive.  Dataset users and documentation consumers at large
 are highly encouraged to contribute known usages.
@@ -615,8 +615,8 @@ that the dataset has been used for.-->
 
 | **Application**                                                                                                                                                                          | **Brief Description**                                                                                                               | **Purpose of Dataset Usage** | **[AI Act Risk](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)** |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------|----------------------------------------------------------------------------------------------|
-| [Size and Fit - Body Measurements Pipeline](https://docs.google.com/document/d/14kVRAs8jZdqbIfJgQ0dbnvlHcQ0oYe3RbVnMv3eBhO4/edit#heading=h.fhww96oqjjpi)                                 | Pipeline from image of customer to body measurements including image segmentation and body reconstruction                           | Fairnesse Evaluation         | Limited                                                                                      |
-| [Size and Fit - Body Measurements Pipeline - 2022 Proof Of Concept](https://docs.google.com/presentation/d/1DhjDdjWzgIkkjhVg1-AM9VzibCK27kW1kpUEDim3CMA/edit#slide=id.g11e2baacd4a_0_25) | An initial proof of concept to determine a best approach to doing fairness assessments on Size and Fit's body measurements pipeline | Fairnesse Evaluation         | Limited                                                                                      |
+| [Size and Fit - Body Measurements Pipeline](https://docs.fake-domain-x.m.com/document/d/14kVRAs8jZdqbIfJgQ0dbnvlHcQ0oYe3RbVnMv3eBhO4/edit#heading=h.fhww96oqjjpi)                                 | Pipeline from image of customer to body measurements including image segmentation and body reconstruction                           | Fairnesse Evaluation         | Limited                                                                                      |
+| [Size and Fit - Body Measurements Pipeline - 2022 Proof Of Concept](https://docs.fake-domain-x.m.com/presentation/d/1DhjDdjWzgIkkjhVg1-AM9VzibCK27kW1kpUEDim3CMA/edit#slide=id.g11e2baacd4a_0_25) | An initial proof of concept to determine a best approach to doing fairness assessments on Size and Fit's body measurements pipeline | Fairnesse Evaluation         | Limited                                                                                      |
 
 Note, this table may not be exhaustive.  Dataset users and documentation consumers at large
 are highly encouraged to contribute known usages.
@@ -634,7 +634,7 @@ are highly encouraged to contribute known usages.
 <!-- scope: telescope -->
 <!-- info: Select **one**: Use Zalando data access classification
 standards:
-see https://docs.google.com/document/d/1j-khhbdOf2Fqyh2JlSC_82nA9KvyBOfdezftKOkPQ38/edit#heading=h.147n2zr -->
+see https://docs.fake-domain-x.m.com/document/d/1j-khhbdOf2Fqyh2JlSC_82nA9KvyBOfdezftKOkPQ38/edit#heading=h.147n2zr -->
 - Yellow
 
 #### Prerequisite(s)
@@ -642,8 +642,8 @@ see https://docs.google.com/document/d/1j-khhbdOf2Fqyh2JlSC_82nA9KvyBOfdezftKOkP
 <!-- info: Please describe any required training or prerequisites to access
 this dataset. -->
 - Users requiring access must get approval on a DPR (with corresponding use case) either by:
-  - adding their user to the [existing DPR](https://jira.zalando.net/browse/SEC-23706)
-  - creating a [new DPR](https://jira.zalando.net/secure/CreateIssue.jspa?pid=16062&issuetype=15401) if the existing DPR does not match your requirements
+  - adding their user to the [existing DPR](https://jira.fake-domain.net/DPR/ticket)
+  - creating a [new DPR](https://jira.fake-domain.net/DPR/CreateIssue.jspa?pid=16062&issuetype=15401) if the existing DPR does not match your requirements
 - For data with images, users must be added to role with S3 access to the Zalando VOC skin tones dataset
   (first get DPR approval described above, then contact dataset owner)
 
@@ -884,8 +884,7 @@ considerations. -->
 Access to this data is restricted to a small select group of people as governed by the following
 Data Processing Requests (DPRs):
 
-**DPR - [Unblurred Zalando VOC Image access for Skin Tone Labeling](https://jira.zalando.net/browse/SEC-23706):** This DPR is associated with labeling jobs used
-to curate this dataset.
+**DPR - [Unblurred Zalando VOC Image access for Skin Tone Labeling](https://jira.fake-domain.net/DPR/ticket-2):** This DPR is associated with labeling jobs used to curate this dataset.
 
 #### Risk Type(s)
 <!-- scope: telescope -->
@@ -1025,7 +1024,7 @@ corresponding documentation. If the transformations are
 already well described there, do not repeat the information here.  
 Simply refer the reader to go there for this information. -->
 
-See the [skin-tone-labeling code base](https://github.bus.zalan.do/aithics/skin-tone-labeling/tree/main/datasets/zalando-voc)
+See the [skin-tone-labeling code base](https://github.fake.domain/aithics/skin-tone-labeling/tree/main/datasets/zalando-voc)
 for code and documentation on data preparation, including data transformation.
 
 ### Synopsis
@@ -1082,11 +1081,11 @@ the following for each task type.) -->
 
 **Task description:** Skin tone labelers were asked to label the skin tone
 of the human subject appearing in each image by following a particular set of 
-[Instructions for Labelers](https://docs.google.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuoWIrHntZ2Dx4AiCRFE)
+[Instructions for Labelers](https://ceur-ws.org/Vol-3442/paper-17.pdf)
 (more info about who the skin tone labelers where [found below](#human-annotators)).
 
 In short, each labeler labeled each image with one or more skin tone labels from the 
-[2022 Zalando Beauty skin tone scale](https://www.figma.com/file/XiG4sHJbr8YNNoVUObAcPC/Beauty-Advice---Phase-2?node-id=5208%3A69268&t=yFlqy40lkT8sEvVd-0)
+[2022 Zalando Beauty skin tone scale](https://ceur-ws.org/Vol-3442/paper-17.pdf)
 (shown below).
 
 ![](figures/beauty-skin-tone-label-options-plus-uncertain.png)
@@ -1160,10 +1159,10 @@ following for each annotation type.) -->
 ![](figures/cal2-consensus-stats.png)
 
 **Above:** Based on calibration #2 split (4 labelers labeling 59 examples).  See the [Zalando-VOC Skin Tone dataset
-breakdown](https://github.bus.zalan.do/aithics/skin-tone-labeling/tree/main/datasets/zalando-voc) for more details.
+breakdown](https://github.fake.domain/aithics/skin-tone-labeling/tree/main/datasets/zalando-voc) for more details.
 
 All statistics were calculated using 
-[this jupyter notebook](https://github.bus.zalan.do/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results.ipynb).
+[this jupyter notebook](https://github.fake.domain/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results.ipynb).
 
 
 #### Description(s)
@@ -1184,7 +1183,7 @@ type.) -->
 
 **Description:** Skin tone annotations are subjective. Thus we worked with four
 labelers from different backgrounds who annotated for skin tone using the following
-[Instructions for Labelers](https://docs.google.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuoWIrHntZ2Dx4AiCRFE).
+[Instructions for Labelers](https://docs.fake-domain-x.m.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuHntZ2Dx4AiCRFE).
 
 **Platforms, tools, or libraries:**
 
@@ -1208,7 +1207,7 @@ choice of neighbouring labels (i.e. `mid-light`+`medium`) was allowed and such c
 are counted as distinct.
 
 All statistics were calculated using 
-[this jupyter notebook](https://github.bus.zalan.do/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results.ipynb).
+[this jupyter notebook](https://github.fake.domain/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results.ipynb).
 
 ### Human Annotators
 <!-- info: Fill this section if human annotators were used. -->
@@ -1376,7 +1375,7 @@ upstream sources.
 Use additional notes to capture any other
 relevant information or considerations. -->
 See [Data Point Collection Criteria](#data-point-collection-criteria) for information on how images were selected
-for labeling from the [Zalando VOC Images Dataset](https://docs.google.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRDhXfV5BT4ZZXfOcs/edit).
+for labeling from the [Zalando VOC Images Dataset](https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRD5BT4ZZXfOcs/edit).
 
 ## Documentation Metadata
 

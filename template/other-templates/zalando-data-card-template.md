@@ -5,7 +5,7 @@ Data card contributions and feedback are welcome!
 ## Template Version
 <!-- scope: telescope -->
 <!-- info: link to data card version -->
-[0.2.0](https://github.bus.zalan.do/aithics/ai-ml-system-documentation-guidelines-and-templates/tags)
+[0.2.0](https://github.fake.domain/aithics/ai-ml-system-documentation-guidelines-and-templates/tags)
 
 ## Overview
 
@@ -43,7 +43,7 @@ make the difference between this data being discovered
 and going unnoticed.
 
 For more tips on describing data, see Zalando Data Foundation's
-[Quality of Data Descriptions](https://docs.google.com/document/d/1njN1HMnNUl2J3aaY99FMwdJrSp0eMPsTY_cgOSsh46U)!
+[Quality of Data Descriptions](https://docs.fake-domain-x.m.com/document/d/1njN1HMnNUl2J3aaY99FMp0eMPsTY_cgOSsh46U)!
 
 ### Status
 <!-- scope: telescope -->
@@ -79,10 +79,10 @@ The examples below represent
 <!-- width: full -->
 - [Dataset Link] - i.e. link to S3 bucket, SQL or Big Query tables, etc.
 - [Initiative Link] - i.e. link to Google Doc
-- [Code Repository Link] - i.e. link to [GitHub Enterprise](https://github.bus.zalan.do/) repository
-- [Data Quality Monitoring Link] - i.e. link to Data Quality Framework dashboard (for example, [CP&T uses this]((https://cptdpai-data-quality-framework.docs.zalando.net/))
+- [Code Repository Link] - i.e. link to [GitHub Enterprise](https://github.fake.domain/) repository
+- [Data Quality Monitoring Link] - i.e. link to Data Quality Framework dashboard (for example, [CP&T uses this]((https://fake-quality-framework-url.docs.cpt.net/))
 - [Labeling Job Link] - i.e. link to SageMaker Ground Truth job
-- [Active DPRs] - i.e. corresponding [DPR tickets](https://docs.google.com/document/d/1pmvNYNcWDbyj3YknuCWvzJQJdhqeiS6Xs5Z2P63XrcE)
+- [Active DPRs] - i.e. corresponding [DPR tickets](https://docs.fake-url.com/document/akjfslkja)
   - [DPR 1 Link]
   - [DPR 2 Link]
 
@@ -835,7 +835,7 @@ are highly encouraged to contribute known usages.
 <!-- scope: telescope -->
 <!-- info: Select **one**: Use Zalando data access classification
 standards:
-see https://docs.google.com/document/d/1j-khhbdOf2Fqyh2JlSC_82nA9KvyBOfdezftKOkPQ38/edit#heading=h.147n2zr -->
+see https://docs.fake-domain-x.m.com/document/d/1j-khhbdOf2Fqyh2JlSC_82nA9KvyBOftKO8/edit#heading=h.147n2zr -->
 - Green
 - Yellow
 - Orange

@@ -5,7 +5,7 @@ Model card contributions and feedback are welcome!
 ## Template Version
 <!-- scope: telescope -->
 <!-- info: link to model card version -->
-[0.2.1](https://github.bus.zalan.do/aithics/ai-ml-system-documentation-guidelines-and-templates/tags)
+[0.2.1](https://github.fake.domain/aithics/ai-ml-system-documentation-guidelines-and-templates/tags)
 
 ## Overview
 

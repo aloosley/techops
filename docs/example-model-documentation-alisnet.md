@@ -74,7 +74,7 @@ current known usages.
 
 | **Application**                                                                                                                          | **Purpose of Model Usage**                                                                    | **[AI Act Risk](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)** |
 |------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Body Measurements Pipeline](https://docs.google.com/document/d/1bJKJR43o285XEiiThrx4xtqwzXl2bbu3SThUNy7Rbic/edit#heading=h.a6wkeijjbx1) | ALiSNet is used for silhouette extraction as part of Size & Fit's Body Measurements Pipeline. | Limited                                                                                      |
+| [Body Measurements Pipeline](https://docs.fake-domain-x.m.com/document/d/1bJKJR43o28Thrx4xtqwzXl2bbu3SThUNy7Rbic/edit#heading=h.a6wkeijjbx1) | ALiSNet is used for silhouette extraction as part of Size & Fit's Body Measurements Pipeline. | Limited                                                                                      |
 
 Note, this table may not be exhaustive.  Model users and documentation consumers at large
 are highly encouraged to contribute known usages.
@@ -97,7 +97,7 @@ Deploying ALiSNet on-device may cause risks related to backdoor attacks against 
 
 **Mitigation strategy:**
 
-[Privacy risk assessment](https://docs.google.com/document/d/1OXFrcyWblFIHLw9uOXsla8e-zBhtFwlgIBH84MdvrrM/edit?usp=sharing) was performed in order to quantify Membership Inference (MIA) risk of the ALiSNet.
+[Privacy risk assessment](https://docs.fake-domain-x.m.com/document/d/1OXFrcyWblFIHLw9uOXsla8e-zBhtFH84MdvrrM/edit?usp=sharing) was performed in order to quantify Membership Inference (MIA) risk of the ALiSNet.
 As of November 2022 results of the audit showed that MIA risk is none to low.
 
 ### Biases in model performance
@@ -106,7 +106,7 @@ Statistically relevant discrepancies in the model accuracy across protected attr
 
 **Mitigation Strategy:**
 
-[Fairnes assessment](https://docs.google.com/presentation/d/1DhjDdjWzgIkkjhVg1-AM9VzibCK27kW1kpUEDim3CMA/edit?usp=sharing) was performed in order to qunatify potential discerpancies across derived skin tone and body shape.
+[Fairnes assessment](https://docs.fake-domain-x.m.com/presentation/d/1DhjDdjWzgIkkjhVg1-AM9VzibCK27kW1kpUEDMA/edit?usp=sharing) was performed in order to qunatify potential discerpancies across derived skin tone and body shape.
 As of October 2022 no relevant discrepencies in model performance were found.
 
 ## Training

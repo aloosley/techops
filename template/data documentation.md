@@ -36,7 +36,7 @@ make the difference between this data being discovered
 and going unnoticed.
 
 For more tips on describing data, see Zalando Data Foundation's
-[Quality of Data Descriptions](https://docs.google.com/document/d/1njN1HMnNUl2J3aaY99FMwdJrSp0eMPsTY_cgOSsh46U)!<!-- info: Brief (max 200 words) description of the model architecture and the task(s) it was trained to solve. -->
+[Quality of Data Descriptions](https://docs.fake-domain-x.momain-x.m.com/document/d/1njN1HMnNUlY99FMwdJrSp0eMPsTY_cgOSsh46U)!<!-- info: Brief (max 200 words) description of the model architecture and the task(s) it was trained to solve. -->
 
 ### Status
 <!-- scope: telescope -->
