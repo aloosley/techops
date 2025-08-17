@@ -1,0 +1,11 @@
+## Mac stuff
+.DS_Store
+
+# pycharm
+.idea
+
+# python
+*.egg-info
+
+# mkdocs
+site
