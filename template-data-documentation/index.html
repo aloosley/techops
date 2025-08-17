@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Data Documentation Template - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Data Documentation Template";
+    var mkdocs_page_input_path = "template-data-documentation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Data Documentation Template
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+          
+
+  <li class="toctree-l3 current with-children">
+    <a href="#overview">
+      Overview
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3 current">
+    <ul class="subnav-l3 current">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#dataset-description">Dataset Description</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#status">Status</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#relevant-links">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#developers">Developers</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#owner">Owner</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#deployer-instructions-of-use">Deployer instructions of Use</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#version-details">Version Details</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#data-versioning">
+      Data Versioning
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#maintenance-of-metadata-and-schema-versioning">
+      Maintenance of Metadata and Schema Versioning
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#why">Why</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#how">How</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#known-usages">
+      Known Usages
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#models">Model(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#applications">Application(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#dataset-characteristics">Dataset Characteristics</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#data-origin-and-source">Data Origin and Source</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#provenance">
+      Provenance
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#collection">
+      Collection
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#methods-used">Method(s) Used</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#methodology-details">Methodology Detail(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#source-descriptions">Source Description(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#collection-cadence">Collection Cadence</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#data-pre-processing">
+      Data Pre-Processing
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-cleaning">Data Cleaning</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-transformation">Data Transformation</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#feature-engineering">Feature Engineering</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#dimensionality-reduction">Dimensionality Reduction</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-augmentation">Data Augmentation</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#data-annotation-and-labeling">Data Annotation and Labeling</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#validation-types">
+      Validation Types
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#methods">Method(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#breakdowns">Breakdown(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#descriptions">Description(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#sampling-methods">
+      Sampling Methods
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#methods-used_1">Method(s) Used</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#characteristics">Characteristic(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#sampling-criteria">Sampling Criteria</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#descriptions_1">Description(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#dataset-distribution-and-licensing">Dataset Distribution and Licensing</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#access-retention-and-deletion">
+      Access, Retention, and Deletion
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#access">
+      Access
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#relevant-links_1">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-security-classification-in-and-out-of-scope-delineation">Data Security Classification in and out of scope delineation</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#prerequisites">Prerequisite(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#retention">
+      Retention
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#duration">Duration</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#reasons-for-duration">Reasons for Duration</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#policy-summary">Policy Summary</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#data-risk-assessment">Data Risk Assessment</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#cybersecurity-measures">
+      Cybersecurity Measures
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#data-security-measures">
+      Data Security Measures
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-storage">Data Storage</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-transfer">Data Transfer</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-processing">Data Processing</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#standards-applied">Standards Applied</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-post-market-monitoring">Data post-market monitoring</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#eu-declaration-of-conformity">EU Declaration of conformity</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#standards-applied_1">Standards applied</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-metadata">Documentation Metadata</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#version">Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#template-version">Template Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-authors">Documentation Authors</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-application-documentation-safesite-ai/">SafeSiteAI Application Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>TEMPLATES &raquo;</li>
+        
+      
+    
+    <li>Data Documentation Template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="data-documentation-template">Data Documentation Template<a class="headerlink" href="#data-documentation-template" title="Permanent link">&para;</a></h1>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/10/" style="color:blue; text-decoration:underline">Article 10</a>
+  <br>EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 1, 2 (d)
+  <!-- info: The AI Act delineates the data governance practices required in Article 10 and requires a description of the intended purpose, version and provider, and relevant versions and updates.  
+  In Article 11(2)(d), a datasheet is required which describes all training methodologies and techniques as well as the characteristics of the training dataset, a general description of the dataset, information about its provenance, scope and main characteristics, how the data was obtained and selected, labelling procedures conducted, and data cleaning methodologies deployed. -->
+  <p></p>
+</div>
+
+<p><strong>Dataset Owner</strong>: Name and contact information
+<br><strong>Document Version</strong>: Version controlling this document is highly recommended
+<br><strong>Reviewers</strong>: List reviewers</p>
+<!-- info: Replace with dataset name -->
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<!-- info: This section enables all stakeholders to have a glimpse into the data processes. You can use this session to provide transparency to users and high level information to all relevant stakeholders. -->
+
+<h3 id="dataset-description">Dataset Description<a class="headerlink" href="#dataset-description" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 1, 2(d)
+  <p></p>
+  <!-- info: The AI Act requires a description of  all training methodologies and techniques as well as the charatcteristics of the training dataset, general description of the dataset, information about their provenance, scope and main characteristics, how the data was obtained and selected labelling procedures conducted and data cleaning methodologies deployed.-->
+</div>
+
+<p>Write a short summary describing your dataset (limit
+200 words). Include information about the content
+and topic of the data, sources and motivations for the
+dataset, benefits and the problems or use cases it is
+suitable for. For readers that only take 10 seconds to look
+at this data card, adding one good overview image might also
+make the difference between this data being discovered
+and going unnoticed.</p>
+<p>For more tips on describing data, see Zalando Data Foundation's
+<a href="https://docs.fake-domain-x.momain-x.m.com/document/d/1njN1HMnNUlY99FMwdJrSp0eMPsTY_cgOSsh46U">Quality of Data Descriptions</a>!<!-- info: Brief (max 200 words) description of the model architecture and the task(s) it was trained to solve. --></p>
+<h3 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select **one:** -->
+<p><strong>Status Date:</strong> YYYY-MM-DD</p>
+<p><strong>Status:</strong> <em>specify one of</em>:</p>
+<ul>
+<li><strong>Under Preparation</strong> -- The dataset is still under active curation and is not yet ready for use due to active "dev" updates.</li>
+<li><strong>Regularly Updated</strong> -- New versions of the dataset have been or will continue to be made available.</li>
+<li><strong>Actively Maintained</strong> -- No new versions will be made available, but this dataset will be actively maintained, including but not limited to updates to the data.</li>
+<li><strong>Limited Maintenance</strong> -- The data will not be updated, but any technical issues will be addressed.</li>
+<li><strong>Deprecated</strong> -- This dataset is obsolete or is no longer being maintained.</li>
+</ul>
+<h3 id="relevant-links">Relevant Links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h3>
+<!-- info: User studies show document users find quick access to relevant artefacts like papers, model demos, etc..
+very useful. -->
+
+<p>Example references:</p>
+<ul>
+<li>GitHub Repository</li>
+<li>Paper/Documentation Link</li>
+<li>Initiative Demo</li>
+<li>Conference Talk</li>
+<li>API Link</li>
+</ul>
+<h3 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Name, Team</strong></li>
+<li><strong>Name, Team</strong></li>
+</ul>
+<h3 id="owner">Owner<a class="headerlink" href="#owner" title="Permanent link">&para;</a></h3>
+<!-- info: Remember to reference developers and owners emails. -->
+<ul>
+<li><strong>Team Name, Contact Person</strong></li>
+</ul>
+<h3 id="deployer-instructions-of-use">Deployer instructions of Use<a class="headerlink" href="#deployer-instructions-of-use" title="Permanent link">&para;</a></h3>
+<!-- info: Important to determine if there are relevant use-cases or if the data is unsuitable for certair applications. -->
+<ul>
+<li><strong>Instructions for use for deployers</strong>:</li>
+</ul>
+<!-- 
+How to use the data responsibly. Include restrictions, review process, ethical concerns. -->
+
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/13/" style="color:blue; text-decoration:underline">Article 13</a>
+  <p></p>
+</div>
+
+<h3 id="version-details">Version Details<a class="headerlink" href="#version-details" title="Permanent link">&para;</a></h3>
+<h2 id="data-versioning">Data Versioning<a class="headerlink" href="#data-versioning" title="Permanent link">&para;</a></h2>
+<p>(Article 11, paragraph 2(d))</p>
+<p><strong>Data Version Control Tools:</strong></p>
+<!-- Data version control tools are important to track changes in datasets, models, and experiments over time, enabling collaboration, reproducibility, and better model management. This is particularly important to then detect model drifts and debugging or for rollbacks when overwriting on the original data  -->
+
+<ul>
+<li>Include a Data_versioning.md file to document changes</li>
+<li>DVC (Data Version Control): Tracks datasets, connects them to model versions, and integrates with Git.</li>
+<li>Git-LFS (Large File Storage): Stores large data files outside the Git repository.</li>
+</ul>
+<h3 id="maintenance-of-metadata-and-schema-versioning">Maintenance of Metadata and Schema Versioning<a class="headerlink" href="#maintenance-of-metadata-and-schema-versioning" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 3
+  <p></p>
+</div>
+
+<h4 id="why">Why<a class="headerlink" href="#why" title="Permanent link">&para;</a></h4>
+<p>Data formats, schema, and other metadata changes can impact downstream processes. Tracking these ensures transparency.</p>
+<h4 id="how">How<a class="headerlink" href="#how" title="Permanent link">&para;</a></h4>
+<p>Create a data dictionary:</p>
+<ul>
+<li>Document dataset structure, column descriptions, data types, and relationships.</li>
+</ul>
+<p>Track schema changes:</p>
+<ul>
+<li>Use tools to log schema evolution.</li>
+<li>Record changes as part of version control or data pipelines.</li>
+</ul>
+<p>Save metadata alongside datasets:</p>
+<ul>
+<li>Include details like source, timestamp, description, version, and quality metrics.</li>
+</ul>
+<!-- What could help is to incorporate Data Lineage Tools
+   as they provide end-to-end visibility of data transformations and dependencies.-->
+
+<h2 id="known-usages">Known Usages<a class="headerlink" href="#known-usages" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 3
+  <p></p>
+  <!--info: The AI Act requires delineating a system’s foreseeable unintended outcomes and sources of risks to health and safety, fundamental rights, and discrimination in view of the intended purpose of the AI system;  
+  the human oversight measures needed in accordance with Article 14, including the technical measures put in place to facilitate the interpretation of the outputs of AI systems by the deployers;  
+  and specifications on input data, as appropriate.-->
+</div>
+
+<!-- info: Fill out the following section if the dataset has any
+current known usages. This is important to make sure that the dataset is used ethically and legally. A dataset created for classification may not be suitable for regression, or vice versa.
+Moreover, labeling quality, data coverage, and structure vary with use case—assuming it can be used for anything is dangerous. For instance:A skin lesion dataset created for classification—labeling images as benign, malignant, or uncertain—is mistakenly used by an insurance company to train a regression model that predicts cancer risk scores. Because the dataset lacks continuous risk-related data such as treatment outcomes, progression timelines, or cost indicators, the model produces unreliable predictions. As a result, high-risk patients may be misclassified as low-risk, leading to denied or delayed insurance claims. This misuse not only puts patients at risk but also exposes the insurer to ethical and legal scrutiny. Hence it is important to define the safe extent of use of a dataset. 
+-->
+<h3 id="models">Model(s)<a class="headerlink" href="#models" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Provide a table of known models
+that use this dataset.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Model</strong></th>
+<th><strong>Model Task</strong></th>
+<th><strong>Purpose of Dataset Usage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Example Model 1</a></td>
+<td>Image Segmentation</td>
+<td>Fairness evaluation</td>
+</tr>
+<tr>
+<td><a href="">Example Model 2</a></td>
+<td>Skin Tone Classifier</td>
+<td>Training and validation</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table does not have to be exhaustive. Dataset users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h3 id="applications">Application(s)<a class="headerlink" href="#applications" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Provide a table of known AI/ML systems
+that use this dataset.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Application</strong></th>
+<th><strong>Brief Description</strong></th>
+<th><strong>Purpose of Dataset Usage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Example Application 1</a></td>
+<td>Size and Fit Recommendations</td>
+<td>Fairness Evaluation of end-to-end application pipeline</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dataset-characteristics">Dataset Characteristics<a class="headerlink" href="#dataset-characteristics" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 2(d)
+  <p></p>
+</div>
+<!-- This section reflects the requirements of the AI Act of Article 11, paragraph 2 (d): where relevant, the data requirements in terms of datasheets describing the training methodologies and
+techniques and the training data sets used, including a general description of these data sets, information about
+their provenance, scope and main characteristics; how the data was obtained and selected; labelling procedures
+(e.g. for supervised learning), data cleaning methodologies (e.g. outliers detection). Moreover, in order to comply with GDPR provisions, you need to disclose whether you are handling personal information. -->
+
+<p><strong>Data Types:</strong> (e.g., images, text, audio, structured, unstructured data, personal data)
+<br><strong>Size/Volume:</strong>
+<br><strong>Number of Instances/Records:</strong>
+<br><strong>Primary Use Case(s):</strong> Description of the main AI use cases that the dataset was designed for or is typically used in.
+<br><strong>Associated AI System(s):</strong> List known AI system(s) that this dataset is or has been used in.
+<br><strong>Number of Features/Attributes (if applicable):</strong>
+<br><strong>Label Information (if applicable):</strong>
+<br><strong>Geographical Scope:</strong> Geographic location(s) where the data was collected.
+<br><strong>Date of Collection:</strong> Start and end date of data collection.</p>
+<h2 id="data-origin-and-source">Data Origin and Source<a class="headerlink" href="#data-origin-and-source" title="Permanent link">&para;</a></h2>
+<!-- importanto to define this step to understand also compliance with GDPR.  -->
+<p><strong>Source(s):</strong> Provide information about where the data was sourced from (e.g.,public datasets, sensors, surveys, web scraping, crowdsourced).
+<br><strong>Third-Party Data:</strong> Indicate if any part of the dataset was obtained from third parties, and if so, detail the legal agreements in place (license, usage rights, etc.).
+<br><strong>Ethical Sourcing:</strong> <!-- importanto to define this step to understand also compliance with GDPR.   -->Provide information on the ethical and legal compliance of the data collection process (e.g., informed consent, transparency to data subjects, and compliance with GDPR or other regulations).</p>
+<h2 id="provenance">Provenance<a class="headerlink" href="#provenance" title="Permanent link">&para;</a></h2>
+<p><em>Describe the history and origin of the data.</em></p>
+<h3 id="collection">Collection<a class="headerlink" href="#collection" title="Permanent link">&para;</a></h3>
+<h4 id="methods-used">Method(s) Used<a class="headerlink" href="#methods-used" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** methods used to collect data.
+
+Note on crowdsourcing, this covers the case where a crowd labels data
+(make sure the reference the [Annotations and Labeling](#annotations-and-labeling)
+section), or the case where a crowd is responsible for collecting and
+submitting data independently to form a collective dataset.
+-->
+<p><em>Specify one or more of:</em></p>
+<ul>
+<li>API</li>
+<li>Artificially generated</li>
+<li>Crowdsourced - Internal Employee</li>
+<li>Crowdsourced - External Paid</li>
+<li>Crowdsourced - Volunteer</li>
+<li>Vendor collection efforts</li>
+<li>Scraped or crawled</li>
+<li>Survey, forms, or polls</li>
+<li>Interviews, focus groups</li>
+<li>Scientific experiment</li>
+<li>Taken from other existing datasets</li>
+<li>Unknown</li>
+<li>To be determined</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="methodology-details">Methodology Detail(s)<a class="headerlink" href="#methodology-details" title="Permanent link">&para;</a></h4>
+<div style="color: gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> 2 (a), (b), (d)
+  <p></p>
+</div>
+<!-- scope: periscope -->
+<!-- info: Provide a description of each collection method used. Use additional notes to capture any other relevant information or
+considerations. (Usage Note: Duplicate and complete the following for collection method
+type.) -->
+<p><strong>Collection Type</strong></p>
+<p><strong>Source:</strong> Describe here. Include links where available.</p>
+<p><strong>Platform:</strong> [Platform Name], Describe platform here. Include links where relevant.</p>
+<p><strong>Is this source considered sensitive or high-risk?</strong> [Yes/No]</p>
+<p><strong>Dates of Collection:</strong> [YYYY-MM -- YYYY-MM]</p>
+<p><strong>Update Frequency for collected data:</strong></p>
+<p><em>Select one for this collection type:</em> yearly, quarterly, monthly, on demand, no changes, others, ....</p>
+<p><strong>Additional Links for this collection:</strong></p>
+<p>See section on <a href="#access-retention-and-deletion">Access, Rention, and Deletion</a></p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="source-descriptions">Source Description(s)<a class="headerlink" href="#source-descriptions" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a description of each upstream source of data.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Source:</strong> Describe here. Include links, data examples, metrics, visualizations where relevant.</li>
+<li><strong>Source:</strong> Describe here. Include links, data examples, metrics, visualizations where relevant.</li>
+<li><strong>Source:</strong> Describe here. Include links, data examples, metrics, visualizations where relevant.</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="collection-cadence">Collection Cadence<a class="headerlink" href="#collection-cadence" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable**: -->
+<p><strong>Static:</strong> Data was collected once from single or multiple sources.</p>
+<p><strong>Streamed:</strong> Data is continuously acquired from single or multiple sources.</p>
+<p><strong>Dynamic:</strong> Data is updated regularly from single or multiple sources.</p>
+<p><strong>Others:</strong> Please specify</p>
+<h2 id="data-pre-processing">Data Pre-Processing<a class="headerlink" href="#data-pre-processing" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 2 (d, e)
+  <p></p>
+</div>
+
+<h3 id="data-cleaning">Data Cleaning<a class="headerlink" href="#data-cleaning" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Handling missing data: (e.g., removal, imputation method used)</li>
+<li>Outlier treatment: (e.g., detection and removal technique)</li>
+<li>Duplicates removal: (Yes/No)</li>
+<li>Error correction: (Manual/Automated, if applicable)</li>
+</ul>
+<h3 id="data-transformation">Data Transformation<a class="headerlink" href="#data-transformation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Normalization/Standardization: (Method used, e.g., min-max scaling)</li>
+<li>Encoding categorical data: (e.g., one-hot encoding, label encoding)</li>
+<li>Text/tokenization: (Applicable for NLP tasks)</li>
+</ul>
+<h3 id="feature-engineering">Feature Engineering<a class="headerlink" href="#feature-engineering" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Feature selection: (e.g., methods used to select features)</li>
+<li>Feature extraction: (e.g., PCA, interaction terms)</li>
+<li>Newly created features: (List any)</li>
+</ul>
+<h3 id="dimensionality-reduction">Dimensionality Reduction<a class="headerlink" href="#dimensionality-reduction" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Technique(s) used: (e.g., PCA, t-SNE)</li>
+<li>Number of dimensions after reduction: (Specify)</li>
+</ul>
+<h3 id="data-augmentation">Data Augmentation<a class="headerlink" href="#data-augmentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Augmentation technique(s): (e.g., rotation, flipping for images)</li>
+</ul>
+<h2 id="data-annotation-and-labeling">Data Annotation and Labeling<a class="headerlink" href="#data-annotation-and-labeling" title="Permanent link">&para;</a></h2>
+<div style="color: gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> 2(d)
+  <p></p>
+</div>
+
+<ul>
+<li>Annotation Process: Describe the process used to label or annotate the data (e.g., human labelers, automated, crowdsourcing).</li>
+<li>Annotation platform</li>
+<li>Validation: Explain any quality control mechanisms applied to ensure accurate labeling or annotation</li>
+<li>Inter-Annotator agreement</li>
+<li>Consensus process</li>
+<li>
+<p>Calibration rounds</p>
+</li>
+<li>
+<p>Annotator Demographics (Location / Language / Expertise / Background)</p>
+</li>
+</ul>
+<h2 id="validation-types">Validation Types<a class="headerlink" href="#validation-types" title="Permanent link">&para;</a></h2>
+<h3 id="methods">Method(s)<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
+<p>Example= range and constraint validation, structured validation, consistency validation</p>
+<h3 id="breakdowns">Breakdown(s)<a class="headerlink" href="#breakdowns" title="Permanent link">&para;</a></h3>
+<p><strong>(Validation Type)</strong></p>
+<p><strong>Number of Data Points Validated:</strong> </p>
+<h3 id="descriptions">Description(s)<a class="headerlink" href="#descriptions" title="Permanent link">&para;</a></h3>
+<h2 id="sampling-methods">Sampling Methods<a class="headerlink" href="#sampling-methods" title="Permanent link">&para;</a></h2>
+<h3 id="methods-used_1">Method(s) Used<a class="headerlink" href="#methods-used_1" title="Permanent link">&para;</a></h3>
+<h3 id="characteristics">Characteristic(s)<a class="headerlink" href="#characteristics" title="Permanent link">&para;</a></h3>
+<h3 id="sampling-criteria">Sampling Criteria<a class="headerlink" href="#sampling-criteria" title="Permanent link">&para;</a></h3>
+<h3 id="descriptions_1">Description(s)<a class="headerlink" href="#descriptions_1" title="Permanent link">&para;</a></h3>
+<h2 id="dataset-distribution-and-licensing">Dataset Distribution and Licensing<a class="headerlink" href="#dataset-distribution-and-licensing" title="Permanent link">&para;</a></h2>
+<div style="color: gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> 2(d)
+  <p></p>
+</div>
+
+<ul>
+<li>Availability:</li>
+<li>Open/public or private dataset</li>
+<li>Dataset Documentation Link: (Link to further details if available)</li>
+<li>User Rights and Limitations:</li>
+</ul>
+<h2 id="access-retention-and-deletion">Access, Retention, and Deletion<a class="headerlink" href="#access-retention-and-deletion" title="Permanent link">&para;</a></h2>
+<!-- info: Where applicable, collect input from privacy governance team -->
+<h3 id="access">Access<a class="headerlink" href="#access" title="Permanent link">&para;</a></h3>
+<h4 id="relevant-links_1">Relevant Links<a class="headerlink" href="#relevant-links_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>[Link to filestore]</li>
+<li>[Link to governance processes for data access]</li>
+<li>...</li>
+</ul>
+<h4 id="data-security-classification-in-and-out-of-scope-delineation">Data Security Classification in and out of scope delineation<a class="headerlink" href="#data-security-classification-in-and-out-of-scope-delineation" title="Permanent link">&para;</a></h4>
+<!-- scope: Is there a potentially harmful application iof this data, can you foresee this?  -->
+<!-- info: Select **one**: Use your companies data access classification
+standards (replace the classifications below accordingly) -->
+
+<h4 id="prerequisites">Prerequisite(s)<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Please describe any required training or prerequisites to access
+this dataset. -->
+<p>For example:</p>
+<p>This dataset requires membership in [specific] database groups:</p>
+<ul>
+<li>Complete the [Mandatory Training]</li>
+<li>Read [Data Usage Policy]</li>
+<li>Initiate a [Data Processing Request]</li>
+</ul>
+<h3 id="retention">Retention<a class="headerlink" href="#retention" title="Permanent link">&para;</a></h3>
+<h4 id="duration">Duration<a class="headerlink" href="#duration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Specify the duration for which this dataset can be retained: -->
+<p>Specify duration in days, months, or years.</p>
+<h4 id="reasons-for-duration">Reasons for Duration<a class="headerlink" href="#reasons-for-duration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Specify the reason for duration for which this dataset can be retained: -->
+<p>...</p>
+<h4 id="policy-summary">Policy Summary<a class="headerlink" href="#policy-summary" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the retention policy for this dataset. -->
+<p><strong>Policy:</strong> Add a link to the policy if it's standardized at your company </p>
+<h2 id="data-risk-assessment">Data Risk Assessment<a class="headerlink" href="#data-risk-assessment" title="Permanent link">&para;</a></h2>
+<p><strong>Describe the assessment of data risks</strong>:</p>
+<ul>
+<li>Foreseeable unintended outcomes or biases arising from dataset use.</li>
+<li>Sources of potential discrimination or harm.</li>
+</ul>
+<h2 id="cybersecurity-measures">Cybersecurity Measures<a class="headerlink" href="#cybersecurity-measures" title="Permanent link">&para;</a></h2>
+<div style="color: gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 5
+  <p></p>
+</div>
+
+<h3 id="data-security-measures">Data Security Measures<a class="headerlink" href="#data-security-measures" title="Permanent link">&para;</a></h3>
+<h4 id="data-storage">Data Storage<a class="headerlink" href="#data-storage" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Encryption</strong>: Use AES-256; detail key management (e.g., HSM, key rotation).</li>
+<li><strong>Access Control</strong>: Implement role-based access and MFA.</li>
+<li><strong>Backup</strong>: Document backup frequency, encryption, and recovery testing.</li>
+<li><strong>Integrity Monitoring</strong>: Use hashes, checksums, or blockchain.</li>
+<li><strong>Security</strong>: Describe server protections (e.g., restricted access).</li>
+</ul>
+<h4 id="data-transfer">Data Transfer<a class="headerlink" href="#data-transfer" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Encryption in Transit</strong>: Specify TLS 1.3, IPsec configurations.</li>
+<li><strong>Endpoint Security</strong>: Detail device verification and certificate pinning.</li>
+<li><strong>API Security</strong>: Document authentication, rate-limiting, and channel encryption.</li>
+<li><strong>Data Masking</strong>: Use pseudonymisation for sensitive data in transit.</li>
+</ul>
+<h4 id="data-processing">Data Processing<a class="headerlink" href="#data-processing" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Secure Environments</strong>: Use containers, VMs, or trusted execution (e.g., Intel SGX).</li>
+<li><strong>Audit Logs</strong>: Specify logging standards, retention, and tamper protection.</li>
+<li><strong>Data Minimisation</strong>: Anonymise or limit collected data.</li>
+</ul>
+<h3 id="standards-applied">Standards Applied<a class="headerlink" href="#standards-applied" title="Permanent link">&para;</a></h3>
+<!-- info: provide information of the standards applied and certifications in this section-->
+
+<h3 id="data-post-market-monitoring">Data post-market monitoring<a class="headerlink" href="#data-post-market-monitoring" title="Permanent link">&para;</a></h3>
+<p>-<strong>Data Drift Detection and Monitoring:</strong> Describe here what type of drift was identified (covariate drift, prior probability drift or concept drift)</p>
+<!-- info: This section is particularly important as it enables to understand whether the model is still making accurate predictions, especially if used in critical domains. 
+For instance: If yoi train a model to detec and diagnose lung cancer from hospital A, deploying to hopsital B might affect accuracy as the other hospital might use different scanning machines that have different contrasts or resolutions and therefore might affect the distributional differences of the input images and the model might drop accuracy.
+ .-->
+
+<p>-<strong>Audit Logs:</strong> Periodically perform manual or semi-automated reviews of data samples and log changes in the data as well as access patterns.</p>
+<ul>
+<li><strong>Action plans implemented to address identified issues:</strong>.</li>
+</ul>
+<h3 id="eu-declaration-of-conformity">EU Declaration of conformity<a class="headerlink" href="#eu-declaration-of-conformity" title="Permanent link">&para;</a></h3>
+<div style="color: gray">
+  EU AI Act <a href="https://artificialintelligenceact.eu/article/47/" style="color:blue; text-decoration:underline">Article 47</a>
+  <p></p>
+</div>
+
+<!-- when applicable and certifications are available: it requires a systems name as well as the name and address of the provider; a statement that the EU declaration of conformity referred to in Article 47 is issued under the sole responsibility of the provider; a statement that the AI system is in conformity with this Regulation and, if applicable, with any other relevant Union law that provides for the issuing of the EU declaration of conformity referred to in Article 47, Where an AI system involves the processing of personal data;  a statement that that AI system complies with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, reference to the haharmonised standards used or any other common specification in relation to which
+conformity is declared; the name and identification number of the notified body, a description of the conformity
+assessment procedure performed, and identification of the certificate issued; the place and date of issue of the declaration, the name and function of the person who signed it, as well as an
+indication for, or on behalf of whom, that person signed, a signature.-->
+
+<h3 id="standards-applied_1">Standards applied<a class="headerlink" href="#standards-applied_1" title="Permanent link">&para;</a></h3>
+<!-- Document here the standards and frameworks used-->
+
+<h3 id="documentation-metadata">Documentation Metadata<a class="headerlink" href="#documentation-metadata" title="Permanent link">&para;</a></h3>
+<h3 id="version">Version<a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
+<!-- info: provide version of this document, if applicable (dates might also be useful) -->
+
+<h3 id="template-version">Template Version<a class="headerlink" href="#template-version" title="Permanent link">&para;</a></h3>
+<!-- info: link to model documentation template (i.e. could be a GitHub link) -->
+
+<h3 id="documentation-authors">Documentation Authors<a class="headerlink" href="#documentation-authors" title="Permanent link">&para;</a></h3>
+<!-- info: Give documentation authors credit
+
+Select one or more roles per author and reference author's
+emails to ease communication and add transparency. -->
+
+<ul>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../example-application-documentation-safesite-ai/" class="btn btn-neutral float-right" title="SafeSiteAI Application Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../template-model-documentation/" class="btn btn-neutral" title="Model Documentation Template"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../template-model-documentation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../example-application-documentation-safesite-ai/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

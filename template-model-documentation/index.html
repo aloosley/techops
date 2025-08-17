@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Model Documentation Template - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Model Documentation Template";
+    var mkdocs_page_input_path = "template-model-documentation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Model Documentation Template
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+          
+
+  <li class="toctree-l3 current with-children">
+    <a href="#overview">
+      Overview
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3 current">
+    <ul class="subnav-l3 current">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-type">Model Type</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-description">Model Description</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#status">Status</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#relevant-links">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#developers">Developers</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#owner">Owner</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#version-details-and-artifacts">Version Details and Artifacts</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#intended-and-known-usage">
+      Intended and Known Usage
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#intended-use">Intended Use</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#domains-of-use">Domain(s) of use</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#out-of-scope-uses">Out Of Scope Uses</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#known-applications">Known Applications</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#model-architecture">
+      Model Architecture
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-collection-and-preprocessing">Data Collection and Preprocessing</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-splitting">Data Splitting</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#model-training-process">Model Training Process</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#model-training-and-validation">Model Training and Validation</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#model-testing-and-evaluation">
+      Model Testing and Evaluation
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#model-bias-and-fairness-analysis">
+      Model Bias and Fairness Analysis
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#bias-detection-methods-used">Bias Detection Methods Used</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#mitigation-measures">Mitigation Measures</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#retraining-approaches">Retraining approaches</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#post-processing-techniques">Post-Processing Techniques</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#model-interpretability-and-explainability">
+      Model Interpretability and Explainability
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#eu-declaration-of-conformity">EU Declaration of conformity</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#standards-applied">Standards applied</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#documentation-metadata">
+      Documentation Metadata
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#version">Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#template-version">Template Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-authors">Documentation Authors</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-application-documentation-safesite-ai/">SafeSiteAI Application Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>TEMPLATES &raquo;</li>
+        
+      
+    
+    <li>Model Documentation Template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="model-documentation-template">Model Documentation Template<a class="headerlink" href="#model-documentation-template" title="Permanent link">&para;</a></h1>
+<!-- info: Replace with model name -->
+
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>, paragraph 1
+    <!-- info:  
+    The AI Act requires a description of  
+    (a) the intended purpose, version, and provider,  
+    (b) a description of how the system interacts with software and hardware,  
+    (c) relevant versions and updates,  
+    (d) all the forms in which the AI system is put into service
+    The overview part should also include:  
+    (e) the hardware on which the system is intended to run,  
+    (f) whether the system is part of the safety component of a product,  
+    (g) a basic description of the user interface, and  
+    (h) the instructions for use for the deployers. 
+    -->
+    <p></p>
+</div>
+
+<p><strong>Model Owner</strong>: Name and contact information
+<br><strong>Document Version</strong>: Version controlling this document is highly recommended
+<br><strong>Reviewers</strong>: List reviewers</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>, paragraph 1
+
+<!-- info: This section enables all stakeholders to have a glimpse into the model selection, design, and development processes.  
+You can use this section to provide transparency to users and high-level information to all relevant stakeholders.-->
+<p></p>
+</div>
+
+<h3 id="model-type">Model Type<a class="headerlink" href="#model-type" title="Permanent link">&para;</a></h3>
+<p><strong>Model Type:</strong> (e.g., Neural Networks, Decision Trees, etc.)</p>
+<h3 id="model-description">Model Description<a class="headerlink" href="#model-description" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 1(a)
+    <p></p>
+</div>
+
+<ul>
+<li>Description</li>
+</ul>
+<!-- info: Brief (max 200 words) description of the model architecture and the task(s) it was trained to solve, architecture (e.g., FPN, PointRend, MnasNet), size/latency optimization, and intended purpose. -->
+
+<h3 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select **one:** -->
+<p><strong>Status Date:</strong> YYYY-MM-DD</p>
+<p><strong>Status:</strong> <em>specify one of</em>:</p>
+<ul>
+<li><strong>Under Preparation</strong> -- The model is still under active development and is not yet ready for use due to active "dev" updates.</li>
+<li><strong>Regularly Updated</strong> -- New versions of the model have been or will continue to be made available.</li>
+<li><strong>Actively Maintained</strong> -- No new versions will be made available, but this model will be actively maintained.</li>
+<li><strong>Limited Maintenance</strong> -- The model will not be updated, but any technical issues will be addressed.</li>
+<li><strong>Deprecated</strong> -- This model is obsolete or is no longer being maintained.</li>
+</ul>
+<h3 id="relevant-links">Relevant Links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h3>
+<!-- info: User studies show document users find quick access to relevant artefacts like papers, model demos, etc..
+very useful. -->
+
+<p>Example references:</p>
+<ul>
+<li>GitHub Repository</li>
+<li>Paper/Documentation Link</li>
+<li>Initiative Demo</li>
+<li>Conference Talk</li>
+<li>API Link</li>
+</ul>
+<h3 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Name, Team</strong></li>
+<li><strong>Name, Team</strong></li>
+</ul>
+<h3 id="owner">Owner<a class="headerlink" href="#owner" title="Permanent link">&para;</a></h3>
+<!-- info: Remember to reference developers and owners emails. -->
+<ul>
+<li><strong>Team Name, Contact Person</strong></li>
+</ul>
+<h2 id="version-details-and-artifacts">Version Details and Artifacts<a class="headerlink" href="#version-details-and-artifacts" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> paragraph 1(c)
+    <p></p>
+</div>
+
+<!-- scope: periscope -->
+<!-- info: Provide details about the current model version
+and which model version the current model card corresponds to.
+
+For models without version number, use "Not currently tracked"
+but be sure to track the release date of the model.
+-->
+
+<p><strong>Current Model Version:</strong></p>
+<p><strong>Model Version Release Date:</strong></p>
+<p><strong>Model Version at last Model Documentation Update:</strong></p>
+<p><strong>Artifacts:</strong></p>
+<ul>
+<li>Model weights (e.g. S3 bucket path)</li>
+<li>Model config <!-- (s3://your-bucket/path/to/config.yaml)--></li>
+</ul>
+<h2 id="intended-and-known-usage">Intended and Known Usage<a class="headerlink" href="#intended-and-known-usage" title="Permanent link">&para;</a></h2>
+<h3 id="intended-use">Intended Use<a class="headerlink" href="#intended-use" title="Permanent link">&para;</a></h3>
+<!-- info: This section focuses on the initial purpose and/or reasoning
+for creating the model. It is important to define this section as the intended use directly affects the AI Act classification. For example:
+A face recognition model for personal photo apps → Limited risk
+The same model used for law enforcement → High or unacceptable risk
+
+
+Example Use Case: A university research team develops a machine learning model to predict the likelihood of hospital readmission among diabetic patients over the age of 65, using data from a regional healthcare network. The model is trained and validated specifically on this elderly population and is intended to support hospital planning and academic research. However, the team does not document the model’s intended use or demographic limitations. A health-tech company later integrates the model into a mobile app aimed at helping diabetes patients of all ages manage their care. The model performs poorly for younger users, frequently overestimating their risk of readmission. This leads to unnecessary anxiety, inappropriate self-care decisions, and false alerts to care providers. The misapplication draws criticism for lacking transparency, and regulators question the ethics of deploying a model outside its original context.   -->
+
+<ul>
+<li>Description</li>
+</ul>
+<h3 id="domains-of-use">Domain(s) of use<a class="headerlink" href="#domains-of-use" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Description</li>
+</ul>
+<p><strong>Specific tasks performed:</strong></p>
+<p><strong>Instructions for use for deployers</strong>:</p>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 13</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a> 
+    <p></p>
+</div>
+
+<h3 id="out-of-scope-uses">Out Of Scope Uses<a class="headerlink" href="#out-of-scope-uses" title="Permanent link">&para;</a></h3>
+<p>Provide potential applications and/or use cases for which use of the model is not suitable.</p>
+<h3 id="known-applications">Known Applications<a class="headerlink" href="#known-applications" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 1(f)
+    <p></p>
+</div>
+
+<!-- info: Fill out the following section if the model has any
+current known usages.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Application</strong></th>
+<th><strong>Purpose of Model Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Application 1</a></td>
+<td>Foundation model providing customer embeddings for fraud detection scoring</td>
+<td>High</td>
+</tr>
+<tr>
+<td><a href="">Application 2</a></td>
+<td>Customer embeddings used directly as features for recommendation engine</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive.  Model users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h2 id="model-architecture">Model Architecture<a class="headerlink" href="#model-architecture" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 2(b), 2(c)
+
+Info – AI Act requirements:  
+This section should contain a description of the elements of the model and the processes of its training and development.  
+
+Article 11(2)(b) requires the design specifications of a system, model selection, and what the system is designed to optimize for, as well as potential trade-offs.  
+
+Article 11(2)(c) requires a description of the system’s architecture, how software components are built on or feed into each other, and the computational resources needed to develop, train, test, and validate the system.
+</div>
+
+<!-- Info: Describing the architecture is fundamental for reproducibility, transparency, and effective maintenance. Without clear records of the model’s layers, activation functions, input/output shapes, and training configurations, it becomes difficult to reproduce results, debug issues, or update the model reliably.  -->
+
+<ul>
+<li>
+<p>Architecture Description</p>
+</li>
+<li>
+<p>Key components</p>
+</li>
+<li>
+<p>Hyperparameter tuning methodology</p>
+</li>
+<li>
+<p>Training Methodology</p>
+</li>
+<li>
+<p>Training duration</p>
+</li>
+<li>
+<p>Compute resources used</p>
+</li>
+</ul>
+<h3 id="data-collection-and-preprocessing">Data Collection and Preprocessing<a class="headerlink" href="#data-collection-and-preprocessing" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 2(d)
+    <p></p>
+</div>
+
+<!--check data documentation to avoid duplicates of information and link it in this sectiion
+
+In Article 11, 2 (d) a datasheet is required which describes all training methodologies and techniques as well as the characteristics of the training dataset, general description of the dataset, information about their provenance, scope and main characteristics, how the data was obtained and selected labelling procedures conducted and data cleaning methodologies deployed -->
+
+<ul>
+<li><strong>Steps Involved</strong>:</li>
+<li>Data collection: Describe how the data was sourced (e.g., databases, APIs, sensors, or publicly available datasets).</li>
+<li>
+<p>Data cleaning: Explain techniques used to handle missing values, outliers, or errors.</p>
+</li>
+<li>
+<p>Data transformation: Include any scaling or encoding applied.</p>
+</li>
+</ul>
+<h3 id="data-splitting">Data Splitting<a class="headerlink" href="#data-splitting" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Subset Definitions</strong>:</li>
+<li><strong>Training set</strong>: </li>
+<li><strong>Validation set</strong>: </li>
+<li><strong>Test set</strong>: </li>
+<li><strong>Splitting Methodology</strong>:</li>
+<li>Describe the approach:<ul>
+<li><strong>Random Sampling</strong>: </li>
+<li><strong>Stratified Sampling</strong>: </li>
+<li><strong>Temporal Splits</strong>: </li>
+</ul>
+</li>
+<li><strong>Proportions</strong>:</li>
+<li>Example: "70% training, 20% validation, 10% testing."</li>
+<li><strong>Reproducibility</strong>:</li>
+<li>Mention how many seeds are being used and how many are needed to prove statistical significance</li>
+</ul>
+<p><strong>Data Shuffling</strong>:</p>
+<ul>
+<li>Shuffle applied: (Yes/No) </li>
+</ul>
+<h2 id="model-training-process">Model Training Process<a class="headerlink" href="#model-training-process" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 2(c, g), paragraph 3
+
+<!-- AI Act requirements info:  
+In Article 11 paragraph 2(c), details about the computational resources needed to develop, train, test, and validate AI systems are required.  
+
+Moreover, in accordance with Article 11 paragraph 2(g), this section must include the validation and testing procedures used, the data involved, and the main metrics adopted to measure accuracy, robustness, and compliance with the requirements laid out in Chapter III, Section 2.  
+
+Paragraph 3 further requires detailed information about the monitoring, functioning, and control of the system, as well as logging of testing, with reports dated and signed by responsible stakeholders.-->
+<p></p>
+</div>
+
+<p><strong>Details of Processes</strong>:</p>
+<ul>
+<li><strong>Initialisation</strong>: </li>
+<li><strong>Loss Function</strong>:</li>
+<li><strong>Optimiser</strong>:</li>
+<li><strong>Hyperparameters</strong>:</li>
+</ul>
+<h2 id="model-training-and-validation">Model Training and Validation<a class="headerlink" href="#model-training-and-validation" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 2(g)
+    <br>EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 15</a>
+    <p></p>
+</div>
+
+<p>Objective: Clarify what the model is supposed to achieve. </p>
+<ul>
+<li>Problem statement (e.g., classification of X, prediction of Y)</li>
+<li>Business goals (accuracy, fairness, speed)</li>
+<li>
+<p>Metrics selected (e.g., accuracy, precision, recall, F1-score, AUC-ROC, MAE, RMSE)
+Rationale for each metric (why accuracy? why F1-score?)</p>
+</li>
+<li>
+<p>Model predictions on the validation set evalutaion description. </p>
+</li>
+</ul>
+<!--
+- Performance metrics (e.g., accuracy, F1 score, RMSE) are monitored.
+- Documeting this step is important as it enables to detect errors and performance issues early on: Overfitting can be detected using validation loss trends.
+-->
+
+<!--### Performance Metrics
+
+- Evaluation Metrics Used (e.g., Accuracy, Precision, Recall, AUC-ROC)
+- Benchmarking Results
+- Validation Process
+- Real-World Performance
+- Stress testing
+- Performance across different environments and populations -->
+
+<p><strong>Hyperparameter Tuning</strong>:</p>
+<p><strong>Regularisation</strong>:</p>
+<p><strong>Early Stopping</strong>:</p>
+<h2 id="model-testing-and-evaluation">Model Testing and Evaluation<a class="headerlink" href="#model-testing-and-evaluation" title="Permanent link">&para;</a></h2>
+<!--
+- Performance metrics (e.g., accuracy, F1 score, RMSE) are monitored.
+- Documeting this step is important as it enables to detect errors and performance issues early on: Overfitting can be detected using validation loss trends.
+-->
+
+<!-- Example: In medical diagnosis, using accuracy alone can be misleading in imbalanced datasets, potentially missing critical cases like cancer. Metrics like recall (which measures the percentage of actual cancer cases the model correctly identifies. Critical for minimizing missed diagnoses), precision ( to ensure that when the model predicts cancer, it’s actually correct—important to reduce false alarms), F1 score, and AUC-ROC provide a more meaningful assessment by accounting for the real-world impact of false positives and false negatives. Choosing the right metrics ensures models are effective, trustworthy, and aligned with practical goals and consequences.
+
+## Model Validation and Testing
+- **Assess the metrics of model performance** 
+   - accuracy:
+   - precision: 
+   - recall:
+   - F1 score:
+
+- **Advanced performance metrics**
+  - ROC-AUC:
+    - trade-off between true positive rate and false positive rate
+  - PR- AUC
+     - Evaluating precision and recall trade-off
+  - Specificity
+    - (True Negatives/(True Negatives+False Positives))
+  - Log Loss (Cross-Entropy Loss):
+    - Penalises incorrect probabilities assigned to classes.
+
+
+- **Context dependant metrics**: 
+  - Regression Metrics: For tasks predicting continuous values
+  - Clustering Metrics: for tasks grouping similar data points
+  - Ranking Metrics: for tasks predicting rankings (e.g., search engines recommendation systems)
+  - NLP processing metrics (e.g., text classification, sequence-to-sequence tasks)
+
+
+- **Fairness Metrics**:
+
+    - Ensure the model treats different groups (e.g., based on gender, race) equitably.
+    - Examples: Demographic parity, equal opportunity, and disparate impact.
+- **Explainability Metrics**:
+
+    - Measure how understandable and interpretable are the model’s decisions.
+    - Examples: Feature importance, fidelity (how well explanations match the model), and sparsity (using fewer features for explanations).
+    - 
+- **Robustness Metrics**:
+
+    - Assess how well the model performs under challenging or unexpected conditions.
+    - Examples: Adversarial robustness, performance under data drift, and sensitivity to input changes.
+
+- Limitations of the performance after the tests
+- Simulate deployment scenarios to understand real-world implications.
+- Define thresholds for acceptable performance levels.
+- Justify the choice of metrics based on the application’s purpose.
+
+-->
+
+<p><strong>Performance Metrics</strong>:</p>
+<ul>
+<li>Compute metrics on the test set:</li>
+<li>Accuracy, precision, recall, F1 score for classification.</li>
+<li>MSE, RMSE, MAE for regression.</li>
+</ul>
+<p><strong>Confusion Matrix</strong>:</p>
+<ul>
+<li>Generate a confusion matrix to evaluate classification results.</li>
+</ul>
+<p><strong>ROC Curve and AUC</strong>:</p>
+<ul>
+<li>For binary classifiers, compute the ROC curve and Area Under the Curve (AUC).</li>
+</ul>
+<p><strong>Feature Importance</strong>:</p>
+<ul>
+<li>Analyse feature contributions (for explainability).</li>
+</ul>
+<p><strong>Robustness Testing</strong>:</p>
+<ul>
+<li>Test the model on edge cases or adversarial examples.</li>
+</ul>
+<p><strong>Comparison to Baselines</strong>:</p>
+<ul>
+<li>Compare the model’s performance to a simple baseline (e.g., random guess, mean prediction).</li>
+</ul>
+<h3 id="model-bias-and-fairness-analysis">Model Bias and Fairness Analysis<a class="headerlink" href="#model-bias-and-fairness-analysis" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a> ; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 2 (f, g), paragraph 3, 4
+    <p></p>
+</div>
+
+<!-- info: This section aims to cover the AI Act requirements layed out in Article 11 paragraph 2 g that requires the description of the potential discriminatory impacts. 
+Paragraph 4 requires the assessment of the appropriateness of the performance metrics.-->
+
+<p><img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXclauxwg1nWuPj2z0TcgUK9y69AqHzk_-jQ5BJwYeDkjPSOLVddFcHJ6-oOiuZ2p4Rk3VpqyKw9CvU7N1LOqYtpdjN6CV_hhTxTtpNj4auLmqhsaIQ5fRLIPnVpZOnhtR63YNELlg?key=Lv0_1kRp5_LSkJabUJ8gjQ" />Implicit Bias, Measurement Bias, Temporal Bias, Selection Bias, Confounding Bias</p>
+<h4 id="bias-detection-methods-used">Bias Detection Methods Used<a class="headerlink" href="#bias-detection-methods-used" title="Permanent link">&para;</a></h4>
+<p><strong>Pre-processing:</strong> Resampling, Reweighting,Transformation (data imputation, changing order of data); Relabeling, Blinding</p>
+<p><strong>In-processing:</strong> Transfer learning, Reweighting, Constraint optimization, Adversarial Learning, Regularization, Bandits</p>
+<p><strong>Post-processing:</strong> Transformation, Calibration, Thresholding</p>
+<p><strong>Results of Bias Testing:</strong></p>
+<h4 id="mitigation-measures">Mitigation Measures<a class="headerlink" href="#mitigation-measures" title="Permanent link">&para;</a></h4>
+<p><strong>Fairness adjustments:</strong> Introduce fairness criteria (like demographic parity, equal opportunity, or equalized odds) into the model training process. </p>
+<p><strong>Adversarial Debiasing:</strong> Use adversarial networks to remove biased information during training. The main model tries to make accurate predictions, while an adversary network tries to predict sensitive attributes from the model's predictions.</p>
+<h4 id="retraining-approaches">Retraining approaches<a class="headerlink" href="#retraining-approaches" title="Permanent link">&para;</a></h4>
+<p><strong>Fairness Regularization:</strong> Modify the model's objective function to penalize bias. This introduces regularization terms that discourage the model from making predictions that disproportionately affect certain groups.</p>
+<p><strong>Fair Representation Learning:</strong> Learn latent representations of the input data that remove sensitive attributes, ensuring that downstream models trained on these representations are fair.</p>
+<h3 id="post-processing-techniques">Post-Processing Techniques<a class="headerlink" href="#post-processing-techniques" title="Permanent link">&para;</a></h3>
+<p><strong>Fairness-Aware Recalibration:</strong> After the model is trained, adjust decision thresholds separately for different demographic groups to reduce disparities in false positive/false negative rates.</p>
+<p><strong>Output Perturbation:</strong> Introduce randomness or noise to model predictions to make outcomes more equitable across groups.</p>
+<p><strong>Fairness Impact Statement:</strong> Explain trade-offs made to satisfy certain fairness criterias</p>
+<h2 id="model-interpretability-and-explainability">Model Interpretability and Explainability<a class="headerlink" href="#model-interpretability-and-explainability" title="Permanent link">&para;</a></h2>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/11/" style="color:blue; text-decoration:underline">Article 11</a>; <a href="https://artificialintelligenceact.eu/annex/4/" style="color:blue; text-decoration:underline">Annex IV</a>  paragraph 2(e)
+    <p></p>
+</div>
+
+<p><strong>Explainability Techniques Used:</strong>
+  <!-- for example: Shapley values, LIME, etc. Both SHAP and LIME are explainability techniques that help to understand why a machine learning model made a specific prediction — especially when the model is a complex "black box" like a random forest, gradient boosting, or deep neural net. Shap Uses game theory to assign each feature a value showing how much it contributed to a prediction. Lime builds a simple, interpretable model (like a linear model) near the point of interest to explain the prediction -->
+</p>
+<p>Examples: 
+    SHAP (SHapley Additive exPlanations), 
+    LIME (Local Interpretable Model-agnostic Explanations)</p>
+<p><strong>Post-hoc Explanation Models</strong></p>
+<ul>
+<li>Feature Importance, Permutation Importance, SHAP (SHapley Additive exPlanations), LIME (Local Interpretable Model-agnostic Explanations):</li>
+<li>Partial Dependence Plots (PDP) </li>
+<li>Counterfactual Explanations</li>
+<li>Surrogate Models</li>
+<li>Attention Mechanisms (for Deep Learning)</li>
+</ul>
+<p><strong>Model-Specific Explanation Techniques</strong></p>
+<!-- info: this part is important to delineate why a model makes a decision or to debug and identify if the model is focusing on the right parts of the input. Especially fundamental for models deployed in critical domains such as medical, financial and legal or law enforcement. This section can be useful to draft the user-interface section of the documentation.) -->
+
+<ul>
+<li>Grad-CAM (Gradient-weighted Class Activation Mapping) for CNNs and RNNs: especially for computer vision applications </li>
+<li>Layer-wise Relevance Propagation (LRP): Works well for CNNs, fully connected nets, and some RNNs (classification focused)</li>
+<li>TreeSHAP (SHAP for Decision Trees)</li>
+</ul>
+<p>How interpretable is the model’s decision-making process? </p>
+<!--
+Some technical tools that can aid transparency include:
+- Data Lineage Tools: Track the flow and transformation of data (e.g., Apache Atlas, Pachyderm).
+- Explainability Libraries: SHAP, LIME, Captum, TensorFlow Explain.
+- Version Control Systems: Git, DVC (Data Version Control) for datasets and models. -->
+
+<h3 id="eu-declaration-of-conformity">EU Declaration of conformity<a class="headerlink" href="#eu-declaration-of-conformity" title="Permanent link">&para;</a></h3>
+<div style="color:gray">
+    EU AI Act <a href="https://artificialintelligenceact.eu/article/47/" style="color:blue; text-decoration:underline">Article 47</a>(d)
+    <p></p>
+</div>
+
+<!-- when applicable and certifications are available: it requires a systems name as well as the name and address of the provider; a statement that the EU declaration of conformity referred to in Article 47 is issued under the sole responsibility of the provider; a statement that the AI system is in conformity with this Regulation and, if applicable, with any other relevant Union law that provides for the issuing of the EU declaration of conformity referred to in Article 47, Where an AI system involves the processing of personal data;  a statement that that AI system complies with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, reference to the harmonised standards used or any other common specification in relation to which
+conformity is declared; the name and identification number of the notified body, a description of the conformity
+assessment procedure performed, and identification of the certificate issued; the place and date of issue of the declaration, the name and function of the person who signed it, as well as an
+indication for, or on behalf of whom, that person signed, a signature.-->
+
+<h3 id="standards-applied">Standards applied<a class="headerlink" href="#standards-applied" title="Permanent link">&para;</a></h3>
+<!-- Document here the standards and frameworks used-->
+
+<h2 id="documentation-metadata">Documentation Metadata<a class="headerlink" href="#documentation-metadata" title="Permanent link">&para;</a></h2>
+<h3 id="version">Version<a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
+<!-- info: provide version of this document, if applicable (dates might also be useful) -->
+
+<h3 id="template-version">Template Version<a class="headerlink" href="#template-version" title="Permanent link">&para;</a></h3>
+<!-- info: link to model documentation template (i.e. could be a GitHub link) -->
+
+<h3 id="documentation-authors">Documentation Authors<a class="headerlink" href="#documentation-authors" title="Permanent link">&para;</a></h3>
+<!-- info: Give documentation authors credit
+
+Select one or more roles per author and reference author's
+emails to ease communication and add transparency. -->
+
+<ul>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../template-data-documentation/" class="btn btn-neutral float-right" title="Data Documentation Template">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../template-application-documentation/" class="btn btn-neutral" title="Application Documentation Template"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../template-application-documentation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../template-data-documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

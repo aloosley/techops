@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>ALiSNet Model Documentation - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ALiSNet Model Documentation";
+    var mkdocs_page_input_path = "example-model-documentation-alisnet.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-application-documentation-safesite-ai/">SafeSiteAI Application Documentation</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        ALiSNet Model Documentation
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+          
+
+  <li class="toctree-l3 current with-children">
+    <a href="#overview">
+      Overview
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3 current">
+    <ul class="subnav-l3 current">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-type">Model Type</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-description">Model Description</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#status">Status</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#relevant-links">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#developers">Developer(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#owners">Owner(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#version-details-and-artifacts">Version Details and Artifacts</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#intended-and-known-usage">
+      Intended and Known Usage
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#intended-use">Intended Use</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#out-of-scope-uses">Out of Scope Uses</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#known-applications">Known Applications</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#risks-and-ethical-considerations">
+      Risks and Ethical Considerations
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#processing-or-storage-of-customer-photos-during-deployment">Processing or storage of customer photos during deployment</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#on-device-deployment">On-device deployment</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#biases-in-model-performance">Biases in model performance</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#training">
+      Training
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#datasets">Datasets</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#evaluation">
+      Evaluation
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#performance-metrics">Performance Metrics</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-bias-and-fairness-analysis">Model Bias and Fairness Analysis</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#datasets_1">Datasets</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#caveats-and-recommendations">Caveats and Recommendations</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#documentation-metadata">
+      Documentation Metadata
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-template-version">Documentation Template Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-authors">Documentation Authors</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>EXAMPLES &raquo;</li>
+        
+      
+    
+    <li>ALiSNet Model Documentation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="alisnet-model-documentation">ALiSNet Model Documentation<a class="headerlink" href="#alisnet-model-documentation" title="Permanent link">&para;</a></h1>
+<p><strong>Model Owner</strong>: <a href="">Amrollah Seifoddini</a>
+<br><strong>Document Version</strong>: 0.2.0
+<br><strong>Reviewers</strong>: <a href="">Alex Loosley</a>, <a href="">Rocco Maresca</a></p>
+<p>Model documentation contributions and feedback are welcome!</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h3 id="model-type">Model Type<a class="headerlink" href="#model-type" title="Permanent link">&para;</a></h3>
+<p>Convolutional Neural Network</p>
+<h3 id="model-description">Model Description<a class="headerlink" href="#model-description" title="Permanent link">&para;</a></h3>
+<!-- info: Brief (max 200 words) description of the model architecture and the task(s) it was trained to solve. -->
+<p><strong>A</strong>ccurate and <strong>Li</strong>ghtweight mobile human <strong>S</strong>egmentation <strong>Net</strong>work (ALiSNet) is a Convolutional Neural Network (CNN) for semantic segmentation of human silhouettes from photos.
+Architecture of ALiSNet is based on <a href="https://arxiv.org/abs/1901.02446">Semantic FPN</a> with <a href="https://arxiv.org/abs/1912.08193">PointRend</a> refinement. The original backbone of the network is exchanged by mobile-optimized <a href="https://arxiv.org/abs/1807.11626">MnasNet</a> to achieve significant model size reduction. Additionaly, Feature Pyramid Network (FPN) from the original backbone is replaced with a simpler aggregation step, skipping FPN top-down path. Final model is also quantized to 8 bits integer precision using Qantization Aware Training.</p>
+<h3 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h3>
+<p><strong>Status Date:</strong> 2025-01-22</p>
+<p><strong>Regularly Updated</strong> - New versions of the model have been or will continue to be made available.</p>
+<h3 id="relevant-links">Relevant Links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2304.07533">Paper</a></li>
+</ul>
+<h3 id="developers">Developer(s)<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h3>
+<p><a href=""><strong>Amrollah Seifoddini</strong></a>, <strong>Size &amp; Fit</strong></p>
+<h3 id="owners">Owner(s)<a class="headerlink" href="#owners" title="Permanent link">&para;</a></h3>
+<!-- info: Remember to reference developers and owners emails. -->
+<p><strong>Team Name</strong>: <a href=""><strong>Size &amp; Fit</strong></a></p>
+<p><strong>Contact Person</strong>: <a href=""><strong>Amrollah Seifoddini</strong></a></p>
+<h2 id="version-details-and-artifacts">Version Details and Artifacts<a class="headerlink" href="#version-details-and-artifacts" title="Permanent link">&para;</a></h2>
+<!-- scope: periscope -->
+<!-- info: Provide details about the current model version
+and which model version the current model card corresponds to.
+
+For models without version number, use "Not currently tracked"
+but be sure to track the release date of the model.
+-->
+<p><strong>Current Model Version:</strong> Not currently tracked</p>
+<p><strong>Model Version Release Date:</strong> N/A</p>
+<p><strong>Model Version for last Model Card Update:</strong> N/A</p>
+<p><strong>Artifacts:</strong></p>
+<h2 id="intended-and-known-usage">Intended and Known Usage<a class="headerlink" href="#intended-and-known-usage" title="Permanent link">&para;</a></h2>
+<!-- info: The model owners are not expected to track all applications that use this model.-->
+<h3 id="intended-use">Intended Use<a class="headerlink" href="#intended-use" title="Permanent link">&para;</a></h3>
+<!-- info: This section focuses on the initial purpose and/or reasoning
+for creating the model.-->
+
+<p>Model was developed to perform semantic segmentation of humans vs. background as a step in inference of body 
+measurements from photos. Given the specific use case, 
+ALiSNet was trained to work for very narrow arm and leg angles ranges.</p>
+<h3 id="out-of-scope-uses">Out of Scope Uses<a class="headerlink" href="#out-of-scope-uses" title="Permanent link">&para;</a></h3>
+<p>ALiSNet was trained to work for very narrow arm and leg angles ranges. It shouldn't be used for general semantic segmentation tasks of human silhouettes vs. background.</p>
+<h3 id="known-applications">Known Applications<a class="headerlink" href="#known-applications" title="Permanent link">&para;</a></h3>
+<!-- info: Fill out the following section if the model has any
+current known usages.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Application</strong></th>
+<th><strong>Purpose of Model Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs.fake-domain-x.m.com/document/d/1bJKJR43o28Thrx4xtqwzXl2bbu3SThUNy7Rbic/edit#heading=h.a6wkeijjbx1">Body Measurements Pipeline</a></td>
+<td>ALiSNet is used for silhouette extraction as part of Size &amp; Fit's Body Measurements Pipeline.</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive.  Model users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h2 id="risks-and-ethical-considerations">Risks and Ethical Considerations<a class="headerlink" href="#risks-and-ethical-considerations" title="Permanent link">&para;</a></h2>
+<p>Privacy risks were initially reviewed by Size &amp; Fit (<a href="">J. Peterman</a>, <a href="">Frank Constanza</a>, <a href="">David Puddy</a>, <a href="">Stefan Messmer</a>) in collaboration with Algorithmic Privacy &amp; Fairness (<a href="">Elaine Benes</a>) and Product Security (<a href="">Kenny Bania</a>).</p>
+<h3 id="processing-or-storage-of-customer-photos-during-deployment">Processing or storage of customer photos during deployment<a class="headerlink" href="#processing-or-storage-of-customer-photos-during-deployment" title="Permanent link">&para;</a></h3>
+<p>In order to obtain measurments customers need to upload their photos to our app so that their silhouette may be inferred. This creates a risk related to storage and processing of private data.</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p>ALiSNet is deployed on-device. Customers photos are processed and stored on their device and Zalando does not have access to them. Only inferred silhouettes are sent to Zalando servers.</p>
+<h3 id="on-device-deployment">On-device deployment<a class="headerlink" href="#on-device-deployment" title="Permanent link">&para;</a></h3>
+<p>Deploying ALiSNet on-device may cause risks related to backdoor attacks against ML models such as Membership Inference or Model Inversion which may result in violation of privacy of our customers.</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p><a href="https://docs.fake-domain-x.m.com/document/d/1OXFrcyWblFIHLw9uOXsla8e-zBhtFH84MdvrrM/edit?usp=sharing">Privacy risk assessment</a> was performed in order to quantify Membership Inference (MIA) risk of the ALiSNet.
+As of November 2022 results of the audit showed that MIA risk is none to low.</p>
+<h3 id="biases-in-model-performance">Biases in model performance<a class="headerlink" href="#biases-in-model-performance" title="Permanent link">&para;</a></h3>
+<p>Statistically relevant discrepancies in the model accuracy across protected attributes related to human characteristics such as age, percieved skin tone, height etc..</p>
+<p><strong>Mitigation Strategy:</strong></p>
+<p><a href="https://docs.fake-domain-x.m.com/presentation/d/1DhjDdjWzgIkkjhVg1-AM9VzibCK27kW1kpUEDMA/edit?usp=sharing">Fairnes assessment</a> was performed in order to qunatify potential discerpancies across derived skin tone and body shape.
+As of October 2022 no relevant discrepencies in model performance were found.</p>
+<h2 id="training">Training<a class="headerlink" href="#training" title="Permanent link">&para;</a></h2>
+<!-- info: This section should include overview regarding training process such as training dataset(s), training task (ex. next token prediciton, pixel-wise classification). -->
+<p>ALiSNet is a classification model trained on semantic segmentation task which goal is to perform a classification of pixels in the input image with corresponding semantic class (human, bike etc.).</p>
+<p>See <a href="https://arxiv.org/abs/2304.07533">ALiSNet Paper</a> for more details about training.</p>
+<h3 id="datasets">Datasets<a class="headerlink" href="#datasets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Location</th>
+<th>Sensitive*</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Filtered Common Objects in Context (COCO)</td>
+<td>s3://sagemaker-io-2/coco/</td>
+<td>No*</td>
+<td>~50k samples</td>
+</tr>
+<tr>
+<td>Another Production Dataset Training Split (Another Dataset Train)</td>
+<td>s3://obfuscated-bucket-name/production/</td>
+<td>Yes*</td>
+<td>3625 samples</td>
+</tr>
+</tbody>
+</table>
+<p>(*): Requires a special Data Processing Request</p>
+<h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
+<!-- info: Remember to reference metrics definitions and results variance (if available.) -->
+<p>See <a href="https://arxiv.org/abs/2304.07533">ALiSNet Paper</a> for more details about testing such as performance metrics and baselines.</p>
+<h3 id="performance-metrics">Performance Metrics<a class="headerlink" href="#performance-metrics" title="Permanent link">&para;</a></h3>
+<p>Metrics used to evaluate model:</p>
+<ul>
+<li><strong>MIoU</strong>: <a href="https://en.wikipedia.org/wiki/Jaccard_index">Mean Intersection over Union</a></li>
+</ul>
+<p><strong>Results</strong>:</p>
+<ul>
+<li>Voices of Customers (VOC):</li>
+<li><strong>MIoU</strong>: 97.6 (+/- 0.1)</li>
+</ul>
+<h3 id="model-bias-and-fairness-analysis">Model Bias and Fairness Analysis<a class="headerlink" href="#model-bias-and-fairness-analysis" title="Permanent link">&para;</a></h3>
+<p>See <a href="https://ceur-ws.org/Vol-3442/paper-17.pdf">Body Measurement Prediction Fairness Paper</a> for complete fairness assessment results.</p>
+<h3 id="datasets_1">Datasets<a class="headerlink" href="#datasets_1" title="Permanent link">&para;</a></h3>
+<p>ALiSNet was evaluated using multiple datasets. All of the datasets represent realistic examples expected to be seen in intended deployment scenario.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Location</th>
+<th>Sensitive*</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Faces dataset<sup>1</sup></td>
+<td>s3://obfuscated-bucket-name/faces/production/</td>
+<td>Yes*</td>
+<td>2416 samples</td>
+</tr>
+<tr>
+<td>Voices of Customers (VOC) dataset<sup>1,2</sup></td>
+<td>s3://obfuscated-bucket-name/voc/production/</td>
+<td>Yes*</td>
+<td>6494 samples</td>
+</tr>
+<tr>
+<td>Optimass dataset<sup>1</sup></td>
+<td>s3://obfuscated-bucket-name/optimass/production/</td>
+<td>Yes*</td>
+<td>322 samples</td>
+</tr>
+<tr>
+<td><a href="../example-data-documentation-voc-skin-tones/">Skin tones dataset</a><sup>2</sup></td>
+<td>s3://obfuscated-bucket-name/skin-tones/production/</td>
+<td>Yes*</td>
+<td>499 samples</td>
+</tr>
+</tbody>
+</table>
+<p>(*): Requires a special Data Processing Request
+<br>(1): Used for overall performance evaluation
+<br>(2): Used for fairness evaluation</p>
+<h2 id="caveats-and-recommendations">Caveats and Recommendations<a class="headerlink" href="#caveats-and-recommendations" title="Permanent link">&para;</a></h2>
+<p>Poor lightning conditions and low photo resolution may decrease quality of segmentation. (?)</p>
+<p>The model was designed with strong size and latency constraints and is ready to be deployed to production or edge devices.</p>
+<h2 id="documentation-metadata">Documentation Metadata<a class="headerlink" href="#documentation-metadata" title="Permanent link">&para;</a></h2>
+<p>Note, some names in this document have been anonymized.</p>
+<h3 id="documentation-template-version">Documentation Template Version<a class="headerlink" href="#documentation-template-version" title="Permanent link">&para;</a></h3>
+<p><a href="../template-model-documentation/">v1.0.0</a></p>
+<h3 id="documentation-authors">Documentation Authors<a class="headerlink" href="#documentation-authors" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><a href="">Rocco Maresca</a>, Algorithmic Privacy &amp; Fairness:</strong> (Owner)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../example-data-documentation-voc-skin-tones/" class="btn btn-neutral float-right" title="Skin Tones Data Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../example-application-documentation-safesite-ai/" class="btn btn-neutral" title="SafeSiteAI Application Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../example-application-documentation-safesite-ai/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../example-data-documentation-voc-skin-tones/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

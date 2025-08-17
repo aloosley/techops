@@ -1,0 +1,2781 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Skin Tones Data Documentation - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Skin Tones Data Documentation";
+    var mkdocs_page_input_path = "example-data-documentation-voc-skin-tones.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-application-documentation-safesite-ai/">SafeSiteAI Application Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Skin Tones Data Documentation
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+          
+
+  <li class="toctree-l3 current with-children">
+    <a href="#overview">
+      Overview
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3 current">
+    <ul class="subnav-l3 current">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#primary-data-modality">Primary Data Modality</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#dataset-description">Dataset Description</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#status">Status</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#relevant-links">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#developers">Developers</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#owner">Owner</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-subjects">Data Subject(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-point-description">Data Point Description</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#dataset-statistics">Dataset Statistics</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#tables-and-fields">
+      Tables and Fields
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#table-labels_per_image">TABLE: labels_per_image</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#table-labeling_job_manifest">TABLE: labeling_job_manifest</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#table-data_per_label">TABLE: data_per_label</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#dataset-version-and-maintenance">
+      Dataset Version and Maintenance
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#version-details">Version Details</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-change-log">Data Change Log</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#maintenance-plan">Maintenance Plan</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#next-planned-updates">Next Planned Update(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#expected-changes">Expected Change(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#example-of-data-points">
+      Example of Data Points
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#typical-data-point">Typical Data Point</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#atypical-data-point">Atypical Data Point</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#sampling-of-data-points">Sampling of Data Points</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#purpose-and-motivations">
+      Purpose and Motivations
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#intended-purposes">Intended Purpose(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#motivating-factors">Motivating Factor(s)</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#intended-use">
+      Intended Use
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#dataset-uses">Dataset Use(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#suitable-use-cases">Suitable Use Case(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#unsuitable-use-cases">Unsuitable Use Case(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#research-and-problem-spaces">Research and Problem Space(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#information-for-usage">
+      Information for Usage
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#usage-guidelines">Usage Guideline(s)</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#use-with-other-data">
+      Use with Other Data
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#safety-level">Safety Level</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#best-practices">Best Practices</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#forking-and-sampling">
+      Forking and Sampling
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#safety-level_1">Safety Level</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#acceptable-sampling-methods">Acceptable Sampling Method(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#best-practices_1">Best Practice(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#risks-and-mitigations">Risk(s) and Mitigation(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#notable-features">Notable Feature(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#distributions">Distribution(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#known-correlations">Known Correlation(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#split-statistics">Split Statistics</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#citation-guidelines">Citation Guidelines</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#known-usage">
+      Known Usage
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#modelss">Models(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#applications">Application(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#access-retention-and-deletion">
+      Access, Retention, and Deletion
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#access">
+      Access
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#relevant-links_1">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-security-classification">Data Security Classification</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#prerequisites">Prerequisite(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#retention">
+      Retention
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#duration">Duration</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#reasons-for-duration">Reasons for Duration</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#policy-summary">Policy Summary</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#process-guide">Process Guide</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#exceptions-and-exemptions">Exception(s) and Exemption(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#deletion">
+      Deletion
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#deletion-event-summary">Deletion Event Summary</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#acceptable-means-of-deletion">Acceptable Means of Deletion</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#post-deletion-obligations">Post-Deletion Obligations</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#operational-requirements">Operational Requirement(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#exceptions-and-exemptions_1">Exceptions and Exemptions</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#provenance">
+      Provenance
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#collection">
+      Collection
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#methods-used">Method(s) Used</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#source-descriptions">Source Description(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#collection-cadence">Collection Cadence</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#attribute-collection-criteria-and-integration">
+      Attribute Collection Criteria and Integration
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-integration">Data Integration</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#data-point-collection-criteria">
+      Data Point Collection Criteria
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-selection">Data Selection</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#relationship-to-source">
+      Relationship to Source
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#use-and-utilityies">Use and Utility(ies)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#benefit-and-values">Benefit and Value(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#limitations-and-trade-offs">Limitation(s) and Trade-Off(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#sensitive-and-protected-attributes">
+      Sensitive and Protected Attributes
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#sensitivity-of-data">
+      Sensitivity of Data
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#sensitivity-types">Sensitivity Type(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#fields-with-sensitive-data">Field(s) with Sensitive Data</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#security-and-privacy-handling">Security and Privacy Handling</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#risk-types">Risk Type(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#protected-attributes">
+      Protected Attributes
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#protected-attribute-types">Protected Attribute Type(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#fields-with-protected-attributes">Field(s) with Protected Attributes</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#rationale">Rationale</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#sources">Source(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#methodology-details">Methodology Detail(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#protected-attribute-distributions">Protected Attribute Distribution(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#known-correlations-to-protected-attributes">Known Correlations to Protected Attributes</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#possible-correlations-to-protected-attributes">Possible Correlations to Protected Attributes</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#risks-and-mitigations_1">Risk(s) and Mitigation(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#transformations">
+      Transformations
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#code-base-and-existing-documentation">Code Base and Existing Documentation</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#synopsis">
+      Synopsis
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#transformations-applied">Transformation(s) Applied</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#libraryies-and-methods-used">Library(ies) and Method(s) Used</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#annotations-and-labeling">
+      Annotations and Labeling
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#annotation">
+      Annotation
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#tasks">Task(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#characteristics">Characteristic(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#descriptions">Description(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#distributions_1">Distribution(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#human-annotators">
+      Human Annotators
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#annotation-workforce-type">Annotation Workforce Type</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#annotator-pools">Annotator Pool(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#languages">Language(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#locations">Location(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#genders">Gender(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#validation-types">
+      Validation Types
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#methods">Method(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#breakdowns">Breakdown(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#descriptions_1">Description(s)</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#sampling-methods">
+      Sampling Methods
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#methods-used_1">Method(s) Used</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#characteristics_1">Characteristic(s)</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#sampling-criteria">Sampling Criteria</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#documentation-metadata">
+      Documentation Metadata
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-template-version">Documentation Template Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-authors">Documentation Authors</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>EXAMPLES &raquo;</li>
+        
+      
+    
+    <li>Skin Tones Data Documentation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="skin-tones-data-documentation">Skin Tones Data Documentation<a class="headerlink" href="#skin-tones-data-documentation" title="Permanent link">&para;</a></h1>
+<p><strong>Dataset Owner</strong>: <a href="">George Costanza</a>
+<br><strong>Document Version</strong>: 0.5.0
+<br><strong>Reviewers</strong>: <a href="">Jerry Seinfeld</a></p>
+<p>Data documentation contributions and feedback are welcome!</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h3 id="primary-data-modality">Primary Data Modality<a class="headerlink" href="#primary-data-modality" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select the modality(ies) that best describe a typical data point 
+(see http://www.trustworthymachinelearning.com/trustworthymachinelearning-04.htm, 
+section 4.1, for a definition of data modality): -->
+<ul>
+<li>Image Data</li>
+<li>Tabular Data</li>
+</ul>
+<h3 id="dataset-description">Dataset Description<a class="headerlink" href="#dataset-description" title="Permanent link">&para;</a></h3>
+<p><em>Post hoc</em> skin tone labels of the faces of customers in the <a href="https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRDfV5BT4ZZXfOcs">Zalando Voice of Customer (VOC) dataset</a>
+curated as part of the <a href="https://docs.fake-domain-x.m.com/document/d/12wYbrM9dHFXapbeBPZxX3Yh6mvYSQs1nmWrlt-Lk/edit#heading=h.va8flzlzpc8h">"Skin Tone Labeling Initiative."</a>
+The primary purpose of this data is for fairness evaluation purposes:</p>
+<ul>
+<li>to help ensure data used to train ML/AI systems for Size and Fit is representative of Zalando's customers</li>
+<li>to ensure ML/AI systems do not systematically underperform for customers with certain skin tones</li>
+</ul>
+<p>(see <a href="#known-usage">Known Dataset Usage - Known Dataset Usage</a> for more information about known fairness 
+evaluations implemented using this dataset).</p>
+<p>This data was collected by a team of four Zalando labelers from a mix of teams including
+Beauty, Size and Fit, and Algorithmic Privacy and Fairness.  Labelers followed specific
+<a href="https://ceur-ws.org/Vol-3442/paper-17.pdf">Skin Tone Labeling Instructions</a>,
+and labeled each image for skin tone based on the 
+<a href="https://ceur-ws.org/Vol-3442/paper-17.pdf">2022 Zalando Beauty skin tone scale</a>
+(shown below).</p>
+<p><img alt="" src="../figures/beauty-skin-tone-label-options-plus-uncertain.png" /></p>
+<p>Further technical details can be found in the <a href="https://github.fake.domain/aithics/skin-tone-labeling">Skin Tone Labeling GitHub Repository</a>.</p>
+<p>Special thanks to the labelers:</p>
+<ul>
+<li><strong><a href="">Alex Loosley</a></strong>, Algorithmic Privacy and Fairness</li>
+<li><strong><a href="">Susan Ross</a></strong>, Algorithmic Privacy and Fairness</li>
+<li><strong><a href="">Amrollah Seifoddini</a></strong>, Size and Fit</li>
+<li><strong><a href="">Helen Seinfeld</a></strong>, Beauty</li>
+</ul>
+<p>Beyond fairness evaluations, this dataset along with the entire initiative has inpired the creation of a
+Zalando Skin Tone Labeling Playbook.</p>
+<h3 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select **one:** -->
+
+<p><strong>Status Date:</strong> 27/04/2023</p>
+<p><strong>Under Preparation</strong> - The dataset is still under active curation
+and is not yet ready for use due to active "dev" updates.  The dataset should be
+ready for wider usage in June 2023.</p>
+<h3 id="relevant-links">Relevant Links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h3>
+<!-- info: Provide a quickly accessible list of relavent links: -->
+<!-- width: full -->
+
+<ul>
+<li><a href="https://s3.console.aws.amazon.com/s3/buckets/skin-tone-labeling?region=eu-central-1&amp;tab=objects">Zalando VOC Skin Tones Dataset</a>
+(S3 Bucket requiring access permissions)</li>
+<li><a href="https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRfV5BT4ZZXfOcs/edit">Zalando VOC Images Data Documentation</a> (Base dataset used for labeling)</li>
+<li><a href="https://docs.fake-domain-x.m.com/document/d/12wYbrM9dHFXapbeBPYh6mvYSzskQs1nmWrlt-Lk/edit#heading=h.va8flzlzpc8h">Skin Tone Labeling Initiative</a></li>
+<li><a href="https://docs.fake-domain-x.m.com/document/d/1o56MdP7yFW9aWcLbV3fuoWIrHntZ2Dx4AiCRFE/edit">Instructions for Labelers</a></li>
+<li><a href="https://github.fake.domain/aithics/skin-tone-labeling/">Dataset processing and analysis</a> (GitHub Repository)</li>
+</ul>
+<h3 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><a href="">Alex Loosley</a>, Algorithmic Privacy and Fairness:</strong> (Principal Developer)</li>
+<li><strong><a href="">Amrollah Seifoddini</a>, Size and Fit:</strong> (Dataset Owner)</li>
+</ul>
+<h3 id="owner">Owner<a class="headerlink" href="#owner" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Main point of contact:</strong> <a href="">George Steinbrenner</a></li>
+<li><strong>Team:</strong> <a href="">Size and Fit</a> (Zurich)</li>
+<li><strong>Affiliation:</strong> Zalando SE</li>
+<li><strong>Team Website:</strong> N/A</li>
+</ul>
+<h3 id="data-subjects">Data Subject(s)<a class="headerlink" href="#data-subjects" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select ***all applicable**** subjects contained the dataset: -->
+<ul>
+<li>Images of consenting customers</li>
+<li>Sensitive Data about people</li>
+<li>Skin tones labels</li>
+</ul>
+<h3 id="data-point-description">Data Point Description<a class="headerlink" href="#data-point-description" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Provide a short description of the content in a data point: -->
+
+<p>A data point is made up of an image of a person, and one or more skin tone labels as defined in this
+<a href="https://docs.fake-domain-x.m.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuoWIrHntZ2Dx4AiCRFE/edit">Instructions for Labelers</a>
+document.</p>
+<p>See the <a href="#example-of-data-points">Examples of Data Points</a> section for examples.</p>
+<h3 id="dataset-statistics">Dataset Statistics<a class="headerlink" href="#dataset-statistics" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Provide a statistics of the dataset:<br><br>(Add or remove fields
+based on common sense about which are most useful for consumers to see at a glance.
+Use the additional notes to include relevant information, considerations,
+and links to table(s) with more detailed breakdowns.) -->
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Size of Dataset</td>
+<td>1009 MB</td>
+</tr>
+<tr>
+<td>Number of Data Points</td>
+<td>59 calibration + 999 main</td>
+</tr>
+<tr>
+<td>Label Classes</td>
+<td>6 (5 skin tones, 1 for uncertainty)</td>
+</tr>
+<tr>
+<td>Type of labels</td>
+<td>Multiple labels per data point</td>
+</tr>
+<tr>
+<td>Algorithmic Labels</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Human Labels</td>
+<td>All</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> The definitions of main and calibration splits and information on labels can be found in 
+the <a href="#human-annotators">Human Annotations</a> section.</p>
+<h3 id="tables-and-fields">Tables and Fields<a class="headerlink" href="#tables-and-fields" title="Permanent link">&para;</a></h3>
+<!-- width: full -->
+<!-- scope: microscope -->
+<!-- info: List the dataset fields and their descriptions.
+For `Type` use [python typing standards](https://docs.python.org/3/library/typing.html).-->
+
+<h4 id="table-labels_per_image">TABLE: labels_per_image<a class="headerlink" href="#table-labels_per_image" title="Permanent link">&para;</a></h4>
+<!-- width: full -->
+<ul>
+<li><strong>Primary Key:</strong> <code>annotation_image_id</code></li>
+<li><strong>Description:</strong> Skin tone label data for each image.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>annotation_image_id</td>
+<td>str</td>
+<td>Primary key identifying image with respect to annotation job</td>
+</tr>
+<tr>
+<td>labels</td>
+<td>list[list[str]]</td>
+<td>List of multiple labels (inner lists) given by each labeler (outer list)</td>
+</tr>
+<tr>
+<td>skin_tone_values</td>
+<td>list[float]</td>
+<td>Skin tone values for each labeler (based on <a href="https://github.fake.domain/aithics/skin-tone-labeling/blob/main/skin_tone/encoders/zbeauty.py#L22">ZBeautySkinToneLabelEncoder</a>)</td>
+</tr>
+<tr>
+<td>valid_skin_tone_values</td>
+<td>list[float]</td>
+<td>Same as skin tone values with invalid value floats removed</td>
+</tr>
+<tr>
+<td>skin_tone_mean</td>
+<td>float</td>
+<td>Mean valid skin tone value</td>
+</tr>
+<tr>
+<td>skin_tone_std</td>
+<td>float</td>
+<td>Standard deviation of valid skin tone values</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Statistic</th>
+<th>skin_tone_mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td>999</td>
+</tr>
+<tr>
+<td>mean</td>
+<td>0.670921</td>
+</tr>
+<tr>
+<td>std</td>
+<td>0.629619</td>
+</tr>
+<tr>
+<td>min</td>
+<td>0.</td>
+</tr>
+<tr>
+<td>25%</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>50%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>75%</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>max</td>
+<td>4.</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
+<p>Histogram of <code>skin_tone_mean</code> values:</p>
+<p><img alt="" src="../figures/skin-tone-histogram-main.png" /></p>
+<p><strong>Additional Notes:</strong> Skin tone related labels and values are protected attributes,
+see the <a href="#sensitive-and-protected-attributes">sensitive and protected attributes</a> section
+for more details.</p>
+<hr />
+<h4 id="table-labeling_job_manifest">TABLE: labeling_job_manifest<a class="headerlink" href="#table-labeling_job_manifest" title="Permanent link">&para;</a></h4>
+<!-- width: full -->
+<ul>
+<li><strong>Primary Key:</strong> <code>image_id</code></li>
+<li><strong>Description:</strong> Annotation job manifest, containing information about what was annotated.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>image_id</td>
+<td>str</td>
+<td>Unique image id</td>
+</tr>
+<tr>
+<td>annotation_image_id</td>
+<td>str</td>
+<td>image id given corresponding annotation job</td>
+</tr>
+<tr>
+<td>source-ref</td>
+<td>str</td>
+<td>s3 bucket location</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="table-data_per_label">TABLE: data_per_label<a class="headerlink" href="#table-data_per_label" title="Permanent link">&para;</a></h4>
+<!-- width: full -->
+<ul>
+<li><strong>Primary Key:</strong> None</li>
+<li><strong>Description:</strong> Information about each label, such as a labeler UUID and meta data like how much time was needed to
+  produce the label.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>annotation_image_id</td>
+<td>str</td>
+<td>links to <code>image_id</code> in <code>labels_per_image</code> table</td>
+</tr>
+<tr>
+<td>workerId</td>
+<td>str</td>
+<td>unique id of worker (labeler) who labeled the image</td>
+</tr>
+<tr>
+<td>timeSpentInSeconds</td>
+<td>float</td>
+<td>time needed for labeler to label the image</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dataset-version-and-maintenance">Dataset Version and Maintenance<a class="headerlink" href="#dataset-version-and-maintenance" title="Permanent link">&para;</a></h3>
+<h4 id="version-details">Version Details<a class="headerlink" href="#version-details" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide details about the current data version
+and which data version the current data card corresponds to.
+
+For datasets without version number, use "Not currently tracked"
+but be sure to track the release date of the data.
+
+
+<pre><code>**Current Data Version:** Not currently tracked
+
+**Data Version Release Date:** 05/03/2023
+
+**Data Version for last Data Card Update:** N/A
+
+**Last Data Card Update:** 10/03/2023
+</code></pre>
+
+-->
+<p><strong>Current Data Version:</strong> Not currently tracked</p>
+<p><strong>Data Version Release Date:</strong> 03/03/2023</p>
+<p><strong>Data Version for last Data Card Update:</strong> N/A</p>
+<p><strong>Last Data Card Update:</strong> 10/03/2023</p>
+<h4 id="data-change-log">Data Change Log<a class="headerlink" href="#data-change-log" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<p>TBD</p>
+<h4 id="maintenance-plan">Maintenance Plan<a class="headerlink" href="#maintenance-plan" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the maintenance plan for the dataset:
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>This dataset is in development mode and not yet being maintained for usage by others.</p>
+<p><strong>Versioning:</strong> TBD</p>
+<p><strong>Updates:</strong> TBD</p>
+<p><strong>Errors:</strong> TBD</p>
+<p><strong>Feedback:</strong> TBD</p>
+<h4 id="next-planned-updates">Next Planned Update(s)<a class="headerlink" href="#next-planned-updates" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide details about the next planned update:
+For datasets that are not currently version controlled or
+under active development that are not yet stable,
+this section could be filled in as follows:
+
+
+<pre><code>**Version affected:** Not currently tracked
+
+**Next data update:** Ongoing until version 1.0.0 released
+
+**Next version:** 1.0.0
+
+**Next version update:** 04/2029 (expected first stable dataset release,
+                                  ie. version 1.0.0)
+
+</code></pre>
+
+-->
+<p><strong>Version affected:</strong> Not currently tracked</p>
+<p><strong>Next data update:</strong> Ongoing until version 1.0.0</p>
+<p><strong>Next version:</strong> 1.0.0</p>
+<p><strong>Next version update:</strong> 04/2023</p>
+<h4 id="expected-changes">Expected Change(s)<a class="headerlink" href="#expected-changes" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the updates to the dataset and/or data that are expected
+on the next update.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>Version 1.0.0 will be released once data curation and preparation is complete.</p>
+<h2 id="example-of-data-points">Example of Data Points<a class="headerlink" href="#example-of-data-points" title="Permanent link">&para;</a></h2>
+<h3 id="typical-data-point">Typical Data Point<a class="headerlink" href="#typical-data-point" title="Permanent link">&para;</a></h3>
+<!-- width: half -->
+<!-- info: Provide an example of a typical data point and describe what makes
+it typical.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p>A typical annotation example from the <code>labels_per_image</code> table:</p>
+<pre><code class="language-json">{&quot;annotation_image_id&quot;: &quot;10&quot;,
+ &quot;skin_tone_values&quot;: [3.5, 3.5, 3.0, 3.0],
+ &quot;labels&quot;: [[&quot;mid-deep&quot;, &quot;deep&quot;],
+  [&quot;mid-deep&quot;, &quot;deep&quot;],
+  [&quot;mid-deep&quot;],
+  [&quot;mid-deep&quot;]],
+ &quot;uncertain_labels&quot;: [false, false, false, false],
+ &quot;valid_skin_tone_values&quot;: [3.5, 3.5, 3.0, 3.0],
+ &quot;any_uncertainty&quot;: false,
+ &quot;complete_consensus&quot;: false,
+ &quot;overlap_consensus&quot;: true,
+ &quot;near_consensus&quot;: true,
+ &quot;n_skin_tone_values&quot;: 4,
+ &quot;frac_unique_values&quot;: 0.5,
+ &quot;n_unique_skin_tone_values&quot;: 2,
+ &quot;n_connected_skin_tone_groups&quot;: 1,
+ &quot;skin_tone_mean&quot;: 3.25,
+ &quot;skin_tone_std&quot;: 0.25,
+ &quot;has_invalid_annotation&quot;: false,
+ &quot;skin_tone_mode_value&quot;: 3.0,
+ &quot;skin_tone_mode_count&quot;: 2,
+ &quot;n_valid_labels&quot;: 4}
+</code></pre>
+<p>Here, annotators were not uncertain in their labels, two believed the skin tone was a combination of
+<code>mid-deep</code> and <code>deep</code>, and two thought the skin tone was just <code>deep</code> (note neighbouring skin-tone labels 
+like <code>mid-deep</code> and <code>deep</code> were allowed, see <a href="#annotations-and-labeling">Annotations and Labling</a> 
+for more details).</p>
+<p>Note, this data corresponds to the main labeling task which only had three labelers. See 
+<a href="#annotations-and-labeling">Annotations and Labeling</a> for more details about labeling tasks.</p>
+<h3 id="atypical-data-point">Atypical Data Point<a class="headerlink" href="#atypical-data-point" title="Permanent link">&para;</a></h3>
+<!-- width: half -->
+<!-- info: Provide an example of an outlier data point and describe what makes
+it atypical.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p>An atypical annotation example from the <code>labels_per_image</code> table where
+the first labeler seemed to have made a mistake by labeled a skin tone as both <code>light</code> and <code>deep</code>:</p>
+<pre><code class="language-json">{&quot;annotation_image_id&quot;: &quot;24&quot;,
+ &quot;skin_tone_values&quot;: [-1.0, 1.5, 0.0],
+ &quot;labels&quot;: [[&quot;light&quot;, &quot;deep&quot;], [&quot;mid-light&quot;, &quot;medium&quot;], [&quot;light&quot;]],
+ &quot;uncertain_labels&quot;: [false, false, false],
+ &quot;valid_skin_tone_values&quot;: [1.5, 0.0],
+ &quot;any_uncertainty&quot;: false,
+ &quot;complete_consensus&quot;: false,
+ &quot;overlap_consensus&quot;: false,
+ &quot;near_consensus&quot;: false,
+ &quot;n_skin_tone_values&quot;: 2,
+ &quot;frac_unique_values&quot;: 1.0,
+ &quot;n_unique_skin_tone_values&quot;: 2,
+ &quot;n_connected_skin_tone_groups&quot;: 2,
+ &quot;skin_tone_mean&quot;: 0.75,
+ &quot;skin_tone_std&quot;: 0.75,
+ &quot;has_invalid_annotation&quot;: true,
+ &quot;skin_tone_mode_value&quot;: 0.0,
+ &quot;skin_tone_mode_count&quot;: 1}
+</code></pre>
+<p>Note, this data corresponds to the calibration 1 labeling task which had more labeling mistakes as labelers 
+got used to the labeling UI.  See <a href="#annotations-and-labeling">Annotations and Labeling</a> for more details about
+labeling tasks.</p>
+<h3 id="sampling-of-data-points">Sampling of Data Points<a class="headerlink" href="#sampling-of-data-points" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Provide link(s) to data points OR
+a link to an exploratory demo if one exists -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Example Type</th>
+            <th>annotation_image_id</th>
+            <th>Apparent skin tone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>human labelers agreed on labels</td>
+            <td>10</td>
+            <td>lighter</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>deeper</td>
+        </tr>
+        <tr>
+            <td rowspan=2>human labelers were uncertain about label</td>
+            <td>14</td>
+            <td>lighter</td>
+        </tr>
+        <tr>
+            <td>255</td>
+            <td>deeper</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Additional Note</strong>: No actual images can be shown here because they require access approval 
+(see <a href="#access">Access section</a>). </p>
+<h2 id="purpose-and-motivations">Purpose and Motivations<a class="headerlink" href="#purpose-and-motivations" title="Permanent link">&para;</a></h2>
+<!-- info: This section focuses on the initial reasons why the
+dataset was curated / created, and should be written from the point
+of view of the dataset developers before and during its creation.
+
+For current usage guidelines, see the section.
+-->
+
+<h3 id="intended-purposes">Intended Purpose(s)<a class="headerlink" href="#intended-purposes" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select the original intended purposes of creating or
+curating this dataset-->
+<ul>
+<li>Fairness Evaluation</li>
+</ul>
+<h3 id="motivating-factors">Motivating Factor(s)<a class="headerlink" href="#motivating-factors" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: List the primary motivations for creating or curating this dataset:
+
+(Usage Note: use this to describe the problem space and corresponding
+motivations for the dataset.) -->
+<ul>
+<li>Assessing and publishing the distribution of skin tones in the <a href="https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-Jtx5BT4ZZXfOcs/edit">Zalando VOC dataset</a></li>
+<li>Identifying potential sample bias in data that may be used for training computer vision systems at Zalando</li>
+<li>Providing a skin tone dataset for fairness evaluation</li>
+<li>Writing a <a href="https://github.fake.domain/aithics/skin-tone-labeling/tree/main/playbook">skin tone labeling playbook</a> for others who want to curate skin tones via <em>post hoc</em> human labeling</li>
+</ul>
+<p>See the <a href="https://github.fake.domain/aithics/skin-tone-labeling">skin-tone-labeling</a> repository for more details.</p>
+<h3 id="intended-use">Intended Use<a class="headerlink" href="#intended-use" title="Permanent link">&para;</a></h3>
+<h4 id="dataset-uses">Dataset Use(s)<a class="headerlink" href="#dataset-uses" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: -->
+<ul>
+<li>Skin tone fairness evalaution for pre-production models</li>
+</ul>
+<h4 id="suitable-use-cases">Suitable Use Case(s)<a class="headerlink" href="#suitable-use-cases" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Summarize known suitable and intended use cases of this dataset.
+
+Use additional notes to capture any specific patterns that readers should
+look out for, or other relevant information or considerations. -->
+<p><strong>Suitable Use Case:</strong> Use to evaluate (un)fairness of any model that should perform well for Zalando VOC type images of humans.
+For example, Zalando's <a href="https://docs.fake-domain-x.m.com/document/d/14kVRAs8jZdqbIfJgQ0dbn0oYe3RbVnMv3eBhO4">Body Measurements Pipeline</a>.</p>
+<h4 id="unsuitable-use-cases">Unsuitable Use Case(s)<a class="headerlink" href="#unsuitable-use-cases" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize known unsuitable and unintended use cases of this dataset.
+
+Use additional notes to capture any specific patterns that readers should look
+out for, or other relevant information or considerations. -->
+<p>This data is, in its current form, not vetted for training a skin tone classifier that could be
+used at scale.</p>
+<h4 id="research-and-problem-spaces">Research and Problem Space(s)<a class="headerlink" href="#research-and-problem-spaces" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a description of the specific problem space that this
+dataset intends to address. -->
+<ul>
+<li>Skin tone fairness evaluation</li>
+<li>Analysis of bias in human skin tone annotations</li>
+</ul>
+<h2 id="information-for-usage">Information for Usage<a class="headerlink" href="#information-for-usage" title="Permanent link">&para;</a></h2>
+<!-- info: Information about dataset for others that
+want to use this dataset. -->
+
+<h3 id="usage-guidelines">Usage Guideline(s)<a class="headerlink" href="#usage-guidelines" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Summarize usage guidelines or policies that consumers should be
+aware of.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Usage Guidelines:</strong> This dataset is meant for fairness evaluation purposes only to ensure
+that models trained on the Zalando VOC dataset, or similar, do not systematically underperform
+for subjects with certain skin tones.</p>
+<p><strong>Approval Steps:</strong> The reason of using this dataset for a particular use case must be described
+and approved via a <a href="https://jira.fake-domain.net/DPR/CreateIssue.jspa?pid=16062&amp;issuetype=15401">DPR process</a>.
+New DPRs should refer to this <a href="https://jira.fake-domain.net/DPR/ticket">existing DPR</a>, which pertains to the
+creation of this dataset.  See the <a href="#prerequisites">Accesss Prerequesites</a> section.</p>
+<p><strong>Reviewer:</strong> Please tag the data owner when creating a DPR.</p>
+<h3 id="use-with-other-data">Use with Other Data<a class="headerlink" href="#use-with-other-data" title="Permanent link">&para;</a></h3>
+<h4 id="safety-level">Safety Level<a class="headerlink" href="#safety-level" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: -->
+<ul>
+<li>Safe to use with other data for fairness evaluation purposes</li>
+</ul>
+<h4 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize best practices for using this dataset with other datasets
+or data types.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>If presenting examples of this data is a must, consider blurring faces and backgrounds.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="forking-and-sampling">Forking and Sampling<a class="headerlink" href="#forking-and-sampling" title="Permanent link">&para;</a></h3>
+<h4 id="safety-level_1">Safety Level<a class="headerlink" href="#safety-level_1" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: -->
+<ul>
+<li>Conditionally safe to fork and/or sample</li>
+</ul>
+<h4 id="acceptable-sampling-methods">Acceptable Sampling Method(s)<a class="headerlink" href="#acceptable-sampling-methods" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Select **all applicable** acceptable methods to sample this
+dataset: -->
+<ul>
+<li>Cluster Sampling</li>
+<li>Multi-stage sampling</li>
+<li>Stratified Sampling</li>
+<li>Unsampled</li>
+</ul>
+<h4 id="best-practices_1">Best Practice(s)<a class="headerlink" href="#best-practices_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the best practices for forking or sampling this dataset.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>This dataset is meant for fairness assessments against skin tone.  Any samples should
+ensure that all skin tones are represented.</p>
+<h4 id="risks-and-mitigations">Risk(s) and Mitigation(s)<a class="headerlink" href="#risks-and-mitigations" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Fill this out if you selected "Conditionally safe to fork and/or
+sample" or "Should not be forked and/or sampled":
+
+Summarize known or residual risks associated with forking and sampling methods
+when applied to the dataset.
+
+Use additional notes to capture any other
+relevant information or considerations. -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Unrepresenting skin tone groups:</strong> Sampling incorrectly risks certain skin tone groups
+being underrepresented for skin tone based fairness evaluations.  Ensure all skin tones are
+well represented such as to have enough data points to estimate performance
+on particular skin tones with a low enough level of uncertainty to be able to draw
+reliable fairness conclusions.</p>
+<h3 id="notable-features">Notable Feature(s)<a class="headerlink" href="#notable-features" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Describe any notable feature distributions or relationships between
+individual data points made explicit.
+
+Include links to servers where readers can explore the data on their own. -->
+
+<p><strong>Exploration Demo:</strong> Found in <a href="https://github.fake.domain/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results-from-local.ipynb">Jupyter Notebook</a></p>
+<h3 id="distributions">Distribution(s)<a class="headerlink" href="#distributions" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Describe the recommended splits and corresponding criteria.
+
+Use additional notes to capture any other
+relevant information or considerations. -->
+
+<p>N/A - The entire main split of the dataset can be used for fairness evaluation.  At this time, we
+do not recommend training models with this data, and therefore, do not have a recommended train-validation-test
+split.</p>
+<h3 id="known-correlations">Known Correlation(s)<a class="headerlink" href="#known-correlations" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Summarize any known correlations with
+the indicated features in this dataset.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate for each known
+correlation.) -->
+<p>None known at this time</p>
+<h3 id="split-statistics">Split Statistics<a class="headerlink" href="#split-statistics" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- width: full -->
+<!-- info: Provide the sizes of each split. As appropriate, provide any
+descriptive statistics for features. -->
+
+<p>TBD</p>
+<h3 id="citation-guidelines">Citation Guidelines<a class="headerlink" href="#citation-guidelines" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Provide guidelines and steps for citing this dataset in research
+and/or production.
+
+For research cases, provide a BiBTeX record (see template below).
+
+For non research cases, we suggest others reference the dataset by
+providing a link to this data card (or comparable data documentation).
+
+Use additional notes to capture any specific patterns that readers should look
+out for, or other relevant information or considerations. -->
+
+<p><strong>Guidelines:</strong> Refer to this dataset by it's title and provide a reference link to this data card.</p>
+<h2 id="known-usage">Known Usage<a class="headerlink" href="#known-usage" title="Permanent link">&para;</a></h2>
+<!-- info: Fill out the following section if your dataset was primarily
+created for use in AI/ML system(s) -->
+<h3 id="modelss">Models(s)<a class="headerlink" href="#modelss" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Provide a table of known models that use this dataset
+that the dataset has been used for.-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Model</strong></th>
+<th><strong>Model Task</strong></th>
+<th><strong>Purpose of Dataset Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs.fake-domain-x.m.com/document/d/14XxvBzHaOj2Ny5vi9Iw-6edz9JuYfanPyJuvP6ImcNY/edit#heading=h.c4gjs8wgfzq">Size and Fit - On Device Silhouette Extraction</a></td>
+<td>image segmentation</td>
+<td>Fairness Evaluation</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive.  Dataset users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h3 id="applications">Application(s)<a class="headerlink" href="#applications" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Provide a table of known AI/ML systems that use this dataset
+that the dataset has been used for.-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Application</strong></th>
+<th><strong>Brief Description</strong></th>
+<th><strong>Purpose of Dataset Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs.fake-domain-x.m.com/document/d/14kVRAs8jZdqbIfJgQ0dbnvlHcQ0oYe3RbVnMv3eBhO4/edit#heading=h.fhww96oqjjpi">Size and Fit - Body Measurements Pipeline</a></td>
+<td>Pipeline from image of customer to body measurements including image segmentation and body reconstruction</td>
+<td>Fairnesse Evaluation</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td><a href="https://docs.fake-domain-x.m.com/presentation/d/1DhjDdjWzgIkkjhVg1-AM9VzibCK27kW1kpUEDim3CMA/edit#slide=id.g11e2baacd4a_0_25">Size and Fit - Body Measurements Pipeline - 2022 Proof Of Concept</a></td>
+<td>An initial proof of concept to determine a best approach to doing fairness assessments on Size and Fit's body measurements pipeline</td>
+<td>Fairnesse Evaluation</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive.  Dataset users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h2 id="access-retention-and-deletion">Access, Retention, and Deletion<a class="headerlink" href="#access-retention-and-deletion" title="Permanent link">&para;</a></h2>
+<!-- info: NEEDS INPUT FROM PRIV-GOV! -->
+<h3 id="access">Access<a class="headerlink" href="#access" title="Permanent link">&para;</a></h3>
+<h4 id="relevant-links_1">Relevant Links<a class="headerlink" href="#relevant-links_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://s3.console.aws.amazon.com/s3/buckets/skin-tone-labeling?region=eu-central-1&amp;tab=objects">Zalando VOC Skin Tones Dataset</a>
+(S3 Bucket requiring access permissions)</li>
+</ul>
+<h4 id="data-security-classification">Data Security Classification<a class="headerlink" href="#data-security-classification" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: Use Zalando data access classification
+standards:
+see https://docs.fake-domain-x.m.com/document/d/1j-khhbdOf2Fqyh2JlSC_82nA9KvyBOfdezftKOkPQ38/edit#heading=h.147n2zr -->
+<ul>
+<li>Yellow</li>
+</ul>
+<h4 id="prerequisites">Prerequisite(s)<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Please describe any required training or prerequisites to access
+this dataset. -->
+<ul>
+<li>Users requiring access must get approval on a DPR (with corresponding use case) either by:</li>
+<li>adding their user to the <a href="https://jira.fake-domain.net/DPR/ticket">existing DPR</a></li>
+<li>creating a <a href="https://jira.fake-domain.net/DPR/CreateIssue.jspa?pid=16062&amp;issuetype=15401">new DPR</a> if the existing DPR does not match your requirements</li>
+<li>For data with images, users must be added to role with S3 access to the Zalando VOC skin tones dataset
+  (first get DPR approval described above, then contact dataset owner)</li>
+</ul>
+<h3 id="retention">Retention<a class="headerlink" href="#retention" title="Permanent link">&para;</a></h3>
+<h4 id="duration">Duration<a class="headerlink" href="#duration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Specify the duration for which this dataset can be retained: -->
+<p>TBD</p>
+<h4 id="reasons-for-duration">Reasons for Duration<a class="headerlink" href="#reasons-for-duration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Specify the reason for duration for which this dataset can be retained: -->
+<p>TBD</p>
+<h4 id="policy-summary">Policy Summary<a class="headerlink" href="#policy-summary" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the retention policy for this dataset. -->
+<p>TBD</p>
+<h4 id="process-guide">Process Guide<a class="headerlink" href="#process-guide" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Summarize any requirements and related steps to retain the dataset.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>TBD</p>
+<h4 id="exceptions-and-exemptions">Exception(s) and Exemption(s)<a class="headerlink" href="#exceptions-and-exemptions" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize any exceptions and related steps to retain the dataset.
+Include links where necessary.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>TBD</p>
+<h3 id="deletion">Deletion<a class="headerlink" href="#deletion" title="Permanent link">&para;</a></h3>
+<h4 id="deletion-event-summary">Deletion Event Summary<a class="headerlink" href="#deletion-event-summary" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the sequence of events and allowable processing for data
+deletion.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>TBD - One deletion event has occurred during the timespan of curating this dataset (is this documented elsewhere?)</p>
+<h4 id="acceptable-means-of-deletion">Acceptable Means of Deletion<a class="headerlink" href="#acceptable-means-of-deletion" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List the acceptable means of deletion: -->
+<p>TBD</p>
+<h4 id="post-deletion-obligations">Post-Deletion Obligations<a class="headerlink" href="#post-deletion-obligations" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the sequence of obligations after a deletion event.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p>TBD</p>
+<h4 id="operational-requirements">Operational Requirement(s)<a class="headerlink" href="#operational-requirements" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List any deletion integration operational requirements: -->
+<p>TBD</p>
+<h4 id="exceptions-and-exemptions_1">Exceptions and Exemptions<a class="headerlink" href="#exceptions-and-exemptions_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize any exceptions and related steps to a deletion event.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p>TBD</p>
+<h2 id="provenance">Provenance<a class="headerlink" href="#provenance" title="Permanent link">&para;</a></h2>
+<h3 id="collection">Collection<a class="headerlink" href="#collection" title="Permanent link">&para;</a></h3>
+<h4 id="methods-used">Method(s) Used<a class="headerlink" href="#methods-used" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** methods used to collect data.
+
+Note on crowdsourcing, this covers the case where a crowd labels data
+(make sure the reference the [Annotations and Labeling](#annotations-and-labeling)
+section), or the case where a crowd is responsible for collecting and
+submitting data independently to form a collective dataset.
+-->
+<ul>
+<li>Taken from other existing datasets</li>
+<li>Crowdsourced - Internal Employee (See section on <a href="#annotations-and-labeling">Annotations and Labeling</a>)</li>
+</ul>
+<p><strong>Is this source considered sensitive or high-risk?</strong> Yes</p>
+<p><strong>Dates of Collection:</strong> 2022/12/15 - 2023/03/15</p>
+<p><strong>Update Frequency for collected data:</strong></p>
+<ul>
+<li>Static</li>
+</ul>
+<p><strong>Additional Links for this collection:</strong></p>
+<p>See section on <a href="#access-retention-and-deletion">Access, Rention, and Deletion</a></p>
+<h4 id="source-descriptions">Source Description(s)<a class="headerlink" href="#source-descriptions" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a description of each upstream source of data.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Source:</strong> <a href="https://s3.console.aws.amazon.com/s3/buckets/skin-tone-labeling?region=eu-central-1&amp;tab=objects">Zalando VOC Skin Tones Dataset</a></li>
+</ul>
+<h4 id="collection-cadence">Collection Cadence<a class="headerlink" href="#collection-cadence" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable**: -->
+<p><strong>Static:</strong> Data was collected once from a single source.</p>
+<h3 id="attribute-collection-criteria-and-integration">Attribute Collection Criteria and Integration<a class="headerlink" href="#attribute-collection-criteria-and-integration" title="Permanent link">&para;</a></h3>
+<h4 id="data-integration">Data Integration<a class="headerlink" href="#data-integration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List all fields collected from different sources, and specify if
+they were included or excluded from the dataset.
+
+Use additional notes to
+capture any other relevant information or considerations.
+
+(Usage Note: Duplicate and complete the following for each upstream
+source.)
+
+If included and excluded fields don't apply, just write a short
+summary about how data was integrated into this dataset from
+upstream sources.
+
+-->
+<p>Zalando-VOC images were used as input for labeling.  These images are not generally included in skin tone dataset, but
+are identified by image-id to allow for fairness evaluation of systems that use such images.</p>
+<h3 id="data-point-collection-criteria">Data Point Collection Criteria<a class="headerlink" href="#data-point-collection-criteria" title="Permanent link">&para;</a></h3>
+<h4 id="data-selection">Data Selection<a class="headerlink" href="#data-selection" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Summarize the data selection criteria.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Filter out images with bad lighting and occlusions:</strong> done based with
+  previously existing annotations done on Zalando VOC data</li>
+<li><strong>Choose images with &gt;2.5% skin exposure:</strong> This threshold gave balance between being able to see skin,
+  and leaving enough images to annotate (~1000) for a fairness evaluation, given the annotation budget</li>
+</ul>
+<h3 id="relationship-to-source">Relationship to Source<a class="headerlink" href="#relationship-to-source" title="Permanent link">&para;</a></h3>
+<h4 id="use-and-utilityies">Use and Utility(ies)<a class="headerlink" href="#use-and-utilityies" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Describe how the resulting dataset is aligned with the purposes,
+motivations, or intended use of the upstream source(s).
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each source type.) -->
+<ul>
+<li><strong>Zalando VOC images:</strong> Skin tone labels data are intended to be used for to evaluate the fairness ML/AI systems
+  that take Zalando VOC images as an input.</li>
+</ul>
+<h4 id="benefit-and-values">Benefit and Value(s)<a class="headerlink" href="#benefit-and-values" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Summarize the benefits of the resulting dataset to its consumers,
+compared to the upstream source(s).
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each source type.)
+
+Compared to the Use and Utilities section above, which describe the use, this
+section generally describes what benefits come from these usages and the
+value system in which those benefits provide value.
+
+-->
+<ul>
+<li><strong>Zalando VOC images:</strong> This data can be used to ensure ML/AI systems
+  that consume Zalando VOC like images do not underperform for certain skin types.
+  These skin tone data also inform others of existing skin tone biases in the
+  Zalando VOC dataset.</li>
+</ul>
+<h4 id="limitations-and-trade-offs">Limitation(s) and Trade-Off(s)<a class="headerlink" href="#limitations-and-trade-offs" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What are the limitations of the resulting dataset to its consumers,
+compared to the upstream source(s)?
+
+Break down by source type.<br><br>(Usage Note: Duplicate and complete the
+following for each source type.) -->
+<ul>
+<li><strong>Zalando VOC images:</strong> The skin tones in this dataset are <strong>annotations, not customer self-identifications</strong>.
+  Skin tone annotation is <strong>subjective</strong> and the data here represent the best guesses from annotators that is affected
+  a range of factors (see <a href="#annotations-and-labeling">Annotations and Labeling</a>). <strong>Mistakes</strong> from labelers may have also
+  occurred.</li>
+</ul>
+<h2 id="sensitive-and-protected-attributes">Sensitive and Protected Attributes<a class="headerlink" href="#sensitive-and-protected-attributes" title="Permanent link">&para;</a></h2>
+<h3 id="sensitivity-of-data">Sensitivity of Data<a class="headerlink" href="#sensitivity-of-data" title="Permanent link">&para;</a></h3>
+<!-- info: Be mindful not to repeat any information that might be in a technical
+risk assessment or data processing request somewhere else.  Use references where necessary,
+or write TDB where no answers are currently known?
+
+This section is under development with ProdSec, PrivGov, and
+Algorithmic Privacy and Fairness (for ethical assessment). -->
+
+<h4 id="sensitivity-types">Sensitivity Type(s)<a class="headerlink" href="#sensitivity-types" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select ***all applicable*** data types present in the dataset: -->
+<ul>
+<li>User Metadata (skin tones)</li>
+<li>Identifiable Data (unblurred images)</li>
+<li>S/PII</li>
+</ul>
+<h4 id="fields-with-sensitive-data">Field(s) with Sensitive Data<a class="headerlink" href="#fields-with-sensitive-data" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List fields in the dataset that contain S/PII, and specify if their
+collection was intentional or unintentional.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Intentional Collected Sensitive Data</strong></p>
+<ul>
+<li>Images used in labeling contain pictures of customers (without blurred faces)</li>
+</ul>
+<p><strong>Unintentionally Collected Sensitive Data</strong></p>
+<ul>
+<li>Can see the setting in which customers take pictures of themselves</li>
+</ul>
+<h4 id="security-and-privacy-handling">Security and Privacy Handling<a class="headerlink" href="#security-and-privacy-handling" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the measures or steps to handle sensitive data in this
+dataset and list relevant DPRs
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+
+<p>Access to this data is restricted to a small select group of people as governed by the following
+Data Processing Requests (DPRs):</p>
+<p><strong>DPR - <a href="https://jira.fake-domain.net/DPR/ticket-2">Unblurred Zalando VOC Image access for Skin Tone Labeling</a>:</strong> This DPR is associated with labeling jobs used to curate this dataset.</p>
+<h4 id="risk-types">Risk Type(s)<a class="headerlink" href="#risk-types" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** risk types presenting from the
+dataset: -->
+<p>See relevant DPRs</p>
+<h3 id="protected-attributes">Protected Attributes<a class="headerlink" href="#protected-attributes" title="Permanent link">&para;</a></h3>
+<h4 id="protected-attribute-types">Protected Attribute Type(s)<a class="headerlink" href="#protected-attribute-types" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all attributes** that are represented (directly or
+indirectly) in the dataset. -->
+<ul>
+<li>Skin Tone</li>
+</ul>
+<h4 id="fields-with-protected-attributes">Field(s) with Protected Attributes<a class="headerlink" href="#fields-with-protected-attributes" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List fields in the dataset that contain protected attributes, and
+specify if their collection was intentional or unintentional.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Intentionally Collected Attributes</strong></p>
+<p>Protected attributes were labeled or collected as a part of the dataset creation
+process.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>skin_tone_labels</td>
+<td>list of skin tone labels (one or more from each labeler)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unintentionally Collected Attributes</strong></p>
+<h4 id="rationale">Rationale<a class="headerlink" href="#rationale" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Describe the motivation, rationale, considerations or approaches
+that caused this dataset to include the indicated protected attributes.
+
+Summarize why or how this might affect the use of the dataset. -->
+<p>To be used for fairness evaluation.</p>
+<h4 id="sources">Source(s)<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List the sources of the protected attributes. -->
+
+<h4 id="methodology-details">Methodology Detail(s)<a class="headerlink" href="#methodology-details" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Describe the methods used to collect protected attributes in the
+dataset.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each human
+attribute.) -->
+
+<p>All protected attributes were collected via human annotation.  See the
+<a href="#annotations-and-labeling">Annotations and Labeling</a> section for more details.</p>
+<h4 id="protected-attribute-distributions">Protected Attribute Distribution(s)<a class="headerlink" href="#protected-attribute-distributions" title="Permanent link">&para;</a></h4>
+<!-- width: full -->
+<!-- info: Provide basic descriptive statistics for each protected
+attribute, noting key takeaways in the caption.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each human
+attribute.)
+
+** Use figures instead of tables, when possible.**
+-->
+<p>All protected attributes (skin-tone) were collected via human annotation:</p>
+<p>See <a href="#annotations-and-labeling">Annotations and Labeling - Distributions</a> for skin-tone distributions.</p>
+<h4 id="known-correlations-to-protected-attributes">Known Correlations to Protected Attributes<a class="headerlink" href="#known-correlations-to-protected-attributes" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Describe any known correlations with the indicated protected
+attributes in this dataset.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate for each known correlation.) -->
+<p>None identified at this time.</p>
+<h4 id="possible-correlations-to-protected-attributes">Possible Correlations to Protected Attributes<a class="headerlink" href="#possible-correlations-to-protected-attributes" title="Permanent link">&para;</a></h4>
+<p>Labeler bias may cause correlations between skin tone labels and attributes of the image not
+related to skin tone, such as:</p>
+<ul>
+<li>judgements based on objects in the field of view (i.e. certain objects associated with certain cultures)</li>
+<li>facial shape and body shape</li>
+<li>repeated customers - some customers appear multiple times in separate images and labelers may have
+  consistently given each the same incorrect skin tone</li>
+<li>labeler recency bias - seeing a lot of a certain skin color in a row can affect the next label made</li>
+</ul>
+<h4 id="risks-and-mitigations_1">Risk(s) and Mitigation(s)<a class="headerlink" href="#risks-and-mitigations_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize systemic or residual risks, performance expectations,
+trade-offs and caveats because of protected attributes in this dataset.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+Usage Note: Duplicate and complete the following for each protected attribute. -->
+<p>Some of the possible correlations have been mitigated by:</p>
+<ul>
+<li>having multiple labelers from different backgrounds label each image</li>
+<li>shuffling the data each labeler labels - reducing the labeler recency bias effect </li>
+<li>making two independent labeler calibration round to have the chance to debug the labeling process
+  have discussions about various unconscious labeler biases so each labeler can be mindful and potentially
+  prevent introducing these unwanted correlations</li>
+</ul>
+<p>See <a href="#annotations-and-labeling">Annotations and Labeling</a> section for more details.</p>
+<h2 id="transformations">Transformations<a class="headerlink" href="#transformations" title="Permanent link">&para;</a></h2>
+<!-- info: The goal of this section is to elucidate if any biases
+may have been introduced during the transformation process(es) underwent
+to create this dataset.
+
+If any subsections below are covered by using Collibra data assets,
+simply provide a link to those corresponding data assets in the
+subsections below.
+
+If your transformation codebase or tooling already provides
+reasonably well understood information about the transformations
+applied to create this dataset, you should simply provide a relevant links
+in the subsection below.-->
+
+<h3 id="code-base-and-existing-documentation">Code Base and Existing Documentation<a class="headerlink" href="#code-base-and-existing-documentation" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Provide link(s) to transformation codebase and 
+corresponding documentation. If the transformations are 
+already well described there, do not repeat the information here.  
+Simply refer the reader to go there for this information. -->
+
+<p>See the <a href="https://github.fake.domain/aithics/skin-tone-labeling/tree/main/datasets/zalando-voc">skin-tone-labeling code base</a>
+for code and documentation on data preparation, including data transformation.</p>
+<h3 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h3>
+<h4 id="transformations-applied">Transformation(s) Applied<a class="headerlink" href="#transformations-applied" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** transformations
+that were applied to the dataset. -->
+<ul>
+<li>Data Enrichment</li>
+<li>Grouping</li>
+</ul>
+<h4 id="libraryies-and-methods-used">Library(ies) and Method(s) Used<a class="headerlink" href="#libraryies-and-methods-used" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a description of the methods
+used to transform or process the
+dataset.
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each transformation
+type applied.) -->
+<p><strong>Transformation Type</strong> N/A</p>
+<p><strong>Method:</strong> Skin tone labels have been grouped by image and enriched
+by calculating other statistics. No loss of raw data has taken place.</p>
+<p><strong>Platforms, tools, or libraries:</strong></p>
+<ul>
+<li>Python</li>
+</ul>
+<p><strong>Additional Notes:</strong></p>
+<h2 id="annotations-and-labeling">Annotations and Labeling<a class="headerlink" href="#annotations-and-labeling" title="Permanent link">&para;</a></h2>
+<!-- info: Fill this section if any human or algorithmic annotation tasks were
+performed in the creation of your dataset. -->
+
+<h3 id="annotation">Annotation<a class="headerlink" href="#annotation" title="Permanent link">&para;</a></h3>
+<h4 id="tasks">Task(s)<a class="headerlink" href="#tasks" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize each task type associated
+with annotations in the dataset.
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each task type.) -->
+
+<p><strong>Task description:</strong> Skin tone labelers were asked to label the skin tone
+of the human subject appearing in each image by following a particular set of 
+<a href="https://ceur-ws.org/Vol-3442/paper-17.pdf">Instructions for Labelers</a>
+(more info about who the skin tone labelers where <a href="#human-annotators">found below</a>).</p>
+<p>In short, each labeler labeled each image with one or more skin tone labels from the 
+<a href="https://ceur-ws.org/Vol-3442/paper-17.pdf">2022 Zalando Beauty skin tone scale</a>
+(shown below).</p>
+<p><img alt="" src="../figures/beauty-skin-tone-label-options-plus-uncertain.png" /></p>
+<p>LabelerAn <code>uncertain</code> label was also used by human-labelers that felt uncertain about the label
+they chose (for example, <code>mid-light</code> + <code>uncertain</code>, or just <code>uncertain</code> was allowed).</p>
+<p>Labelers were allowed to choose two adjacent labels when unsure (for example, <code>mid-light</code> + <code>medium</code>
+was allowed), and labelers had a separate label for indicating they were not sure of the correct label.</p>
+<p>The overall labeling work was broken down into four sequential tasks described in the following timeline figure:</p>
+<p><img alt="" src="../figures/labeling-tasks.png" />
+<strong>Figure: Labeling tasks.</strong> </p>
+<p>Labelers were given a two small calibration tasks and after each calibration task, a discussed took place about:</p>
+<ul>
+<li>How long did the task take?</li>
+<li>Were any instructions unclear?</li>
+<li>What, if any, potential biasing factors did you notice, and how might one be mindful about these to mitigate such
+  biasing factors?</li>
+</ul>
+<p><strong>Methods used:</strong> Four human labelers with varying backgrounds labeled each image
+(see section below on <a href="#human-annotators">Human Annotators</a>).</p>
+<p><strong>Inter-rater adjudication policy:</strong> Budget permitting, the next version
+of the dataset will include results from a labeler review of images
+where more than two labelers disagreed.</p>
+<!-- Gold questions (i.e., questions with unambiguous, known answers)
+are questions that workers are only likely to get wrong if they
+don’t clearly understand the annotation criteria. -->
+<p><strong>Golden questions:</strong> No golden questions.</p>
+<h4 id="characteristics">Characteristic(s)<a class="headerlink" href="#characteristics" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Describe relevant characteristics of annotations
+as indicated. For quality metrics, consider
+including accuracy, consensus accuracy, IRR
+(inter-rater reliability, sometimes called
+inter-annotator agreement or IAA, and its
+variants such as Cohen Kappa Score),
+inter-annotator agreement or IAA),
+xRR (cross replication reliability,
+sometimes called intra-rater reliability)
+at the appropriate granularity (e.g. across
+dataset, by annotator, by annotation, etc.).
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<table>
+<thead>
+<tr>
+<th><strong>Skin tone label</strong></th>
+<th><strong>Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of annotated examples</td>
+<td>1058</td>
+</tr>
+<tr>
+<td>Total number of annotations</td>
+<td>4322</td>
+</tr>
+<tr>
+<td>Average annotations per example</td>
+<td>4.1</td>
+</tr>
+<tr>
+<td>Number of annotators per example</td>
+<td>4</td>
+</tr>
+<tr>
+<td>4 of 4 agreement</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>3 of 4 agreement</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>2 of 4 agreement</td>
+<td>51%</td>
+</tr>
+<tr>
+<td>1 unique label</td>
+<td>14%</td>
+</tr>
+<tr>
+<td>2 unique labels</td>
+<td>47%</td>
+</tr>
+<tr>
+<td>3 unique labels</td>
+<td>32%</td>
+</tr>
+<tr>
+<td>4 unique labels</td>
+<td>7%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Based on calibration #2 split (4 labelers labeling 59 examples).</p>
+<p><strong>Label Consensus Statistics:</strong>
+<img alt="" src="../figures/cal2-consensus-stats.png" /></p>
+<p><strong>Above:</strong> Based on calibration #2 split (4 labelers labeling 59 examples).  See the <a href="https://github.fake.domain/aithics/skin-tone-labeling/tree/main/datasets/zalando-voc">Zalando-VOC Skin Tone dataset
+breakdown</a> for more details.</p>
+<p>All statistics were calculated using 
+<a href="https://github.fake.domain/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results.ipynb">this jupyter notebook</a>.</p>
+<h4 id="descriptions">Description(s)<a class="headerlink" href="#descriptions" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide descriptions of the annotations
+applied to the dataset. Include links
+and indicate platforms, tools or libraries
+used wherever possible.
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each annotation
+type.) -->
+<p><strong>Skin Tone Label</strong></p>
+<p><strong>Description:</strong> Skin tone annotations are subjective. Thus we worked with four
+labelers from different backgrounds who annotated for skin tone using the following
+<a href="https://docs.fake-domain-x.m.com/document/d/1o56MdP7yFW9aWcLgPu0pbV3fuHntZ2Dx4AiCRFE">Instructions for Labelers</a>.</p>
+<p><strong>Platforms, tools, or libraries:</strong></p>
+<ul>
+<li>AWS SageMaker</li>
+</ul>
+<h4 id="distributions_1">Distribution(s)<a class="headerlink" href="#distributions_1" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a distribution of annotations for each
+annotation or class of annotations using the
+format below.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<p><img alt="" src="../figures/skin-tone-labels-distribution-all-tasks.png" /></p>
+<p><strong>Figure:</strong> Skin-tone label distributions (ignoring uncertain) for all task splits.  Note, 
+choice of neighbouring labels (i.e. <code>mid-light</code>+<code>medium</code>) was allowed and such combinations 
+are counted as distinct.</p>
+<p>All statistics were calculated using 
+<a href="https://github.fake.domain/aithics/skin-tone-labeling/blob/main/datasets/zalando-voc/notebooks/01-aggregate-labeling-job-results.ipynb">this jupyter notebook</a>.</p>
+<h3 id="human-annotators">Human Annotators<a class="headerlink" href="#human-annotators" title="Permanent link">&para;</a></h3>
+<!-- info: Fill this section if human annotators were used. -->
+<h4 id="annotation-workforce-type">Annotation Workforce Type<a class="headerlink" href="#annotation-workforce-type" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** annotation
+workforce types or methods used
+to annotate the dataset: -->
+<ul>
+<li>Human Annotations (Expert)</li>
+<li>Human Annotations (Non-Expert)</li>
+<li>Human Annotations (Employees)</li>
+</ul>
+<h4 id="annotator-pools">Annotator Pool(s)<a class="headerlink" href="#annotator-pools" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a brief description for each annotator
+pool performing the human annotation task.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<p><strong>Skin tone labelers</strong> (the only pool)</p>
+<p><strong>Number of unique annotators:</strong> 4</p>
+<p><strong>Task(s) completed:</strong> This pool completed <a href="#annotations-and-labeling">all tasks described above</a></p>
+<p><strong>Expertise of annotators:</strong></p>
+<ul>
+<li>Beauty</li>
+<li>Ethical data labeling</li>
+<li>Responsible AI</li>
+<li>Size and fit applications</li>
+</ul>
+<p><strong>Summary of general (non task specific) annotation instructions:</strong> N/A</p>
+<p><strong>Summary of annotator's responses to gold questions:</strong> N/A</p>
+<p><strong>Annotation platforms:</strong> <a href="https://eu-central-1.console.aws.amazon.com/sagemaker/groundtruth?region=eu-central-1#/labeling-jobs">AWS SageMaker GroundTruth</a></p>
+<h4 id="languages">Language(s)<a class="headerlink" href="#languages" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: General information about annotation workforce
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and
+complete the following for each
+annotation type.) -->
+<p><strong>(Annotator Languages Spoken)</strong></p>
+<ul>
+<li>English [100 %]</li>
+<li>German [50 %]</li>
+<li>More TBD</li>
+</ul>
+<h4 id="locations">Location(s)<a class="headerlink" href="#locations" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: General information about annotation workforce
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<p><strong>(Annotator Locations of Upbringing)</strong></p>
+<ul>
+<li>Canada [25 %]</li>
+<li>Azerbaijan [25 %]</li>
+<li>Germany [25 %]</li>
+<li>Iran [25 %]</li>
+</ul>
+<p><strong>(Annotator Current Locations of Residence)</strong></p>
+<ul>
+<li>Germany [75 %]</li>
+<li>Switzerland [25 %]</li>
+</ul>
+<h4 id="genders">Gender(s)<a class="headerlink" href="#genders" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: General information about annotation workforce
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each annotation
+type.) -->
+<p><strong>(Annotator Genders)</strong></p>
+<ul>
+<li>Male [50 %]</li>
+<li>Female [50 %]</li>
+</ul>
+<h2 id="validation-types">Validation Types<a class="headerlink" href="#validation-types" title="Permanent link">&para;</a></h2>
+<!-- info: Fill this section if the data in the dataset was validated during
+or after the creation of your dataset. -->
+<h3 id="methods">Method(s)<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable**: -->
+<ul>
+<li>Range and Constraint Validation</li>
+<li>Structured Validation</li>
+<li>Consistency Validation</li>
+</ul>
+<h3 id="breakdowns">Breakdown(s)<a class="headerlink" href="#breakdowns" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Provide a description of the fields and data
+points that were validated.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each validator type.) -->
+<p><strong>(Validation Type)</strong></p>
+<p><strong>Number of Data Points Validated:</strong> all</p>
+<h3 id="descriptions_1">Description(s)<a class="headerlink" href="#descriptions_1" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Provide a description of the methods used to
+validate the dataset.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each validator type.) -->
+<p>All skin tone labels are checked for validity.</p>
+<h2 id="sampling-methods">Sampling Methods<a class="headerlink" href="#sampling-methods" title="Permanent link">&para;</a></h2>
+<!-- info: The goal of this section is to help consumers identify potential
+biases introduced by sampling to create this dataset.
+
+Fill out the following block if your dataset employs any sampling
+methods. -->
+<h3 id="methods-used_1">Method(s) Used<a class="headerlink" href="#methods-used_1" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** methods used in the creation of this
+dataset: -->
+<ul>
+<li>Unsampled</li>
+</ul>
+<h3 id="characteristics_1">Characteristic(s)<a class="headerlink" href="#characteristics_1" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Provide characteristics of each sampling
+method used.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each sampling method
+used.) -->
+
+<h3 id="sampling-criteria">Sampling Criteria<a class="headerlink" href="#sampling-criteria" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Describe the criteria used to sample data from
+upstream sources.
+
+Use additional notes to capture any other
+relevant information or considerations. -->
+<p>See <a href="#data-point-collection-criteria">Data Point Collection Criteria</a> for information on how images were selected
+for labeling from the <a href="https://docs.fake-domain-x.m.com/document/d/15Agfx3jpiYHLjssztqZMWl-JtxRD5BT4ZZXfOcs/edit">Zalando VOC Images Dataset</a>.</p>
+<h2 id="documentation-metadata">Documentation Metadata<a class="headerlink" href="#documentation-metadata" title="Permanent link">&para;</a></h2>
+<p>Note, some names in this document have been anonymized.</p>
+<h3 id="documentation-template-version">Documentation Template Version<a class="headerlink" href="#documentation-template-version" title="Permanent link">&para;</a></h3>
+<p><a href="../template-data-documentation/">v1.0.0</a></p>
+<h3 id="documentation-authors">Documentation Authors<a class="headerlink" href="#documentation-authors" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><a href="">Alex Loosley</a>, Algorithmic Privacy and Fairness:</strong> (Principal Developer)</li>
+<li><strong><a href="">Pak-Hang Wong</a>, Algorithmic Privacy and Fairness:</strong> (Contributor)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../example-model-documentation-alisnet/" class="btn btn-neutral" title="ALiSNet Model Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../example-model-documentation-alisnet/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

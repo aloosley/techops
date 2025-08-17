@@ -1,0 +1,163 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning,fit,backgrounds,calc}
+\usepackage{xcolor}
+
+\begin{document}yr
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8, 
+    transform shape,
+    box/.style={
+        rectangle, 
+        rounded corners, 
+        minimum width=6cm, 
+        minimum height=0.7cm, 
+        text centered, 
+        draw=black, 
+        fill=white
+    },
+    title/.style={
+        font=\bfseries\large,
+        text centered,
+        minimum height=1cm
+    },
+    subtitle/.style={
+        font=\bfseries,
+        text centered
+    },
+    leftbox/.style={
+        box, 
+        fill=blue!10, 
+        draw=blue!40, 
+        text width=5.8cm
+    },
+    rightbox/.style={
+        box, 
+        fill=green!10, 
+        draw=green!40, 
+        text width=5.8cm
+    },
+    item/.style={
+        align=left, 
+        text width=5.5cm,
+        font=\footnotesize
+    },
+    subitem/.style={
+        align=left, 
+        text width=5.0cm, 
+        font=\footnotesize\itshape
+    },
+    strongline/.style={
+        draw=blue!70, 
+        line width=0.8mm
+    },
+    mediumline/.style={
+        draw=blue!50, 
+        line width=0.5mm
+    },
+    weakline/.style={
+        draw=blue!30, 
+        line width=0.3mm
+    }
+]
+
+% Title
+\node[title] (title) at (0,12) {Mapping AI Act Technical Documentation to Dataset Documentation Template};
+
+% Left column - AI Act Requirements
+\node[subtitle] (left_title) at (-4,10.5) {AI Act Technical Documentation};
+\node[fit={($(left_title.north west) + (0,0.3)$) ($(left_title.south east) + (0,-13)$)}, leftbox] (left_box) {};
+
+% Right column - Dataset Documentation
+\node[subtitle] (right_title) at (4,10.5) {Dataset Documentation Template};
+\node[fit={($(right_title.north west) + (0,0.3)$) ($(right_title.south east) + (0,-13)$)}, rightbox] (right_box) {};
+
+% AI Act Requirements List
+\node[item, anchor=north west] (ai1) at ($(left_box.north west) + (0.3,-1)$) {1. General description of AI system};
+\node[item, anchor=north west] (ai2) at ($(ai1.south west) + (0,-0.3)$) {2. Detailed description of elements and development};
+\node[subitem, anchor=north west] (ai2a) at ($(ai2.south west) + (0.5,-0.3)$) {2(a) Methods and steps for development};
+\node[subitem, anchor=north west] (ai2b) at ($(ai2a.south west) + (0,-0.3)$) {2(b) Design specifications};
+\node[subitem, anchor=north west] (ai2c) at ($(ai2b.south west) + (0,-0.3)$) {2(c) System architecture};
+\node[subitem, anchor=north west] (ai2d) at ($(ai2c.south west) + (0,-0.3)$) {2(d) Data requirements and datasets};
+\node[subitem, anchor=north west] (ai2e) at ($(ai2d.south west) + (0,-0.3)$) {2(e) Human oversight measures};
+\node[subitem, anchor=north west] (ai2f) at ($(ai2e.south west) + (0,-0.3)$) {2(f) Predetermined changes};
+\node[subitem, anchor=north west] (ai2g) at ($(ai2f.south west) + (0,-0.3)$) {2(g) Validation and testing};
+\node[subitem, anchor=north west] (ai2h) at ($(ai2g.south west) + (0,-0.3)$) {2(h) Cybersecurity measures};
+\node[item, anchor=north west] (ai3) at ($(ai2h.south west) + (-0.5,-0.3)$) {3. Monitoring, functioning and control details};
+\node[item, anchor=north west] (ai4) at ($(ai3.south west) + (0,-0.3)$) {4. Performance metrics};
+\node[item, anchor=north west] (ai5) at ($(ai4.south west) + (0,-0.3)$) {5. Risk management system};
+\node[item, anchor=north west] (ai6) at ($(ai5.south west) + (0,-0.3)$) {6. Description of lifecycle changes};
+\node[item, anchor=north west] (ai7) at ($(ai6.south west) + (0,-0.3)$) {7. Standards applied};
+\node[item, anchor=north west] (ai8) at ($(ai7.south west) + (0,-0.3)$) {8. EU declaration of conformity};
+\node[item, anchor=north west] (ai9) at ($(ai8.south west) + (0,-0.3)$) {9. Post-market monitoring plan};
+
+% Dataset Documentation List
+\node[item, anchor=north west] (ds1) at ($(right_box.north west) + (0.3,-1)$) {• Overview};
+\node[item, anchor=north west] (ds2) at ($(ds1.south west) + (0,-0.3)$) {• Dataset Description};
+\node[item, anchor=north west] (ds3) at ($(ds2.south west) + (0,-0.3)$) {• Status};
+\node[item, anchor=north west] (ds4) at ($(ds3.south west) + (0,-0.3)$) {• Relevant Links};
+\node[item, anchor=north west] (ds5) at ($(ds4.south west) + (0,-0.3)$) {• Developers};
+\node[item, anchor=north west] (ds6) at ($(ds5.south west) + (0,-0.3)$) {• Owner};
+\node[item, anchor=north west] (ds7) at ($(ds6.south west) + (0,-0.3)$) {• Dataset Characteristics};
+\node[item, anchor=north west] (ds8) at ($(ds7.south west) + (0,-0.3)$) {• Data Origin and Source};
+\node[item, anchor=north west] (ds9) at ($(ds8.south west) + (0,-0.3)$) {• Provenance};
+\node[item, anchor=north west] (ds10) at ($(ds9.south west) + (0,-0.3)$) {• Data Pre-Processing};
+\node[item, anchor=north west] (ds11) at ($(ds10.south west) + (0,-0.3)$) {• Data Annotation and Labeling};
+\node[item, anchor=north west] (ds12) at ($(ds11.south west) + (0,-0.3)$) {• Dataset Distribution and Licensing};
+\node[item, anchor=north west] (ds13) at ($(ds12.south west) + (0,-0.3)$) {• Data Versioning};
+\node[item, anchor=north west] (ds14) at ($(ds13.south west) + (0,-0.3)$) {• Known Usages};
+\node[item, anchor=north west] (ds15) at ($(ds14.south west) + (0,-0.3)$) {• Access, Retention, and Deletion};
+\node[item, anchor=north west] (ds16) at ($(ds15.south west) + (0,-0.3)$) {• Data Risk Assessment};
+\node[item, anchor=north west] (ds17) at ($(ds16.south west) + (0,-0.3)$) {• Cybersecurity Measures};
+\node[item, anchor=north west] (ds18) at ($(ds17.south west) + (0,-0.3)$) {• Documentation Metadata};
+
+% Connection lines - Strong relationships
+\begin{scope}[on background layer]
+    % Strong relationships
+    \draw[strongline] (ai2d.east) -- (ds7.west);
+    \draw[strongline] (ai2d.east) -- (ds8.west);
+    \draw[strongline] (ai2d.east) -- (ds9.west);
+    \draw[strongline] (ai2d.east) -- (ds10.west);
+    \draw[strongline] (ai2d.east) -- (ds11.west);
+    \draw[strongline] (ai2h.east) -- (ds17.west);
+    \draw[strongline] (ai6.east) -- (ds13.west);
+    \draw[strongline] (ai5.east) -- (ds16.west);
+
+    % Medium relationships
+    \draw[mediumline] (ai1.east) -- (ds1.west);
+    \draw[mediumline] (ai1.east) -- (ds2.west);
+    \draw[mediumline] (ai2a.east) -- (ds5.west);
+    \draw[mediumline] (ai2b.east) -- (ds7.west);
+    \draw[mediumline] (ai2c.east) -- (ds7.west);
+    \draw[mediumline] (ai4.east) -- (ds7.west);
+    \draw[mediumline] (ai9.east) -- (ds14.west);
+
+    % Weak relationships
+    \draw[weakline] (ai7.east) -- (ds12.west);
+    \draw[weakline] (ai2f.east) -- (ds15.west);
+    \draw[weakline] (ai2g.east) -- (ds16.west);
+    \draw[weakline] (ai8.east) -- (ds18.west);
+\end{scope}
+
+% Legend
+\node[draw=black!20, fill=white, rounded corners, minimum width=8cm, minimum height=2cm] (legend) at (0,-3.5) {};
+\node[font=\bfseries] at (0,-2.8) {Legend};
+
+\draw[strongline] (-3,-3.3) -- (-2.2,-3.3);
+\node[anchor=west, font=\footnotesize] at (-2,-3.3) {Strong relationship};
+
+\draw[mediumline] (-3,-3.8) -- (-2.2,-3.8);
+\node[anchor=west, font=\footnotesize] at (-2,-3.8) {Medium relationship};
+
+\draw[weakline] (0.5,-3.3) -- (1.3,-3.3);
+\node[anchor=west, font=\footnotesize] at (1.5,-3.3) {Weak relationship};
+
+\end{tikzpicture}
+\caption{Mapping between AI Act Technical Documentation Requirements and Dataset Documentation Template}
+\label{fig:documentation-mapping}
+\end{figure}
+
+\end{document}

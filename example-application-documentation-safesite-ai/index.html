@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>SafeSiteAI Application Documentation - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SafeSiteAI Application Documentation";
+    var mkdocs_page_input_path = "example-application-documentation-safesite-ai.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        SafeSiteAI Application Documentation
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#relevant-links">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#general-information">General Information</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#risk-classification">Risk Classification</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#application-functionality">Application Functionality</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#models-and-datasets">
+      Models and Datasets
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#models">Models</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#datasets">Datasets</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#application-development">Application Development</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#deployment">Deployment</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#integration-with-external-systems">Integration with External Systems</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#deployment-plan">Deployment Plan</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#lifecycle-management">Lifecycle Management</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#risk-management-system">Risk Management System</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#testing-and-validation-accuracy-robustness-cybersecurity">Testing and Validation (Accuracy, Robustness, Cybersecurity)</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#human-oversight">Human Oversight</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#incident-management">Incident Management</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#eu-declaration-of-conformity">EU Declaration of Conformity</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#standards-applied">Standards Applied</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#documentation-metadata">
+      Documentation Metadata
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#template-version">Template Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-authors">Documentation Authors</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>EXAMPLES &raquo;</li>
+        
+      
+    
+    <li>SafeSiteAI Application Documentation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="safesiteai-application-documentation">SafeSiteAI Application Documentation<a class="headerlink" href="#safesiteai-application-documentation" title="Permanent link">&para;</a></h1>
+<p><strong>Application Owner</strong>: <a href="mailto:g.costanza@vandelay-industries.com">George Costanza</a>, Vandelay Industries
+<br><strong>Document Version</strong>: 0.4.1
+<br><strong>Reviewers</strong>: <a href="">Jerry Seinfeld</a>, <a href="">Alex Loosley</a></p>
+<h2 id="relevant-links">Relevant Links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="">GitHub Repository</a></li>
+<li><a href="">Deployment Pipeline</a></li>
+<li><a href="">API</a> (<a href="">Swagger Docs</a>)</li>
+<li><a href="">AWS Account</a></li>
+<li><a href="">JIRA Backlog</a></li>
+<li><a href="">LeanIX Page</a></li>
+</ul>
+<h2 id="general-information">General Information<a class="headerlink" href="#general-information" title="Permanent link">&para;</a></h2>
+<p><strong>Purpose and Intended Use</strong>:
+SafeSiteAI is a <strong>fictional</strong> high-risk AI system developed to detect and monitor construction worker safety using real-time video 
+analytics and sensor fusion. The system's primary objective is to identify unsafe behaviors 
+(e.g., not wearing PPE, entering danger zones) and hazardous conditions (e.g., falling debris, proximity to heavy machinery) to trigger alerts, prevent accidents, and support regulatory compliance.</p>
+<ul>
+<li><strong>Sector</strong>: Construction and Occupational Safety</li>
+<li><strong>Problem Solved</strong>: Reduces on-site accidents, improves compliance with safety protocols  </li>
+<li><strong>Target Users</strong>: Site supervisors, safety managers, construction companies  </li>
+<li><strong>KPIs</strong>: Reduction in incidents, response time to alerts, detection accuracy </li>
+<li><strong>Ethical/Regulatory</strong>: Adheres to GDPR for video data, complies with EU AI Act for high-risk systems</li>
+<li><strong>Prohibited Uses</strong>: Employee surveillance beyond safety (e.g., productivity scoring) </li>
+<li><strong>Operational Environment</strong>: Deployed on-site with edge devices, synced with a cloud dashboard</li>
+</ul>
+<h2 id="risk-classification">Risk Classification<a class="headerlink" href="#risk-classification" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Classification</strong>: High </li>
+<li><strong>Reasoning</strong>: Monitors safety-critical scenarios in a workplace where human health is at risk, regulated under AI Act Article 6(1)(a) and (b)</li>
+</ul>
+<h2 id="application-functionality">Application Functionality<a class="headerlink" href="#application-functionality" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Instructions for Use for Deployers</strong>:</li>
+<li>System requires regular calibration and access to camera feeds and IoT sensors.    </li>
+<li>Alerts are issued via on-site monitors and mobile apps.</li>
+<li><strong>Model Capabilities</strong>:</li>
+<li>Detects PPE (helmets, vests), boundary breaches, fall incidents, and idle heavy machinery  </li>
+<li>Limitations: Lower accuracy under poor lighting/weather conditions </li>
+<li>Languages supported: English, German</li>
+<li><strong>Input Data Requirements</strong>:</li>
+<li>Real-time video feeds (HD cameras), sensor logs</li>
+<li>Valid inputs: stable camera angle, active worker zones   </li>
+<li>Invalid inputs: occluded views, uncalibrated sensors</li>
+<li><strong>Output Explanation</strong>:</li>
+<li>Generates classification alerts (e.g., PPE violation) with confidence scores</li>
+<li>Provides bounding box visualizations and timestamps</li>
+<li><strong>System Architecture Overview</strong>:</li>
+<li>See <a href="">SafeSiteAI LeanIX Architecture</a></li>
+</ul>
+<h2 id="models-and-datasets">Models and Datasets<a class="headerlink" href="#models-and-datasets" title="Permanent link">&para;</a></h2>
+<h3 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Documentation</th>
+<th>Description of Application Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALiSNet</td>
+<td><a href="../example-model-documentation-alisnet/">TechOps Model Document</a></td>
+<td>Used for identity masked human and PPE segmentation</td>
+</tr>
+<tr>
+<td>PPE Fit and Usage Classifier</td>
+<td><a href="">TechOps Model Document</a>*</td>
+<td>Used to score if PPE properly used</td>
+</tr>
+<tr>
+<td>Other Danger Classifier</td>
+<td><a href="">GitHub Repo</a>*</td>
+<td>Used to detect other safety hazards in view</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Fictional example (no link provided)</li>
+</ul>
+<h3 id="datasets">Datasets<a class="headerlink" href="#datasets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Documentation</th>
+<th>Description of Application Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skin tones dataset</td>
+<td><a href="../example-data-documentation-voc-skin-tones/">TechOps Data Document</a></td>
+<td>Used for end-to-end application testing</td>
+</tr>
+<tr>
+<td>PPE annotation data</td>
+<td><a href="">GitHub Repo</a>*</td>
+<td>Used for end-to-end application testing</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Fictional example (no link provided)</li>
+</ul>
+<p>Note, other datasets were used to train, evaluate, and test <a href="#models">models</a> used as part of SafeSiteAI. 
+See those documentation for details about those datasets.</p>
+<h2 id="application-development">Application Development<a class="headerlink" href="#application-development" title="Permanent link">&para;</a></h2>
+<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Cloud Setup</strong>: See <a href="">LeanIX Page</a></li>
+<li><strong>APIs</strong>: <a href="">Backend</a> (see <a href="">Swagger Documentation</a>)  </li>
+<li><strong>Integration</strong>: Application integrated into Vandelay Industries <a href="">SafeSiteAI Suite</a> </li>
+</ul>
+<h2 id="integration-with-external-systems">Integration with External Systems<a class="headerlink" href="#integration-with-external-systems" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Systems</strong>:</li>
+<li>Dependencies: Camera hardware, sensor suite, on-site edge gateway</li>
+<li>Data flow diagrams showing interactions: Site -&gt; Edge Device -&gt; Cloud -&gt; Dashboard </li>
+<li>Error-handling mechanisms: Retry logic, manual fallback</li>
+</ul>
+<h2 id="deployment-plan">Deployment Plan<a class="headerlink" href="#deployment-plan" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Infrastructure</strong>:</li>
+<li>Environments: development, staging, production  </li>
+<li>Scaling: Auto-scale based on number of cameras </li>
+<li>Backup and recovery: Daily snapshots, recovery under 15 minutes</li>
+<li><strong>Integration Steps</strong>:</li>
+<li>Deploy pipeline: edge device → data store → alert engine → dashboard    </li>
+<li>Dependencies: PyTorch, OpenCV, AWS SDK  </li>
+<li>Rollback: Last-stable container with health-check triggers</li>
+<li><strong>User Information</strong>: Currently deployed across 6 EU construction sites</li>
+</ul>
+<h2 id="lifecycle-management">Lifecycle Management<a class="headerlink" href="#lifecycle-management" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Monitoring</strong>:</li>
+<li>Performance: Detection latency, accuracy (see <a href="">Grafana monitoring dashboard</a>)</li>
+<li>Infrastructure: CPU, memory, network (see <a href="">Grafana monitoring dashboard</a>)</li>
+<li><strong>Versioning and change logs</strong>: See Application <a href="">GitHub Repository</a>  </li>
+<li><strong>Key Activities</strong>:</li>
+<li><a href="">Continuous evaluation</a>  </li>
+<li>Retraining quarterly or on demand        </li>
+<li><strong>Documentation Needs</strong>:</li>
+<li>Logs: Accuracy drift  </li>
+<li>Audit trails: <a href="">Model update logs</a></li>
+<li>Incident reports: Alert false positives/negatives</li>
+</ul>
+<h2 id="risk-management-system">Risk Management System<a class="headerlink" href="#risk-management-system" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Methodology</strong>: ISO 31000 + Hazard Identification Matrix</li>
+<li><strong>Identified Risks</strong>:</li>
+<li>False negatives (undetected hazards) </li>
+<li>Privacy violations (video storage)</li>
+<li><strong>Mitigation</strong>:</li>
+<li>Preventive: Diverse <a href="#datasets">evaluation data</a>, <a href="#models">identity masking</a> (ALiSNet)</li>
+<li>Protective: Manual override, encrypted alert logs</li>
+</ul>
+<h2 id="testing-and-validation-accuracy-robustness-cybersecurity">Testing and Validation (Accuracy, Robustness, Cybersecurity)<a class="headerlink" href="#testing-and-validation-accuracy-robustness-cybersecurity" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Accuracy</strong>: See latest deployed model scores in <a href="">Model Registry</a></li>
+<li><strong>Robustness</strong>: See latest deployed model scores in <a href="">Model Registry</a></li>
+<li><strong>Cybersecurity</strong>:</li>
+<li>TLS 1.3, IAM roles, intrusion logging</li>
+<li>See <a href="">Monitoring Dashboard</a></li>
+</ul>
+<h2 id="human-oversight">Human Oversight<a class="headerlink" href="#human-oversight" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Human-in-the-loop</strong>: Required for alert validation </li>
+<li><strong>Override</strong>: Site manager may suppress or escalate alerts</li>
+<li><strong>Training</strong>: Safety staff <a href="">trained</a> on alert review interface</li>
+<li><strong>Limitations</strong>: Cannot detect underground/chemical hazards - See <a href="">QA Board</a> for more details</li>
+</ul>
+<h2 id="incident-management">Incident Management<a class="headerlink" href="#incident-management" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Common Issues</strong>:</li>
+<li>False alarms from shadows/motion  </li>
+<li>Compatibility issues with legacy hardware  </li>
+<li><strong>Support Contact</strong>:</li>
+<li><a href="">24/7 tech hotline</a>, <a href="">escalation team</a></li>
+</ul>
+<h2 id="eu-declaration-of-conformity">EU Declaration of Conformity<a class="headerlink" href="#eu-declaration-of-conformity" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>System Name</strong>: SafeSiteAI</li>
+<li><strong>Provider</strong>: Vandelay Industries, New York, NY, 10101 USA</li>
+<li><strong>Compliance</strong>: EU AI Act Art. 47, GDPR, ISO/IEC 27001</li>
+</ul>
+<h2 id="standards-applied">Standards Applied<a class="headerlink" href="#standards-applied" title="Permanent link">&para;</a></h2>
+<ul>
+<li>ISO 31000: Risk Management </li>
+<li>ISO/IEC 27001: Information Security</li>
+<li>IEC 61508: Functional Safety</li>
+</ul>
+<p>See <a href="">Governance Approvals</a> for more information</p>
+<h2 id="documentation-metadata">Documentation Metadata<a class="headerlink" href="#documentation-metadata" title="Permanent link">&para;</a></h2>
+<h3 id="template-version">Template Version<a class="headerlink" href="#template-version" title="Permanent link">&para;</a></h3>
+<p><a href="../template-application-documentation/">Link to Template</a></p>
+<h3 id="documentation-authors">Documentation Authors<a class="headerlink" href="#documentation-authors" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><a href="mailto:g.costanza@vandelay-industries.com">George Costanza</a>, Importer/Exporter:</strong> (Principal Developer)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../example-model-documentation-alisnet/" class="btn btn-neutral float-right" title="ALiSNet Model Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../template-data-documentation/" class="btn btn-neutral" title="Data Documentation Template"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../template-data-documentation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../example-model-documentation-alisnet/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
