@@ -33,12 +33,16 @@ and examples.
 If you use and parts of this work, we kindly ask that you cite our paper:
 
 ```bibtex
-@inproceedings{lucaj2025techops,
+@article{lucaj2025techops,
    title     = {TechOps: Technical Documentation Templates for the AI Act},
    author    = {Lucaj, Laura and Loosley, Alex and Jonsson,  H{\aa}kan and Gasser, Urs and  van der Smagt, Patrick},
-   booktitle = {Proceedings of the Eighth {AAAI/ACM} Conference on AI, Ethics, and Society {(AIES-25)}},
+   url       = {https://ojs.aaai.org/index.php/AIES/article/view/36663},
+   DOI       = {10.1609/aies.v8i2.36663},
+   journal   = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society},
+   pages     = {1647-1660},
    publisher = {{AAAI} Press},
-   year      = {2025}
+   year      = {2025},
+   month     = {Oct.}
 }
 ```
 
