@@ -11,7 +11,7 @@
 
 If you answered yes to any of these questions, TechOps is for you.  
 
-TechOps, published in [AIES 2025](https://www.aies-conference.com/2025/) (see [citation details](#citing) below), 
+TechOps, [published in AIES 2025](https://ojs.aaai.org/index.php/AIES/article/view/36663) (see [citation details](#citing) below), 
 is a set of documentation templates and examples designed to help technical teams and companies
 document their AI/ML applications, models, and datasets. TechOps is also the first set of documentation 
 templates that we know of to completely map its sections to the EU AI Act, for developers and providers 
@@ -30,7 +30,7 @@ and examples.
 
 ## Citing
 
-If you use and parts of this work, we kindly ask that you cite our paper:
+If you use and parts of this work, we kindly ask that you cite [our paper](https://ojs.aaai.org/index.php/AIES/article/view/36663):
 
 ```bibtex
 @article{lucaj2025techops,
@@ -49,7 +49,7 @@ If you use and parts of this work, we kindly ask that you cite our paper:
 
 Developing TechOps Documentation is easy, it's just markdown!  TechOps Documentation is, on purpose, rendering 
 agnostic, so it can be integrated with any existing documentation systems as needed.  However, we also provide
-an [mkdocs](https://www.mkdocs.org/) based blueprint for rendering TechOps Documentation.
+an [mkdocs based blueprint](https://aloosley.github.io/techops/) for rendering TechOps Documentation.
 
 Follow these instructions to get started.
 
