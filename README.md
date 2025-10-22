@@ -21,7 +21,7 @@ While rendering agnostic content is the primary contribution of TechOps, content
 always needed to make such content useful to a real world audience.  For documentation developers that do 
 not already have their own systems of documentation rendering, we provide a [blueprint for rendering TechOps Documentation](#blueprint-for-rendering-techops-documentation).  This blueprint is designed to make TechOps Documentation readable by a wide variety of reader personas (technical users, business analysts, regulators, etc.), by rendering these complex documents with a side navbar so readers can quickly drill down to find the information they most need to see, without losing track of the big picture (see screenshot below).
 
-<img src="paper/aies/rendering.png" width="700" alt="Example of rendering TechOps Documentation">
+<img src="docs/figures/rendering.png" width="700" alt="Example of rendering TechOps Documentation">
 
 See [the TechOps website](https://aloosley.github.io/techops/) to dive in deeper and/or explore our templates
 and examples.
