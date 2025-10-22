@@ -40,7 +40,6 @@ If you use and parts of this work, we kindly ask that you cite our paper:
    DOI       = {10.1609/aies.v8i2.36663},
    journal   = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society},
    pages     = {1647-1660},
-   publisher = {{AAAI} Press},
    year      = {2025},
    month     = {Oct.}
 }
